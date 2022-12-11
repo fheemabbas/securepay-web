@@ -1,0 +1,61 @@
+@import "../../../../assets/scss/variables.scss";
+.jobFilters_custom {
+	.filterDetails {
+		.form {
+			.filterItem {
+				padding: 16px;
+				.titleText {
+					padding-bottom: 8px;
+					padding-top: 0px;
+					font-size: $FONT_14;
+					font-family: $ROBOTO_REGULAR;
+				}
+				.textField {
+					width: 48%;
+					float: left;
+					&:nth-child(3) {
+						margin-left: 8px;
+					}
+					.form-control {
+						padding: 8px 12px;
+						font-family: $ROBOTO_REGULAR;
+						font-size: $FONT_14;
+						line-height: 22px;
+					}
+				}
+				.dropdownSection {
+					display: table;
+					width: 100%;
+					margin-bottom: 16px;
+					.titleText {
+						padding-bottom: 8px;
+						font-size: $FONT_14;
+						font-family: $ROBOTO_REGULAR;
+					}
+				}
+				.input_row{
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+			.custombtnfield {
+				border-top: 1px solid $INPUTBORDER;
+				padding: 16px;
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				margin: 0;
+				.custombtn {
+					width: 48%;
+					float: left;
+					padding: 8px 0 !important;
+					&:nth-child(2) {
+						margin-left: 0px;
+						background: transparent;
+						color: $TXT_GREEN;
+					}
+				}
+			}
+		}
+	}
+}

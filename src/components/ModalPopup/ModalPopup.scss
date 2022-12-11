@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables.scss";
+.modalPopup {
+	.modal-content {
+		border: 0;
+		.modalInner {
+			display: block;
+			.modal-body {
+				padding: 24px 24px;
+				display: table;
+				width: 100%;
+				.closeBtn{
+					float: right;
+					i{
+						color: $CHECKBOXBORDER;
+					};
+					&:focus{
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+

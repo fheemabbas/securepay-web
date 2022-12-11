@@ -1,0 +1,832 @@
+@import "../../../../assets/scss/variables.scss";
+.disputeListingMain {
+	max-width: 1590px;
+	padding-top: 60px;
+    margin: 0 auto;
+    .titleText{
+		padding-top: 24px;
+		padding-left: 12px;
+    }
+	.searchFilter {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 12px;
+		padding-left: 12px;
+		.searchSection {
+			display: flex;
+			.searchboxMain {
+				width: 623px;
+			}
+			.filterBtn {
+				position: relative;
+				&.filterSorting{
+					display: none;
+				}
+				.filterIcon {
+					position: relative;
+					margin-left: 15px;
+					background: $BG_WHITE;
+					width: 40px;
+					height: 40px;
+					border-radius: 8px;
+					border: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+                    -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+					&:focus {
+						outline: none;
+					}
+					i {
+                        color: $TXT_BLUE_GREY;
+                        font-size: $FONT_16;
+					}
+				}
+				
+			}
+		}
+	}
+	.tableSection {
+		padding-top: 25px;
+		.header {
+			padding-right: 12px;
+			padding-left: 12px;
+			.headerItem {
+				padding-right: 0;
+				.headingListing{
+					.headingTable{
+                        padding-right: 0px;
+						.headingItem {
+							display: flex;
+							align-items: center;
+                            &:first-child{
+                                width: 20%;
+                            }
+                            &:nth-child(2){
+                               width: 10%;
+							}
+							&:nth-child(3){
+                               width: 10%;
+							}
+							&:nth-child(4){
+                               width: 10%;
+							}
+							&:nth-child(5){
+                               width: 10%;
+							}
+							&:nth-child(6){
+                               width: 20%;
+							}
+							&:nth-child(7){
+                               width: 10%;
+							}
+
+                            &:last-child{
+                                text-align: left;
+                            }
+                            .icon-sort{
+                                cursor: pointer;
+                            }
+						}
+					}
+					
+				}
+			}
+		}
+		.listing {
+			padding-top: 8px;
+			.listingScroll {
+				height: calc(100vh - 254px) !important;
+				.tableListing {
+					margin-right: 12px;
+                    margin-left: 12px;
+                    background-color: $BG_WHITE;
+                    -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    border-radius: 8px;
+                    &:hover{
+                        -webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                        -moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                        box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                    }
+					.headingUl {
+                            padding: 12px 0px 12px 16px;
+                            display: flex;
+                            align-items: center;
+						.headingItem {
+							display: flex;
+                            &:first-child{
+								width:40%;
+								padding-right: 0px;
+								.column{
+									padding-right: 15px;
+									width: 25%;
+									&:first-child{
+										width: 50%;
+										white-space: nowrap;
+										overflow: hidden;
+										text-overflow: ellipsis;
+									}
+								}
+                            }
+                            &:nth-child(2){
+                               width: 10%;
+							}
+							&:nth-child(3){
+                               width: 10%;
+							}
+							&:nth-child(4){
+							   width: 30%;
+							   padding-right: 0px;
+							   .twoCulomn{
+								   width: 33%;
+								   padding-right: 15px;
+								   &:first-child{
+									   width: 67%;
+								   }
+							   }
+							}
+                            &:last-child{
+								width: 10%;
+								text-align: left;
+								padding-right: 5px;
+                            }
+							i {
+								color: $TXT_YELLOW;
+                                font-size: $FONT_18;
+                               
+							}
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px){
+	.disputeListingMain{
+		.tableSection{
+			.header{
+				.headerItem{
+					.headingListing{
+						.headingTable{
+							.headingItem{
+								width: 15%;
+								&:nth-child(1){
+									&::before{
+										position: relative;
+										content: "Job Details";
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									display: none;
+								}
+								&:nth-child(4){
+									width: 15%;
+								}
+								&:nth-child(5){
+									width: 15%;
+								}
+								&:nth-child(7){
+									width: 15%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.listing{
+				.listingScroll{
+					.tableListing{
+						.headingUl{
+							align-items: flex-start;
+							.headingItem{
+								&:first-child {
+									width: 20%;
+									display: flex;
+									padding-right: 15px;
+									flex-direction: column;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+								.column{
+									width: 100% !important;
+									float: left;
+									padding-right: 0px !important;
+									&:first-child{
+										color: #2c2e3f;
+    									font-family: "source_sans_prosemibold";
+									}
+									&:nth-child(2){
+										&::before{
+											content: "Job Amount: ";
+											position: relative;
+										}
+									}
+									&:nth-child(3){
+										&::before{
+											content: "Admin Fees: ";
+											position: relative;
+										}
+									}
+									color: #494b68;	
+    								font-family: "source_sans_proregular";
+								}
+								&:nth-child(2){
+									width: 15%;
+								}
+								&:nth-child(3){
+									width: 15%;
+								}
+								&:nth-child(4){
+									width: 35%;
+									.twoCulomn{
+										width: 43%;
+										&:first-child{
+											width: 57%;
+										}
+									}
+								}
+								&:last-child{
+									width: 15%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px){
+	.disputeListingMain{
+		.tableSection{
+			.header{
+				.headerItem{
+					.headingListing{
+						.headingTable{
+							.headingItem{
+								width: 15%;
+								&:nth-child(1){
+									&::before{
+										position: relative;
+										content: "Job Details";
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									display: none;
+								}
+								&:nth-child(4){
+									width: 15%;
+								}
+								&:nth-child(5){
+									width: 15%;
+								}
+								&:nth-child(7){
+									width: 15%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.listing{
+				.listingScroll{
+					.tableListing{
+						.headingUl{
+							align-items: flex-start;
+							.headingItem{
+								&:first-child {
+									width: 20%;
+									display: flex;
+									padding-right: 15px;
+									flex-direction: column;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+								.column{
+									width: 100% !important;
+									float: left;
+									padding-right: 0px !important;
+									&:first-child{
+										color: #2c2e3f;
+    									font-family: "source_sans_prosemibold";
+									}
+									&:nth-child(2){
+										&::before{
+											content: "Job Amount: ";
+											position: relative;
+										}
+									}
+									&:nth-child(3){
+										&::before{
+											content: "Admin Fees: ";
+											position: relative;
+										}
+									}
+									color: #494b68;	
+    								font-family: "source_sans_proregular";
+								}
+								&:nth-child(2){
+									width: 15%;
+								}
+								&:nth-child(3){
+									width: 15%;
+								}
+								&:nth-child(4){
+									width: 35%;
+									.twoCulomn{
+										width: 43%;
+										&:first-child{
+											width: 57%;
+										}
+									}
+								}
+								&:last-child{
+									width: 15%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+	.disputeListingMain{
+		.tableSection{
+			.header{
+				.headerItem{
+					.headingListing{
+						.headingTable{
+							.headingItem{
+								&:nth-child(1){
+									width: 23%;
+									&::before{
+										position: relative;
+										content: "Job Details";
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									display: none;
+								}
+								&:nth-child(4){
+									width: 16%;
+								}
+								&:nth-child(5){
+									width: 16%;
+								}
+								&:nth-child(6){
+									width: 25%;
+									&::before{
+										position: relative;
+										content: "Disputed Milestone Details";
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(7){
+									display: none;
+								}
+								&:last-child{
+									width: 20%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.listing{
+				.listingScroll{
+					.tableListing{
+						.headingUl{
+							align-items: flex-start;
+							.headingItem{
+								&:first-child {
+									width: 23%;
+									display: flex;
+									padding-right: 15px;
+									flex-direction: column;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+								.column{
+									width: 100% !important;
+									float: left;
+									padding-right: 0px !important;
+									&:first-child{
+										color: #2c2e3f;
+    									font-family: "source_sans_prosemibold";
+									}
+									&:nth-child(2){
+										&::before{
+											content: "Job Amount: ";
+											position: relative;
+										}
+									}
+									&:nth-child(3){
+										&::before{
+											content: "Admin Fees: ";
+											position: relative;
+										}
+									}
+									color: #494b68;	
+    								font-family: "source_sans_proregular";
+								}
+								&:nth-child(2){
+									width: 16%;
+								}
+								&:nth-child(3){
+									width: 16%;
+								}
+								&:nth-child(4){
+									width: 25%;
+									flex-direction: column;
+									.twoCulomn{
+										width: 100%;
+										&:first-child{
+											width: 100%;
+										}
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount: ";
+												position: relative;
+											}
+										}
+									}
+								}
+								&:last-child{
+									width: 20%;
+									// .statusTxt{
+									// 	font-size: 11px;
+									// }
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+	.disputeListingMain{
+		.searchFilter{
+			.searchSection{
+				width: 100%;
+				.searchboxMain{
+					width: 100%;
+				}
+			}
+		} 
+		 
+		
+		.tableSection{
+			.header{
+				.headerItem{
+					.headingListing{
+						.headingTable{
+							.headingItem{
+								display: none;
+								.headingTitle{
+									display: none;
+								}
+								.icon-sort{
+									display: none;
+								}
+								&:nth-child(1){
+									width: 100%;
+									display: flex;
+									&::before{
+										position: relative;
+										content: "Dispute Management Details";
+									}
+									
+								}
+								
+							}
+						} 
+					} 
+				} 
+			} 
+			.listing{
+				.listingScroll{
+					.tableListing{
+						.headingUl{
+							padding: 12px 16px 12px 16px;
+							display: block;
+							.headingItem{
+								display: inline-block;
+								padding-right: 0px;
+								margin-bottom: 16px;
+								float: left;
+								&:first-child {
+									width: 100%;
+									display: flex;
+									padding-right: 0px;
+									flex-direction: column;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+								.column{
+									width: 100% !important;
+									float: left;
+									padding-right: 0px !important;
+									&:first-child{
+										color: #2c2e3f;
+    									font-family: "source_sans_prosemibold";
+									}
+									&:nth-child(2){
+										&::before{
+											content: "Job Amount: ";
+											position: relative;
+										}
+									}
+									&:nth-child(3){
+										&::before{
+											content: "Admin Fees: ";
+											position: relative;
+										}
+									}
+									color: #494b68;	
+    								font-family: "source_sans_proregular";
+								}
+								&:nth-child(2){
+									width: 50%;
+									&::before{
+										content: "Staff Member";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+								}
+								&:nth-child(3){
+									width: 50%;
+									text-align: right;
+									&::before{
+										content: "Disputed By";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+								}
+								&:nth-child(4){
+									width: 50%;
+									flex-direction: column;
+									&::before{
+										content: "Disputed Milestone Details";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+									.twoCulomn{
+										width: 100%;
+										&:first-child{
+											width: 100%;
+											white-space: nowrap;
+											overflow: hidden;
+											text-overflow: ellipsis;
+										}
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount: ";
+												position: relative;
+											}
+										}
+									}
+								}
+								&:last-child{
+									width: 50%;
+									text-align: right;
+									padding-right: 0px;
+									&::before{
+										content: "Dispute Status";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+									.statusMain{
+										margin-top: 5px;
+									}
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+}
+
+@media only screen and (max-width:575px){
+	.disputeListingMain{
+		.searchFilter{
+			.searchSection{
+				width: 100%;
+				.searchboxMain{
+					width: 100%;
+				}
+				.filterBtn{
+					&.filterSorting{
+						display: block;
+					}
+				} 
+			}
+		} 
+		 
+		
+		.tableSection{
+			.header{
+				.headerItem{
+					.headingListing{
+						.headingTable{
+							.headingItem{
+								display: none;
+								.headingTitle{
+									display: none;
+								}
+								.icon-sort{
+									display: none;
+								}
+								&:nth-child(1){
+									width: 100%;
+									display: flex;
+									&::before{
+										position: relative;
+										content: "Dispute Management Details";
+									}
+									
+								}
+								
+							}
+						} 
+					} 
+				} 
+			} 
+			.listing{
+				.listingScroll{
+					.tableListing{
+						.headingUl{
+							padding: 12px 16px 12px 16px;
+							display: block;
+							.headingItem{
+								display: inline-block;
+								padding-right: 0px;
+								margin-bottom: 16px;
+								float: left;
+								&:first-child {
+									width: 100%;
+									display: flex;
+									padding-right: 0px;
+									flex-direction: column;
+									white-space: nowrap;
+									overflow: hidden;
+									text-overflow: ellipsis;
+								}
+								.column{
+									width: 100% !important;
+									float: left;
+									padding-right: 0px !important;
+									&:first-child{
+										color: #2c2e3f;
+    									font-family: "source_sans_prosemibold";
+									}
+									&:nth-child(2){
+										&::before{
+											content: "Job Amount: ";
+											position: relative;
+										}
+									}
+									&:nth-child(3){
+										&::before{
+											content: "Admin Fees: ";
+											position: relative;
+										}
+									}
+									color: #494b68;	
+    								font-family: "source_sans_proregular";
+								}
+								&:nth-child(2){
+									width: 50%;
+									&::before{
+										content: "Staff Member";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+								}
+								&:nth-child(3){
+									width: 50%;
+									text-align: right;
+									&::before{
+										content: "Disputed By";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+								}
+								&:nth-child(4){
+									width: 100%;
+									flex-direction: column;
+									&::before{
+										content: "Disputed Milestone Details";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+									.twoCulomn{
+										width: 100%;
+										&:first-child{
+											width: 100%;
+											white-space: nowrap;
+											overflow: hidden;
+											text-overflow: ellipsis;
+										}
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount: ";
+												position: relative;
+											}
+										}
+									}
+								}
+								&:last-child{
+									width: 100%;
+									text-align: left;
+									padding-right: 0px;
+									&::before{
+										content: "Dispute Status";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+										width: 100%;
+										float: left;
+									}
+									.statusMain{
+										margin-top: 5px;
+									}
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+		} 
+	} 
+}

@@ -1,0 +1,1404 @@
+@import "../../../../assets/scss/variables.scss";
+
+.paymentListingMain {
+  max-width: 1602px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  .paymentInner {
+    padding-top: 0px;
+
+    .titleClass {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 8px;
+
+      &.paddingtab_remove {
+        padding: 24px 15px;
+      }
+
+      .titleText {
+        padding-right: 8px;
+        padding-bottom: 0px;
+      }
+
+      .ticketRaise {
+        .custombtn {
+          width: 202px;
+          background: transparent !important;
+          color: #0f4c81 !important;
+          border: 1px solid #0f4c81 !important;
+        }
+      }
+    }
+
+    .form-title {
+      padding: 0 15px 15px 15px !important;
+      font-size: $FONT_16;
+      line-height: 19px;
+      color: $TXT_BLUE;
+      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+      padding: 0 0 16px;
+    }
+
+    .searchFilter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 24px;
+      padding-bottom: 8px;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .searchSection {
+        display: flex;
+
+        .searchboxMain {
+          width: 623px;
+        }
+
+        .filterBtn {
+          position: relative;
+
+          .filterIcon {
+            position: relative;
+            margin-left: 15px;
+            background: $BG_WHITE;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+
+            &:focus {
+              outline: none;
+            }
+
+            i {
+              color: $TXT_BLUE_GREY;
+            }
+
+            .dot_filter {
+              width: 5px;
+              height: 5px;
+              background-color: $TXT_BLUE;
+              border-radius: 50%;
+              top: 5px;
+              right: 3px;
+              position: absolute;
+            }
+          }
+        }
+
+        .sortingIcon {
+          color: $TXT_BLUE;
+          padding: 14px 18px;
+          position: relative;
+          position: relative;
+          margin-left: 15px;
+          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+            0px 0.5px 2px rgba(96, 97, 112, 0.16);
+          display: none;
+
+          .FilterSorting {
+            display: flex;
+
+            .filterItem {
+              padding: 0;
+
+              .headingUl {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                list-style: none;
+                margin: 0;
+
+                .headingItem {
+                  display: flex !important;
+                  font-size: 14px !important;
+                  color: $TXT_BLUE;
+                  padding: 10px;
+                  cursor: pointer;
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+        }
+
+        .filterDropdown {
+          .filterDetails {
+            .custombtnfield {
+              .custombtn {
+                &:nth-child(2) {
+                  border: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ticketRaise {
+        .custombtn {
+          width: 202px;
+          background: transparent !important;
+          color: $TXT_BLUE !important;
+          border: 1px solid $TXT_BLUE !important;
+        }
+      }
+    }
+
+    .tableSection {
+      padding-top: 0px;
+
+      .tabMain {
+        width: 100%;
+        float: left;
+        margin-bottom: 9px;
+
+        .nav-tabs {
+          border-bottom: none;
+          margin: 0 8px 0px;
+          padding-bottom: 0;
+
+          .nav-item.show .nav-link {
+            color: $TXT_BLUE;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            background-color: transparent;
+            border-color: $TXT_BLUE $TXT_BLUE $TXT_WHITE;
+          }
+
+          .nav-link {
+            color: $TXT_WINE;
+            font-size: $FONT_18;
+            padding: 10px 40px;
+            outline: none !important;
+
+            &:focus,
+            &:hover {
+              border-color: transparent;
+            }
+
+            &.active {
+              color: $TXT_BLUE;
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              background-color: transparent;
+              border-color: $TXT_BLUE $TXT_BLUE $BG_LIGHTWHITE;
+            }
+          }
+        }
+
+        &.tabborder {
+          margin-top: 24px;
+
+          .tab-content {
+            border-top-left-radius: 0px;
+          }
+        }
+
+        .tab-content {
+          border: 1px solid #0f4c81;
+          margin: 0 8px;
+          border-radius: 5px;
+        }
+      }
+
+      .header {
+        padding-top: 16px;
+        padding-bottom: 4px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .headingListing {
+          .headingTable {
+            .headingItem {
+              flex: 1;
+              width: auto;
+
+              &:first-child {
+                flex-grow: 2;
+              }
+              &:nth-child(5) {
+                flex-grow: 1.5;
+              }
+              &:nth-child(6) {
+                flex-grow: 1.1;
+              }
+
+              &:last-child {
+                padding-right: 0;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .listing {
+        .listingScroll {
+          .tableListing {
+            margin-top: 4px;
+            margin-right: 15px;
+            margin-left: 15px;
+
+            .headingUl {
+              padding: 14px 16px;
+              display: flex;
+              align-items: center;
+
+              .headingItem {
+                width: auto;
+                flex: 1;
+
+                &:first-child {
+                  flex-grow: 2;
+                }
+
+                &:nth-child(6) {
+                  flex-grow: 1.1;
+                  text-align: left;
+                }
+
+                &:last-child {
+                  padding-right: 0;
+                  text-align: center;
+
+                  .icon-warning {
+                    position: relative;
+                    top: 3px;
+                  }
+                }
+
+                .acceptbtn {
+                  border: 1px solid $TXT_BLUE;
+                  color: $TXT_BLUE;
+                  padding: 3px 8px;
+                  background: $BG_WHITE;
+                  border-radius: 5px;
+                  margin-left: 10px;
+                  outline: none;
+                }
+
+                .rejecttbtn {
+                  border: 1px solid $TXT_RED;
+                  color: $TXT_RED;
+                  padding: 3px 8px;
+                  background: $BG_WHITE;
+                  border-radius: 5px;
+                  margin-left: 10px;
+                  outline: none;
+                }
+
+                .statusMain {
+                  &.ongoing {
+                    padding: 0px;
+
+                    .statusTxt {
+                      text-align: left;
+                    }
+                  }
+                }
+
+                i {
+                  color: $TXT_YELLOW;
+                  font-size: $FONT_18;
+                  padding-left: 0px;
+
+                  &.cancel {
+                    color: $TXT_RED !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .paymentListingMain {
+    .paymentInner {
+      .searchFilter {
+        .searchSection {
+          width: 100%;
+
+          .searchboxMain {
+            width: 100%;
+          }
+        }
+      }
+
+      .tableSection {
+        .header {
+          .headingListing {
+            .headingTable {
+              &::before {
+                content: "Transaction Management Details";
+                position: relative;
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+
+              .headingItem {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .listing {
+          &.secondtablisting {
+            .listingScroll {
+              .tableListing {
+                .headingUl {
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+
+                  .headingItem {
+                    flex: inherit !important;
+
+                    &:first-child {
+                      width: 35% !important;
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Title";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      width: 25% !important;
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Created By";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(3) {
+                      margin-bottom: 16px;
+                      width: 40% !important;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Business Name";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(4) {
+                      width: 35% !important;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Amount";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(5) {
+                      width: 25% !important;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Total Interim transaction";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(6) {
+                      width: 40% !important;
+
+                      .statusMain {
+                        margin-top: 5px;
+                      }
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Status";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(7) {
+                      margin-bottom: 16px;
+                      right: 16px;
+                      position: absolute;
+                      text-align: right;
+
+                      i {
+                        position: relative;
+                        top: 5px;
+                      }
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Activity";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .listingScroll {
+            .tableListing {
+              .headingUl {
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+                .headingItem {
+                  flex: inherit !important;
+
+                  &:first-child {
+                    width: 35% !important;
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Title";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    width: 25% !important;
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction For";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(3) {
+                    margin-bottom: 16px;
+                    width: 40% !important;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Amount";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(4) {
+                    width: 35% !important;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Admin Fees";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(5) {
+                    width: 25% !important;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Total Interim transaction";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(6) {
+                    width: 40% !important;
+
+                    .statusMain {
+                      margin-top: 5px;
+                    }
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Status";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(7) {
+                    margin-bottom: 16px;
+                    right: 16px;
+                    position: absolute;
+                    text-align: right;
+
+                    i {
+                      position: relative;
+                      top: 5px;
+                    }
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Activity";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .paymentListingMain {
+    .paymentInner {
+      .searchFilter {
+        .searchSection {
+          width: 100%;
+
+          .searchboxMain {
+            width: 100%;
+          }
+        }
+      }
+
+      .tableSection {
+        .header {
+          .headingListing {
+            .headingTable {
+              &::before {
+                content: "Transaction Management Details";
+                position: relative;
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+
+              .headingItem {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .listing {
+          &.secondtablisting {
+            .listingScroll {
+              .tableListing {
+                .headingUl {
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+
+                  .headingItem {
+                    width: 33.333% !important;
+                    flex: inherit !important;
+
+                    &:first-child {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Title";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Created By";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(3) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Business Name";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(4) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Amount";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(5) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Total Interim transaction";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(6) {
+                      margin-bottom: 16px;
+
+                      .statusMain {
+                        margin-top: 5px;
+                      }
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Status";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(7) {
+                      margin-bottom: 16px;
+                      text-align: left;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Activity";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .listingScroll {
+            .tableListing {
+              .headingUl {
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+                .headingItem {
+                  width: 33.333% !important;
+                  flex: inherit !important;
+
+                  &:first-child {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Title";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction For";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(3) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Amount";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(4) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Admin Fees";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(5) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Total Interim transaction";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(6) {
+                    margin-bottom: 16px;
+
+                    .statusMain {
+                      margin-top: 5px;
+                    }
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Status";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(7) {
+                    margin-bottom: 16px;
+                    text-align: left;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Activity";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .paymentListingMain {
+    .paymentInner {
+      .searchFilter {
+        .searchSection {
+          width: 100%;
+
+          .searchboxMain {
+            width: 100%;
+          }
+        }
+      }
+
+      .tableSection {
+        .header {
+          .headingListing {
+            .headingTable {
+              &::before {
+                content: "Transaction Management Details";
+                position: relative;
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+
+              .headingItem {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .listing {
+          &.secondtablisting {
+            .listingScroll {
+              .tableListing {
+                .headingUl {
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+
+                  .headingItem {
+                    width: 50% !important;
+                    flex: inherit !important;
+
+                    &:first-child {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Title";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Created By";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(3) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Business Name";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(4) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Amount";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(5) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Total Interim transaction";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(6) {
+                      margin-bottom: 16px;
+
+                      .statusMain {
+                        margin-top: 5px;
+                      }
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Status";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(7) {
+                      margin-bottom: 16px;
+                      text-align: left;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Activity";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .listingScroll {
+            .tableListing {
+              .headingUl {
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+                .headingItem {
+                  width: 50% !important;
+                  flex: inherit !important;
+
+                  &:first-child {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Title";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction For";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(3) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Amount";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(4) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Admin Fees";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(5) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Total Interim transaction";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(6) {
+                    margin-bottom: 16px;
+
+                    .statusMain {
+                      margin-top: 5px;
+                    }
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Status";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(7) {
+                    margin-bottom: 16px;
+                    text-align: left;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Activity";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .paymentListingMain {
+    .paymentInner {
+      .titleClass {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        .titleText {
+          width: 100%;
+          float: left;
+          padding-bottom: 15px;
+        }
+      }
+
+      .searchFilter {
+        .searchSection {
+          width: 100%;
+
+          .searchboxMain {
+            width: 100%;
+          }
+        }
+      }
+
+      .tableSection {
+        .tabMain {
+          .nav-tabs {
+            .nav-link {
+              padding: 10px 5px;
+            }
+          }
+        }
+
+        .header {
+          display: none;
+        }
+
+        .listing {
+          &.secondtablisting {
+            .listingScroll {
+              .tableListing {
+                .headingUl {
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+
+                  .headingItem {
+                    width: 100% !important;
+                    flex: inherit !important;
+                    padding-right: 0px;
+
+                    &:first-child {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Title";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Created By";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(3) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Business Name";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(4) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Amount";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(5) {
+                      margin-bottom: 16px;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Total Interim Transaction";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(6) {
+                      margin-bottom: 16px;
+
+                      .statusMain {
+                        margin-top: 5px;
+                      }
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Transaction Status";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+
+                    &:nth-child(7) {
+                      margin-bottom: 16px;
+                      text-align: left;
+
+                      &::before {
+                        width: 100%;
+                        float: left;
+                        content: "Activity";
+                        font-size: $FONT_14;
+                        color: $TXT_BLUE;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .listingScroll {
+            .tableListing {
+              .headingUl {
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+                .headingItem {
+                  width: 100% !important;
+                  flex: inherit !important;
+                  padding-right: 0px;
+
+                  &:first-child {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Title";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction For";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(3) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Amount";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(4) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Admin Fees";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(5) {
+                    margin-bottom: 16px;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Total Interim transaction";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(6) {
+                    margin-bottom: 16px;
+
+                    .statusMain {
+                      margin-top: 5px;
+                    }
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Transaction Status";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+
+                  &:nth-child(7) {
+                    margin-bottom: 16px;
+                    text-align: left;
+
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Activity";
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

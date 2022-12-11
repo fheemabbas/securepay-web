@@ -1,0 +1,46 @@
+@import "../../../../assets/scss/variables.scss";
+.modalPopup {
+	&.update_commission_modal {
+		.modal-dialog {
+			width: 305px;
+			max-width: 100%;
+			min-height: 100%;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px;
+						position: relative;
+						display: table;
+						.titleText {
+							line-height: 24px;
+						}
+						.txt_row{
+							font-size: $FONT_16;
+							line-height: 24px;
+							color: $CHECKBOXBORDER;
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+							padding: 8px 0;
+							span{
+								color: $TXT_WINE;
+							}
+						}
+						.btn_row{
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							.edit_btn{
+								border: none;
+								color: $TXT_DARKGREEN;
+								font-family: $SOURCE_SANS_PRO_REGULAR;
+								outline: none;
+								background-color: transparent;
+								margin-top: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}

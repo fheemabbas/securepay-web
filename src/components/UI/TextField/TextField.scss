@@ -1,0 +1,151 @@
+@import "../../../assets/scss/variables.scss";
+
+.textField {
+  padding: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  &::before {
+    display: none;
+  }
+  .inputBox {
+    position: relative;
+
+    .icon-css {
+      color: $TXT_LIGHTGRAY;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: $FONT_16;
+      background: transparent;
+      font-style: inherit;
+      font-family: $SOURCE_SANS_PRO_REGULAR !important;
+      line-height: normal !important;
+
+      &.eye-show {
+        &::before {
+          content: "Show";
+        }
+      }
+      &.eye-hide {
+        &::before {
+          content: "Hide";
+        }
+      }
+      &.inputfill {
+        color: $TXT_BLUE;
+      }
+    }
+    .eye-hide,
+    .eye-show {
+      cursor: pointer;
+    }
+    .errorMsg {
+      display: block;
+      font-size: $FONT_14;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      color: $TXT_WHITE;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease-out;
+      font-family: $SOURCE_SANS_PRO_REGULAR;
+    }
+    .errorMsg.show {
+      color: $TXT_RED;
+      padding: 8px 0 0;
+      max-height: 50px;
+      transition: max-height 0.3s ease-in;
+      display: flex;
+      align-items: flex-start;
+
+      p {
+        margin: 0px;
+        padding: 0px 0 0 0;
+        font-size: $FONT_14;
+        color: $TXT_RED;
+        font-family: $SOURCE_SANS_PRO_REGULAR;
+      }
+
+      &.passwordcustom {
+        flex-direction: column;
+        max-height: 165px;
+        transition: max-height 0.5s ease-in;
+        padding: 2px 0 0;
+
+        .red {
+          display: flex;
+          padding: 2px 0;
+        }
+
+        .green {
+          display: flex;
+          padding: 2px 0;
+
+          span {
+            margin: 0px;
+            padding: 0px 0 0 0;
+            font-size: $FONT_14;
+            color: $TXT_GREEN;
+          }
+        }
+      }
+    }
+  }
+
+  .form-control {
+    background: $BG_WHITE;
+    font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+    color: $TXT_WINE;
+    font-size: $FONT_16;
+    padding: 11px 12px;
+    height: auto;
+    outline: 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $INPUTBORDER;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-shadow: none;
+
+    &::-webkit-input-placeholder {
+      color: $TXT_LIGHTGRAY;
+    }
+
+    &::-moz-placeholder {
+      color: $TXT_LIGHTGRAY;
+    }
+
+    &:-ms-input-placeholder {
+      color: $TXT_LIGHTGRAY;
+    }
+
+    &:-moz-placeholder {
+      color: $TXT_LIGHTGRAY;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      border-color: $INPUTBORDER;
+      color: $TXT_WINE;
+    }
+
+    &.error {
+      border-color: $INPUTREDBORDER;
+    }
+    &:disabled {
+      background: $BGINPUTDISABLED !important;
+      border: 1px solid $BGINPUTDISABLED;
+      color: $TXT_WINE !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+}

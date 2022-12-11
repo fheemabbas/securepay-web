@@ -1,0 +1,97 @@
+@import "../../assets/scss/variables.scss";
+
+.CustomSideBar {
+  top: 0px;
+  height: 100vh;
+  .managementStstem {
+    width: 100%;
+    float: left;
+    padding: 0px 40px;
+    .disputeTitle {
+      width: 100%;
+      float: left;
+      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+      font-size: $FONT_20;
+      line-height: 150%;
+      color: $TXT_BLUE;
+      text-align: left;
+    }
+    ul {
+      width: 100%;
+      float: left;
+      margin: 0px;
+      padding: 40px 0 0 0;
+      list-style: none;
+      li {
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        text-align: left;
+        margin-bottom: 40px;
+        &:nth-child(odd) {
+          width: 60%;
+        }
+        &:nth-child(even) {
+          width: 40%;
+        }
+        .ListTitle {
+          font-size: $FONT_14;
+          line-height: 16px;
+          color: $TXT_WINE;
+          padding: 0 0 3px;
+        }
+        .ListTxt {
+          font-weight: 600;
+          font-size: $FONT_14;
+          line-height: 150%;
+          color: $TXT_DARKGREY;
+        }
+      }
+    }
+  }
+  .messageChatView {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    .message-head {
+      position: sticky;
+      top: 0;
+      padding: 16px;
+      background: white;
+      .close-pbtn {
+        padding-right: 16px;
+        vertical-align: middle;
+      }
+      .tittle-msg {
+        font-weight: 500;
+        line-height: 20px;
+        vertical-align: middle;
+      }
+      .download-pbtn {
+        float: right;
+        vertical-align: middle;
+      }
+    }
+    .ChatContent {
+      padding: 0 40px 40px;
+      height: calc(100vh - 423px);
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .date-content {
+        text-align: center;
+        margin: 30px 0 36px;
+        span {
+          background: #e6e6e6;
+          border-radius: 12px;
+          padding: 2px 15px;
+        }
+      }
+    }
+  }
+}

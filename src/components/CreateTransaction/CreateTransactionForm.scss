@@ -1,0 +1,978 @@
+@import "../../assets/scss/variables.scss";
+
+.modalPopup {
+    &.CreateTransaction {
+        .modal-dialog {
+            max-width: 620px;
+            min-height: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .modal-content {
+                .modalInner {
+                    .modal-body {
+                        position: relative;
+                        padding: 24px 24px;
+
+                        .titleText {
+                            font-size: $FONT_24;
+                            line-height: 32px;
+                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            color: $TXT_BLUE;
+                            padding-bottom: 0px;
+                        }
+
+                        .titleText {
+                            &.dropdownLabel {
+                                font-size: 16px;
+                                font-family: $SOURCE_SANS_PRO_REGULAR;
+                                color: $TXT_WINE;
+                                line-height: 24px;
+                                padding-bottom: 8px;
+                                padding-left: 0px;
+                            }
+                        }
+
+                        .headermodal {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 24px;
+                            align-items: center;
+
+                            .closeright {
+                                display: flex;
+                                margin: 0px;
+                                padding: 0px;
+                                border: none;
+                                background-color: transparent;
+                                outline: none;
+
+                            }
+                        }
+
+                        .createForm {
+                            padding: 0px 16px;
+                            float: left;
+                            width: 100%;
+
+                            .amountCustomRow {
+                                .form-group {
+                                    .inputBox {
+                                        position: relative;
+
+                                        .form-control {
+                                            padding-right: 30px;
+                                        }
+
+                                        &::after {
+                                            position: absolute;
+                                            font-size: $FONT_14;
+                                            color: $TXT_GRAY;
+                                            top: 14px;
+                                            right: 12px;
+                                            content: "\e91d";
+                                            font-family: 'yatapay' !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .leftsideModal {
+                                position: relative;
+                                z-index: 1;
+                                width: 588px;
+                                padding: 16px 16px;
+                                border-radius: 8px;
+                                background: #fff;
+                            }
+
+                            .rightSideModal {
+                                width: 570px;
+                                position: absolute;
+                                background: #fff;
+                                left: 0;
+                                right: 0;
+                                top: 0px;
+                                padding: 16px 16px;
+                                border-radius: 8px;
+                                transform: translateX(0%);
+                                -webkit-transform: translateX(0%);
+                                transition: all 0.5s ease-in-out;
+                                -webkit-transition: all 0.5s ease-in-out;
+                                -moz-transition: all 0.5s ease-in-out;
+                                -ms-transition: all 0.5s ease-in-out;
+                                -o-transition: all 0.5s ease-in-out;
+                            }
+
+                            .formleft {
+                                width: 100%;
+                                float: left;
+                                padding-right: 0px;
+                                display: flex;
+                                flex-direction: column;
+
+                                .inputLabel {
+                                    font-size: $FONT_16;
+                                    line-height: 24px;
+                                    color: $TXT_WINE;
+                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                    padding: 0 0 8px;
+
+                                }
+
+                                .textareaInput {
+                                    padding: 24px 0 0px;
+
+                                    .form-control {
+                                        height: 120px;
+                                        resize: none;
+                                    }
+                                }
+
+                                .fieldText {
+                                    width: 100%;
+                                    float: left;
+                                    font-size: $FONT_16;
+                                    line-height: 24px;
+                                    color: $TXT_GREEN;
+                                    font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                    margin-top: 24px;
+                                    margin-bottom: 40px;
+
+                                    span {
+                                        width: 100%;
+                                        float: left;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_BLUE_GREY;
+                                    }
+                                }
+
+                                .row-view {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 8px 0px 8px;
+
+                                    .title {
+                                        font-size: $FONT_16;
+                                        line-height: 24px;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_WINE;
+                                        display: flex;
+
+                                        .tooltipMain {
+
+                                            // display: flex;
+                                            .tooltipBtn {
+                                                width: auto;
+                                                padding: 0px;
+                                                background-color: transparent !important;
+                                                border: none !important;
+                                                line-height: normal;
+                                                box-shadow: none !important;
+
+                                                .icon-info {
+                                                    font-size: $FONT_18;
+                                                    color: $TXT_YELLOW;
+                                                    margin-left: 8px;
+                                                    font-family: "yatapay" !important;
+                                                    position: relative;
+                                                    top: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .txt {
+                                        font-size: $FONT_16;
+                                        line-height: 24px;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_WINE;
+                                        display: flex;
+
+                                        .tooltipMain {
+
+                                            // display: flex;
+                                            .tooltipBtn {
+                                                width: auto;
+                                                padding: 0px;
+                                                background-color: transparent !important;
+                                                border: none !important;
+                                                line-height: normal;
+                                                box-shadow: none !important;
+
+                                                .icon-info {
+                                                    font-size: $FONT_18;
+                                                    color: $TXT_YELLOW;
+                                                    margin-left: 8px;
+                                                    font-family: "yatapay" !important;
+                                                    position: relative;
+                                                    top: 0;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                .btnfield-row {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .custombtn {
+                                        width: 49%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 12px 25px !important;
+
+                                        &:first-child {
+                                            background-color: $BG_YELLOW;
+                                            color: $TXT_WHITE;
+
+                                            &:disabled {
+                                                background: #f2f2f2;
+                                                color: #bbbbbb;
+                                                opacity: 1 !important;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .backBtn {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    padding: 32px 0 8px;
+
+                                    .custombtn {
+                                        width: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0px 0px !important;
+                                        background-color: transparent;
+                                        color: $TXT_WINE;
+
+                                        &::before {
+                                            margin-right: 8px;
+                                            content: "\e90f";
+                                            font-family: 'yatapay' !important;
+                                            position: relative;
+                                            font-size: $FONT_16;
+                                        }
+                                    }
+                                }
+
+                                .btnfield {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    padding-top: 8px;
+
+                                    .custombtn {
+                                        width: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 12px 25px !important;
+
+                                        &::after {
+                                            margin-left: 8px;
+                                            content: "\e910";
+                                            font-family: 'yatapay' !important;
+                                            position: relative;
+                                            font-size: $FONT_16;
+                                        }
+                                    }
+                                }
+
+                                .preview_payment_row {
+                                    width: 100%;
+                                    float: left;
+                                    padding: 8px 0;
+
+                                    .preview_inner-row {
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+
+                                    .preview_title {
+                                        font-size: $FONT_16;
+                                        line-height: 24px;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_WINE;
+                                    }
+
+                                    .preview_txt {
+                                        font-size: $FONT_16;
+                                        line-height: 24px;
+                                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                        color: $TXT_WINE;
+                                    }
+
+                                    &.interim_payment {
+                                        .preview_txt {
+                                            &:nth-child(1) {
+                                                width: 80%;
+                                            }
+
+                                            &:nth-child(2) {
+                                                width: 20%;
+                                                word-break: break-all;
+                                                text-align: right;
+                                                position: relative;
+                                                top: -10px;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .border-box {
+                                    border-top: 1px solid $BORDERCOLOR;
+                                    border-bottom: 1px solid $BORDERCOLOR;
+                                    padding: 24px 0;
+                                }
+
+                                .box_border {
+
+                                    margin: 24px 0;
+
+                                    .row-view {
+                                        .title {
+                                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                        }
+                                    }
+                                }
+
+                                .calenderMain {
+                                    width: 100%;
+                                    margin-bottom: 16px;
+
+                                    .custom-input {
+                                        background: $BG_WHITE;
+                                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                        color: $TXT_WINE;
+                                        font-size: $FONT_16;
+                                        padding: 11px 12px;
+                                        height: auto;
+                                        outline: 0px;
+                                        width: 100%;
+                                        border-radius: 5px;
+                                        border: 1px solid $INPUTBORDER;
+                                        outline: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        text-align: left;
+
+                                        .birth_Placeholder {
+                                            color: $TXT_LIGHTGRAY;
+
+                                        }
+                                    }
+
+                                    .react-datepicker-wrapper {
+                                        display: block;
+
+                                        input {
+                                            background: $BG_WHITE;
+                                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                            color: $TXT_WINE;
+                                            font-size: $FONT_16;
+                                            padding: 11px 12px;
+                                            height: auto;
+                                            outline: 0px;
+                                            width: 100%;
+                                            border-radius: 5px;
+                                            border: 1px solid $INPUTBORDER;
+                                            outline: none;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+
+                                            &::-webkit-input-placeholder {
+                                                color: $TXT_LIGHTGRAY;
+                                            }
+
+                                            &::-moz-placeholder {
+                                                color: $TXT_LIGHTGRAY;
+                                            }
+
+                                            &:-ms-input-placeholder {
+                                                color: $TXT_LIGHTGRAY;
+                                            }
+
+                                            &:-moz-placeholder {
+                                                color: $TXT_LIGHTGRAY;
+                                            }
+
+                                            &:focus {
+                                                outline: 0;
+                                                box-shadow: none;
+                                                border-color: $INPUTBORDER;
+                                            }
+
+                                            &.error {
+                                                border-color: $INPUTREDBORDER;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                section {
+                                    width: 100%;
+                                    position: relative;
+                                    right: 0;
+                                    top: 0;
+                                    transition: all 0.5s ease-in-out;
+                                    -webkit-transition: all 0.5s ease-in-out;
+                                    -moz-transition: all 0.5s ease-in-out;
+                                    -ms-transition: all 0.5s ease-in-out;
+                                    -o-transition: all 0.5s ease-in-out;
+                                    display: none;
+
+                                    &.showStep2 {
+                                        padding-bottom: 0px;
+                                        flex-direction: column;
+                                    }
+
+                                    &.active1 {
+                                        position: relative;
+                                        transform: translateX(0%);
+                                        -webkit-transform: translateX(0%);
+                                        display: inline-flex;
+                                    }
+
+                                    &.active2 {
+                                        display: inline-flex;
+                                        background-color: transparent;
+
+                                        .leftsideModal {
+                                            left: -24px;
+                                        }
+                                    }
+
+                                    &.active3 {
+                                        display: inline-flex;
+                                        background-color: $BG_WHITE;
+                                        align-items: center;
+
+                                        .icon-check {
+                                            color: $TXT_YELLOW;
+                                            font-size: $FONT_32;
+                                            margin: 24px 0 8px;
+                                        }
+
+                                        .stepthree-row {
+                                            display: flex;
+                                            width: 100%;
+                                            justify-content: center;
+                                            padding: 20px 0 16px;
+
+                                            .custombtn {
+                                                width: 60%;
+                                            }
+                                        }
+                                    }
+
+                                    &.active4 {
+                                        display: inline-flex;
+                                        background-color: $BG_WHITE;
+
+                                        .stepthree-row {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            padding-bottom: 24px;
+
+                                            .custombtn {
+                                                width: auto;
+                                                padding: 14px 38px !important;
+
+                                                &:first-child {
+                                                    background-color: transparent;
+                                                    color: $TXT_DARKGREY;
+                                                    padding: 0px !important;
+                                                    margin-right: 24px;
+                                                }
+                                            }
+                                        }
+
+                                        .three_row {
+                                            display: flex;
+                                            padding-bottom: 8px;
+                                        }
+
+                                        .row-view {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding: 8px 16px 8px;
+                                            background-color: #F0F6FC;
+                                        }
+
+                                        .interim_payment {
+                                            padding: 8px 16px;
+                                            background-color: #F0F6FC;
+                                            margin-bottom: 8px;
+                                        }
+                                    }
+
+                                    &.active5 {
+                                        display: inline-flex;
+                                        background-color: $BG_WHITE;
+
+                                        .textareaInput {
+                                            padding: 0px;
+                                        }
+
+                                        .amount_calender_row {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            .textField {
+                                                width: 49%;
+                                            }
+
+                                            .calenderMain {
+                                                width: 49%;
+                                                position: relative;
+                                            }
+                                        }
+
+                                        .fiveStep-row {
+                                            width: 100%;
+                                            float: left;
+                                            margin: 0px 0 0px 0;
+                                            padding-left: 0px;
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            .backbtn_left {
+                                                display: flex;
+
+                                                .custombtn {
+                                                    width: auto;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    padding: 0px 0px !important;
+                                                    background-color: transparent;
+                                                    color: $TXT_WINE;
+
+                                                    &::before {
+                                                        margin-right: 8px;
+                                                        content: "\e90f";
+                                                        font-family: 'yatapay' !important;
+                                                        position: relative;
+                                                        font-size: $FONT_16;
+                                                    }
+                                                }
+                                            }
+
+                                            .twobtn_row {
+                                                display: flex;
+                                                padding: 16px 0;
+
+                                                .custombtn {
+                                                    width: auto;
+                                                    padding: 11px 35px !important;
+                                                    margin-left: 8px;
+
+                                                    &:nth-child(2) {
+                                                        border: 1px solid $TXT_BLUE !important;
+                                                        background-color: transparent;
+                                                        color: $TXT_BLUE;
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                                .box_row {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    padding-bottom: 8px;
+
+                                    .amountCustomRow {
+                                        .textField {
+                                            padding-right: 0px;
+                                        }
+                                    }
+
+                                    .textField {
+                                        margin-bottom: 0px;
+                                        padding-right: 16px;
+
+                                        &:nth-child(2) {
+                                            padding-right: 0px;
+                                            width: 50%;
+                                        }
+                                    }
+
+                                    .delete_btn {
+                                        border: none;
+                                        background: transparent;
+                                        padding: 0;
+                                        margin: 14px 0 8px 16px;
+
+                                        .icon-delete {
+                                            font-size: 20px;
+                                            color: $TXT_RED;
+                                        }
+                                    }
+                                }
+
+                                .twobtn_row {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                    padding: 32px 0 0 0;
+
+                                    .amount_remaining {
+                                        font-size: $FONT_16;
+                                        line-height: 24px;
+                                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                        color: $TXT_WINE;
+                                    }
+
+                                    .custombtn {
+                                        width: auto;
+                                        font-size: $FONT_14;
+                                        line-height: 21px;
+                                        padding: 14px 36px !important;
+                                        border-radius: 8px !important;
+                                    }
+
+                                    .deleteicon {
+                                        margin-right: 35px;
+                                    }
+
+                                    .customaddbtn {
+                                        width: auto;
+                                        font-size: $FONT_14;
+                                        line-height: 21px;
+                                        padding: 14px 36px !important;
+                                        color: $TXT_BLUE;
+                                        background-color: $BG_WHITE;
+                                        border: 1px solid $TXT_BLUE !important;
+                                        border-radius: 8px !important;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.addInterimPayments {
+            .modal-dialog {
+                max-width: 1190px;
+
+                .modal-content {
+                    background-color: transparent !important;
+
+                    .modalInner {
+                        .modal-body {
+                            .createForm {
+                                padding: 0px 16px;
+
+                                .formleft {
+                                    section.showStep2 {
+                                        flex-direction: row;
+                                        background-color: transparent !important;
+
+                                        .rightSideModal {
+                                            top: 0px;
+                                            right: inherit;
+                                            transform: translateX(99%);
+                                            -webkit-transform: translateX(99%);
+
+                                            .btnMobileView {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #tooltip-right {
+        background-color: brown;
+
+        .tooltip-inner {
+            max-width: 400px;
+        }
+    }
+}
+
+.moreamount {
+    text-align: right;
+    color: red;
+    font-size: 14px;
+    text-shadow: none;
+}
+
+.withdeletemoreamount {
+    margin-right: 27px;
+}
+
+.submitbtn {
+    color: $TXT_WHITE !important;
+
+    &:not(:disabled) {
+        background: $BG_YELLOW !important;
+    }
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .modalPopup {
+        &.CreateTransaction {
+            &.addInterimPayments {
+                .modal-dialog {
+                    .modal-content {
+                        .modalInner {
+                            .modal-body {
+                                .createForm {
+                                    padding: 0px;
+
+                                    .formleft {
+                                        section {
+                                            &.active2 {
+                                                .leftsideModal {
+                                                    width: 50%;
+                                                    left: 0px;
+
+                                                    .btnfield-row {
+                                                        .custombtn {
+                                                            font-size: $FONT_14 !important;
+                                                            padding: 12px 5px !important;
+                                                        }
+                                                    }
+                                                }
+
+                                                .rightSideModal {
+                                                    width: 50%;
+                                                    left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .modalPopup {
+        &.CreateTransaction {
+            &.addInterimPayments {
+                .modal-dialog {
+                    .modal-content {
+                        .modalInner {
+                            .modal-body {
+                                .createForm {
+                                    .formleft {
+                                        section {
+                                            &.active2 {
+                                                .leftsideModal {
+                                                    width: 50%;
+                                                    left: 0px;
+
+                                                    .btnfield-row {
+                                                        flex-direction: column;
+
+                                                        .custombtn {
+                                                            font-size: $FONT_14 !important;
+                                                            padding: 12px 5px !important;
+                                                            width: 100%;
+                                                            margin-top: 16px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .modalPopup {
+        &.CreateTransaction {
+            &.addInterimPayments {
+                .modal-dialog {
+                    .modal-content {
+                        .modalInner {
+                            .modal-body {
+                                .createForm {
+                                    padding: 0px;
+
+                                    .formleft {
+                                        section {
+                                            &.active2 {
+                                                .leftsideModal {
+                                                    width: 50%;
+                                                    left: 0px;
+
+                                                    .btnfield-row {
+                                                        flex-direction: column;
+
+                                                        .custombtn {
+                                                            font-size: $FONT_14 !important;
+                                                            padding: 12px 5px !important;
+                                                            width: 100%;
+                                                            margin-top: 16px;
+                                                        }
+                                                    }
+                                                }
+
+                                                .rightSideModal {
+                                                    width: 50%;
+                                                    left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .modalPopup {
+        &.CreateTransaction {
+            .modal-dialog {
+                width: 94%;
+                margin: 0 3%;
+
+                .modal-content {
+                    .modalInner {
+                        .modal-body {
+                            .createForm {
+                                padding: 0px;
+
+                                .formleft {
+                                    section {
+                                        &.active2 {
+                                            .leftsideModal {
+                                                width: 100%;
+                                                left: 0;
+                                                padding: 0px;
+
+                                                .btnfield-row {
+                                                    flex-direction: column;
+
+                                                    .custombtn {
+                                                        width: 100%;
+                                                        margin-top: 16px;
+                                                    }
+                                                }
+                                            }
+
+                                            .rightSideModal {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.CreateTransaction {
+            &.addInterimPayments {
+                .modal-dialog {
+                    .modal-content {
+                        background-color: $BG_WHITE !important;
+
+                        .modalInner {
+                            .modal-body {
+                                .createForm {
+                                    padding: 0px;
+
+                                    .formleft {
+                                        section {
+                                            &.active1 {
+                                                display: block;
+                                            }
+
+                                            &.active2 {
+                                                display: inline-block;
+
+                                                .desktopview {
+                                                    display: none;
+                                                }
+
+                                                .leftsideModal {
+                                                    display: none;
+
+                                                    .btnfield-row {
+                                                        flex-direction: column;
+
+                                                        .custombtn {
+                                                            font-size: $FONT_14 !important;
+                                                            padding: 12px 5px !important;
+                                                            width: 100%;
+                                                            margin-top: 16px;
+                                                        }
+                                                    }
+                                                }
+
+                                                .rightSideModal {
+                                                    width: 100%;
+                                                    position: relative;
+                                                    transform: none;
+                                                    -o-transform: none;
+                                                    -ms-transform: none;
+                                                    -moz-transform: none;
+                                                    -webkit-transform: none;
+                                                    padding: 0px;
+                                                    transition: none;
+                                                    -webkit-transition: none;
+
+                                                    .btnMobileView {
+                                                        display: flex;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

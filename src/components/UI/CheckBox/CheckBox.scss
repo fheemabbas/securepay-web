@@ -1,0 +1,50 @@
+@import "../../../assets/scss/variables.scss";
+
+.checkboxMain {
+	display: block;
+}
+
+.checkboxMain input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+}
+
+.checkboxMain label {
+	position: relative;
+	cursor: pointer;
+	font-family: $SOURCE_SANS_PRO_REGULAR;
+	font-size: $FONT_16;
+	color: $TXT_WINE;
+}
+
+.checkboxMain label:before {
+	content: '';
+	-webkit-appearance: none;
+	background-color: transparent;
+	border: 2px solid $CHECKBOXBORDER;
+	padding: 7px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-right: 8px;
+	border-radius: 3px;
+	top: -1px;
+}
+
+.checkboxMain input:checked + label:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 7px;
+	width: 5px;
+	height: 10px;
+	border: solid $TXT_BLUE;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}

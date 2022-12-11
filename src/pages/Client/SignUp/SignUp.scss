@@ -1,0 +1,136 @@
+@import "../../../assets/scss/variables.scss";
+.signupPage {
+	position: relative;
+	width: 100%;
+	float: left;
+	.signupCenter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		.signupBox{
+			max-width: 425px;
+			width: 100%;
+			background-color: $BG_WHITE;
+			padding: 40px;
+			display: block;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			border-radius: 8px;
+			-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+		}
+		.icon-yatapay-brand {
+			font-size: 66px;
+			color: $BG_GREEN;
+		}
+		h1 {
+			margin: 22px 0 8px;
+			font-size: $FONT_24;
+			color: $TXT_BLUE;
+			font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+			text-align: left;
+		}
+		p {
+			margin: 0 0 40px 0;
+			font-size: $FONT_16;
+			color: $TXT_WINE;
+			font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+			text-align: left;
+		}
+		.loginwithgoogle {
+			position: relative;
+			margin: 0;
+
+			p {
+				margin: 0;
+				font-size: $FONT_16;
+				color: $TXT_WINE;
+				font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+				text-align: center;
+			}
+
+			.loginwith {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 24px 0 0 0;
+				border-radius: 5px;
+				border: 1px solid $BUTTONBORDERCOLOR;
+				color: $TXT_WINE;
+				font-size: $FONT_16;
+				padding: 10px 0;
+				cursor: pointer;
+
+				span {
+					font-size: $FONT_24;
+					color: $TXT_BLACK;
+					margin-right: 10px;
+				}
+			}
+		}
+		.back {
+			margin-top: 40px;
+			text-align: center;
+
+			p {
+				margin: 0;
+				color: $TXT_WINE;
+				font-size: $FONT_16;
+				text-align: left;
+
+				.newuser {
+					font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+					font-size: $FONT_16;
+					color: $TXT_BLUE_GREY;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width: 767px) {
+	.signupPage{
+		.signupCenter {
+			height: auto;
+			align-items: flex-start;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			.signupBox{
+				width: 94%;
+				margin: 0 auto;
+				padding: 40px 20px;
+				
+			}
+				
+		}
+	} 
+}
+@media (max-width: 575px) {
+	.signupPage{
+		.signupCenter {
+			height: auto;
+			align-items: flex-start;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			.signupBox{
+				width: 94%;
+				margin: 0 auto;
+				padding: 40px 20px;
+				
+			}
+				
+		}
+	} 
+}
+@media (max-width: 320px) {
+	.signupPage{
+		.signupCenter {
+			height: auto;
+			padding: 20px 0;
+				
+		}
+	} 
+}

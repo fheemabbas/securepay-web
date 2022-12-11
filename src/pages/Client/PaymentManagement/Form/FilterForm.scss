@@ -1,0 +1,51 @@
+@import "../../../../assets/scss/variables.scss";
+.ticketFilter {
+					.filterDetails {
+						.form {
+							.filterItem {
+								padding: 16px;
+								display: flex;
+								flex-direction: column;
+								.titleText {
+									padding-bottom: 8px;
+									font-size: $FONT_14;
+									font-family: $ROBOTO_REGULAR;
+								}
+								.dropdownSection {
+									padding-bottom: 16px;
+									.titleText {
+										padding-bottom: 8px;
+										font-size: $FONT_14;
+										font-family: $ROBOTO_REGULAR;
+									}
+								}
+								.payment_row{
+									display: flex;
+									justify-content: space-between;
+									.textField{
+										width: 48%;
+										float: left;
+									}
+								}
+							}
+							.custombtnfield {
+								border-top: 1px solid $INPUTBORDER;
+								padding: 16px;
+								display: flex;
+								width: 100%;
+								justify-content: center;
+								margin: 0;
+								.custombtn {
+									width: 48%;
+									float: left;
+									padding: 8px 0 8px 0 !important;
+									&:nth-child(2) {
+										margin-left: 8px;
+										background: transparent !important;
+										color: $TXT_BLUE !important;
+									}
+								}
+							}
+						}
+					}
+				}

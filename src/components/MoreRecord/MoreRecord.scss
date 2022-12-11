@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables.scss";
+
+		.moreTxt{
+		font-size: $FONT_14;
+		color: $TXT_BLUE;
+		text-align: left;
+		font-family: $ROBOTO_REGULAR;
+		position: absolute;
+		margin: 0;
+		bottom: 16px;
+    	margin: 0;
+		right: 16px;
+		cursor: pointer;
+	}

@@ -1,0 +1,13 @@
+@import "../../../assets/scss/variables.scss";
+.filterDropdown{
+    min-width: 256px;
+    background: $BG_WHITE;
+    position: absolute;
+    top:42px;
+    right: 0;
+    -webkit-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+    -moz-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 8px;
+    z-index: 1;         
+}

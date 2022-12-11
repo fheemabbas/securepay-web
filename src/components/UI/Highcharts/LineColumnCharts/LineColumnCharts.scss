@@ -1,0 +1,25 @@
+@import "../../../../assets/scss/variables.scss";
+
+.LineColumnChartsMain {
+	width: 100%;
+	float: left;
+	.highcharts-container{
+		border-radius: 8px;
+		.highcharts-title{
+			display: none;
+		}
+		.highcharts-root{
+			// font-family: $primary-font-family;
+		}
+		.highcharts-legend{
+			padding: 0 0 50px;
+		}
+		.highcharts-legend-item{
+			&.highcharts-series-2{
+				.highcharts-point{
+					display: none;
+				}
+			}
+		}
+	}
+}

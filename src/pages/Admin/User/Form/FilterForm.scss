@@ -1,0 +1,70 @@
+@import "../../../../assets/scss/variables.scss";
+.userFilters {
+  .filterDetails {
+    .form {
+      .filterItem {
+        padding: 16px;
+        .titleText {
+          padding-bottom: 8px;
+          font-size: $FONT_14;
+          font-family: $ROBOTO_REGULAR;
+        }
+        .textField {
+          width: 48%;
+          float: left;
+          &:nth-child(3) {
+            margin-left: 8px;
+          }
+          .form-control {
+            padding: 8px 12px;
+            font-family: $ROBOTO_REGULAR;
+            font-size: $FONT_14;
+            line-height: 22px;
+          }
+        }
+        .input_row {
+          display: flex;
+          justify-content: space-between;
+        }
+        .dropdown-menu {
+          background-color: transparent;
+          .dropdown-item {
+            background-color: $BG_WHITE;
+            &:hover {
+              background: $BG_BLUE;
+              color: $TXT_WHITE;
+            }
+          }
+        }
+        .dropdownSection {
+          display: table;
+          width: 100%;
+          .titleText {
+            padding-bottom: 8px;
+            font-size: $FONT_14;
+            font-family: $ROBOTO_REGULAR;
+          }
+        }
+      }
+      .custombtnfield {
+        border-top: 1px solid $INPUTBORDER;
+        padding: 16px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        .custombtn {
+          width: 48%;
+          float: left;
+          padding: 8px 0 !important;
+          &.clear {
+            margin-left: 8px;
+            background: transparent !important;
+            color: $TXT_BLUE;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

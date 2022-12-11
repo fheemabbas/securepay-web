@@ -1,0 +1,308 @@
+@import "../../../../assets/scss/variables.scss";
+.CompanyEditModal {
+  float: left;
+  width: 100%;
+  .informationDetailTitle {
+    font-size: $FONT_16;
+    line-height: 24px;
+    color: $TXT_BLUE;
+    padding: 0 0 16px;
+    font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+  }
+  .popupScroll {
+    height: 485px !important;
+  }
+  .boxContain {
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+    .form {
+      width: 100%;
+      float: left;
+      .leftPart {
+        width: 50%;
+        float: left;
+        padding-right: 20px;
+        position: relative;
+        .text {
+          width: 100%;
+          float: left;
+          font-size: $FONT_16;
+          line-height: 24px;
+          color: $TXT_DARKGREY;
+          padding: 0 0 8px;
+        }
+        .radioButtonRow {
+          width: 100%;
+          float: left;
+          display: flex;
+          margin-bottom: 16px;
+          .RadioButton {
+            margin-right: 70px;
+            input[type="radio"] + label {
+              font-size: $FONT_16;
+              line-height: 20px;
+              font-family: $SOURCE_SANS_PRO_REGULAR;
+            }
+          }
+        }
+        .UBO_list {
+          width: 100%;
+          float: left;
+          display: flex;
+          position: relative;
+          ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            .noUboDeclaration {
+              font-size: $FONT_16;
+              line-height: 24px;
+              color: $TXT_BLUE;
+              padding: 0 0 16px;
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            }
+            .addBtn {
+              position: absolute;
+              top: 0;
+              right: 0;
+              line-height: 13px;
+              .icon-add {
+                font-size: $FONT_26;
+                color: $TXT_BLUE_GREY;
+              }
+            }
+            li {
+              margin: 0px;
+              padding: 0px;
+              display: flex;
+              align-items: center;
+              a {
+                &:first-child {
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: $TXT_DARKGREY;
+                  text-decoration: underline !important;
+                  font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                }
+                &:nth-child(2) {
+                  font-size: $FONT_16;
+                  line-height: 21px;
+                  color: $TXT_BLUE_GREY;
+                  margin-left: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .rightPart {
+        width: 50%;
+        float: left;
+        padding-left: 20px;
+        .dropdownSection {
+          margin-bottom: 16px;
+          &.firstDropDown {
+            .customDropdown {
+              .dropdown {
+                .dropdown-menu {
+                  top: -2px !important;
+                }
+              }
+            }
+          }
+          .customDropdown {
+            .dropdown {
+              &.selected {
+                .btn-primary {
+                  color: $TXT_WINE !important;
+                  &::after {
+                    color: $TXT_BLUE;
+                  }
+                }
+              }
+              .btn-primary {
+                padding: 11px 16px !important;
+                border-radius: 5px !important;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                font-size: $FONT_16 !important;
+                &::after {
+                  margin: 0 !important;
+                  font-size: $FONT_12;
+                  color: $TXT_LIGHTGRAY;
+                  top: 15px !important;
+                }
+              }
+              .dropdown-menu {
+                overflow: hidden;
+                border: 0 !important;
+                -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                top: inherit !important;
+                .dropdownData {
+                  .dropdown-item {
+                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                    font-size: $FONT_16;
+                    color: $TXT_WINE;
+                    padding: 9px 16px !important;
+                    &:hover {
+                      background-color: $BG_BLUE;
+                      color: $TXT_WHITE;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .country_Selection {
+          position: relative;
+
+          &.filled {
+            input {
+              padding: 11px 24px 11px 16px;
+            }
+          }
+
+          .flaimg {
+            position: absolute;
+            left: 15px;
+            top: 16px;
+            margin: 0;
+            display: none;
+          }
+
+          .flaimg ~ div {
+            position: relative;
+            &::before {
+              position: absolute;
+              right: 14px;
+              top: 24px;
+              content: "";
+              width: 0;
+              height: 0;
+            }
+
+            &::before {
+              border-top: 5px solid #4d4d4d;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-bottom: 0;
+            }
+          }
+
+          input {
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 11px 24px 11px 16px;
+            font-size: $FONT_16;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            color: $TXT_WINE;
+            border: 1px solid $INPUTBORDER;
+            border-radius: 4px;
+            background: transparent;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+
+            &::-webkit-input-placeholder {
+              color: $TXT_LIGHTGRAY;
+            }
+
+            &::-moz-placeholder {
+              color: $TXT_LIGHTGRAY;
+            }
+
+            &:-ms-input-placeholder {
+              color: $TXT_LIGHTGRAY;
+            }
+
+            &:-moz-placeholder {
+              color: $TXT_LIGHTGRAY;
+            }
+          }
+
+          .country-list {
+            padding: 10px 16px;
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            // font-weight: 600;
+            font-size: $FONT_16;
+            color: $TXT_WINE;
+            cursor: pointer;
+            text-align: left;
+            span {
+              display: none;
+            }
+            &.active,
+            &:hover {
+              background-color: $BG_BLUE;
+              color: $TXT_WHITE;
+            }
+
+            span {
+              position: relative;
+              top: 1px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .personalAddress {
+          .checkboxMain {
+            input:checked + label:after {
+              left: 6px;
+            }
+            label {
+              &:before {
+                border: 1px solid $CHECKBOXBORDER;
+              }
+            }
+          }
+        }
+      }
+      .btnRow {
+        display: flex;
+        width: 100%;
+        float: left;
+        align-items: center;
+        margin: 0 40px 0 0;
+        .custombtn {
+          width: auto;
+          padding: 12px 33px !important;
+          border-radius: 8px;
+          margin-right: 8px;
+        }
+        .cancelBtn {
+          border: 1px solid #d9d9d9;
+          border-radius: 8px;
+          color: $TXT_WINE;
+          font-size: $FONT_14;
+          font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+          padding: 13px 37px 12px;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .milestoneHistory {
+    .boxContain {
+      width: 100%;
+      float: left;
+      padding: 0 16px;
+    }
+  }
+}

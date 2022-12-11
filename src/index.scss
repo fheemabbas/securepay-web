@@ -1,0 +1,547 @@
+@import "./assets/scss/variables.scss";
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: $SOURCE_SANS_PRO_REGULAR !important;
+  background-color: $BG_LIGHTWHITE !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url("./assets/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/sourcesanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "source_sans_prosemibold";
+  src: url("./assets/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "robotomedium";
+  src: url("./assets/fonts/roboto-medium-webfont.woff2") format("woff2"),
+    url("./assets/fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src: url("./assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "yatapay";
+  src: url("./assets/fonts/yatapay.eot?h88m0m");
+  src: url("./assets/fonts/yatapay.eot?h88m0m#iefix") format("embedded-opentype"),
+    url("./assets/fonts/yatapay.ttf?h88m0m") format("truetype"),
+    url("./assets/fonts/yatapay.woff?h88m0m") format("woff"),
+    url("./assets/fonts/yatapay.svg?h88m0m#yatapay") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "yatapay" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-google:before {
+  content: "\e901";
+}
+
+.icon-toggle:before {
+  content: "\e902";
+}
+
+.icon-add:before {
+  content: "\e903";
+}
+
+.icon-downarrow:before {
+  content: "\e904";
+}
+
+.icon-filter:before {
+  content: "\e905";
+}
+
+.icon-sort:before {
+  content: "\e906";
+}
+
+.icon-email:before {
+  content: "\e907";
+}
+
+.icon-warning:before {
+  content: "\e908";
+}
+
+.icon-close:before {
+  content: "\e909";
+}
+
+.icon-back:before {
+  content: "\e90a";
+}
+
+.icon-minus:before {
+  content: "\e90b";
+}
+
+.icon-attachment:before {
+  content: "\e90c";
+}
+
+.icon-pdf:before {
+  content: "\e90d";
+}
+
+.icon-info:before {
+  content: "\e90e";
+}
+
+.icon-arrow-left:before {
+  content: "\e90f";
+}
+
+.icon-arrow-right:before {
+  content: "\e910";
+}
+
+.icon-close-sq:before {
+  content: "\e911";
+}
+
+.icon-check:before {
+  content: "\e912";
+}
+
+.icon-delete:before {
+  content: "\e913";
+}
+
+.icon-call:before {
+  content: "\e914";
+}
+
+.icon-bell:before {
+  content: "\e915";
+}
+
+.icon-user:before {
+  content: "\e916";
+}
+
+.icon-arrow:before {
+  content: "\e917";
+}
+
+.icon-question:before {
+  content: "\e918";
+}
+
+.icon-plus:before {
+  content: "\e919";
+}
+
+.icon-minus1:before {
+  content: "\e91a";
+}
+
+.icon-Union:before {
+  content: "\e91b";
+}
+
+.icon-yatapay-brand:before {
+  content: "\e91c";
+}
+
+.icon-dolar:before {
+  content: "\e91d";
+}
+
+.icon-check-done:before {
+  content: "\e91e";
+}
+
+.icon-xls:before {
+  content: "\e91f";
+}
+
+.icon-doc:before {
+  content: "\e920";
+}
+
+.icon-info-bold:before {
+  content: "\e921";
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.colorRed {
+  color: $TXT_RED !important;
+}
+
+.colorGreen {
+  color: $TXT_GREEN !important;
+}
+
+.overLay {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.overLayMenu {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.actionLi {
+  cursor: pointer !important;
+}
+
+// tooltip design css start
+#custom_tooltip {
+  &.show {
+    opacity: 1;
+    margin-top: 5px;
+  }
+
+
+  // .arrow::before {
+  //   border-color: $BG_WHITE;
+  // }
+
+  .arrow {
+    left: 0px !important;
+
+    &::before {
+      border-width: 0 0.6rem 0.8rem;
+      border-bottom-color: $BG_WHITE;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: -2px;
+      width: 8px;
+      height: 4px;
+      -webkit-box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.53);
+      -moz-box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.53);
+      box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.53);
+    }
+  }
+
+  .tooltip-inner {
+    max-width: 282px;
+    padding: 16px 16px;
+    text-align: left;
+    background-color: $BG_WHITE;
+    color: $TXT_WINE;
+    font-size: $FONT_14;
+    line-height: 21px;
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -webkit-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -moz-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -ms-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -o-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 8px;
+  }
+}
+
+
+#custom_tooltip-top {
+  .arrow {
+    left: 0px !important;
+
+    &::before {
+      border-width: 0 0.6rem 0.8rem;
+      border-bottom-color: transparent;
+      z-index: 1;
+      border-right-color: $BG_WHITE;
+      transform: rotate(130deg);
+      right: -4px;
+      top: -10px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: -2px;
+      width: 8px;
+      height: 4px;
+      // -webkit-box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+      // -moz-box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+      // box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+    }
+  }
+
+  .tooltip-inner {
+    max-width: 282px;
+    padding: 16px 16px;
+    text-align: left;
+    background-color: $BG_WHITE;
+    color: $TXT_WINE;
+    font-size: $FONT_14;
+    line-height: 21px;
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -webkit-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -moz-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -ms-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -o-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 8px;
+
+    span {
+      margin-top: 8px;
+      display: block;
+      font-family: $SOURCE_SANS_PRO_REGULAR;
+      font-size: $FONT_14;
+      color: $TXT_WINE;
+    }
+
+    .title {
+      font-size: $FONT_16 !important;
+      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+      color: $TXT_GREEN;
+    }
+  }
+}
+
+#custom_tooltip-right {
+
+
+  .arrow {
+    left: 0px !important;
+
+    &::before {
+      border-width: 0 0.6rem 0.8rem;
+      border-bottom-color: transparent;
+      z-index: 1;
+      border-right-color: $BG_WHITE;
+      transform: rotate(220deg);
+      right: -13px;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: -2px;
+      width: 8px;
+      height: 4px;
+      // -webkit-box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+ // -moz-box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+ // box-shadow: 0px -2px 10px 0px rgba(255, 0, 0, 0.53);
+    }
+  }
+
+  .tooltip-inner {
+    max-width: 100%;
+    padding: 16px 16px;
+    text-align: left;
+    background-color: $BG_WHITE;
+    color: $TXT_WINE;
+    font-size: $FONT_14;
+    line-height: 21px;
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -webkit-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -moz-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -ms-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    -o-box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+    border-radius: 8px;
+
+    span {
+      margin-top: 8px;
+      display: block;
+      font-family: $SOURCE_SANS_PRO_REGULAR;
+      font-size: $FONT_14;
+      color: $TXT_WINE;
+    }
+
+    .title {
+      font-size: $FONT_16 !important;
+      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+      color: $TXT_GREEN;
+    }
+  }
+}
+
+// tooltip design css end
+
+// Phone Number css start
+.countryPhoneGroup {
+  position: relative;
+
+  .react-tel-input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100px;
+    outline: none;
+    z-index: 1;
+
+    .special-label {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 14px;
+      width: 1px;
+      height: 20px;
+      background: $INPUTBORDER;
+    }
+
+    .country-list {
+      .country {
+        text-align: left;
+      }
+    }
+
+    .selected-flag {
+      background: transparent !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      padding: 0px;
+
+      .flag {
+        opacity: 0;
+      }
+    }
+
+    .flag-dropdown {
+      border: none;
+      background: transparent !important;
+    }
+
+    .form-control {
+      width: 80px;
+      height: 48px;
+      padding: 0px;
+      text-align: center;
+      border: none;
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+      font-size: 16px;
+      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+    }
+  }
+
+  .textField {
+    .form-control {
+      padding-left: 100px;
+      padding-top: 11px;
+    }
+  }
+}
+
+.showStep2 {
+  .sub_txt {
+    font-size: 16px;
+    color: #0f4c81;
+    text-align: left;
+    padding: 0 0 24px 0;
+  }
+}
+
+.skip_txt {
+  position: absolute;
+  top: -160px;
+  right: -30px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #0f4c81;
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.country-list {
+  .search {
+    .search-box {
+      width: 90%;
+      margin: 0px !important;
+    }
+  }
+}
+
+.errormessage {
+  margin-top: -35px;
+  color: $TXT_RED;
+  text-align: left;
+  font-size: $FONT_13;
+}

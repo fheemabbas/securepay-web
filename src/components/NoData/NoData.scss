@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables.scss";
+
+		.NoText{
+		font-size: $FONT_16;
+		color: $TXT_WINE;
+		text-align: left;
+		font-family: $ROBOTO_REGULAR;
+		margin: 0;
+		align-items: center;
+		align-self: center;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+	}

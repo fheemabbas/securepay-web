@@ -1,0 +1,103 @@
+@import "../../../assets/scss/variables.scss";
+.customDropdown {
+	margin: 0 !important;
+	border-radius: 45px;
+	.dropdown {
+		width: 100%;
+		color: $TXT_LIGHTGRAY;
+		text-align: left;
+		.btn-primary {
+			position: relative;
+			background-color: #ffffff !important;
+			width: 100%;
+			font-size: $FONT_14 !important;
+			font-weight: normal;
+			text-align: left;
+			padding: 8px 16px !important;
+			border-radius: 5px;
+			border: 1px solid $INPUTBORDER !important;
+			font-family: $ROBOTO_REGULAR;
+			color: $TXT_LIGHTGRAY !important;
+			line-height: 22px;
+			
+			&:focus {
+				box-shadow: none !important;
+				border: 1px solid;
+			}
+			&:active {
+				color: grey;
+				border: 1px solid;
+			}
+			&::after {
+				content: "\e904";
+				font-family: 'yatapay' !important;
+				border: none;
+				color: $TXT_LIGHTGRAY;
+				font-size: 10px;
+				position: absolute;
+				right: 16px;
+				top: 10px;
+				font-weight: 600;
+			}
+		}
+		.dropdown-menu {
+			width: 100%;
+			padding: 0;
+			border:none;
+			border-radius: 0;
+			top: -2px !important;
+			.dropdownData {
+				display: block;
+				width: 100%;
+				max-height: 250px;
+				overflow-y: scroll;
+				padding: 0;
+				background-color: $BG_WHITE;
+				scrollbar-color: #d2d2d2;
+				border-radius: 5px;
+				scrollbar-color: #E4E4E4 transparent;
+                    scrollbar-width: none;
+				border: 1px solid $INPUTBORDER;
+				&::-webkit-scrollbar {
+					width: 6px;
+					display: none;
+				}
+				.dropdown-item {
+					font-size: $FONT_16;
+					font-weight: normal;
+					padding: 0;
+					padding: 8px 15px !important;
+					color: $TXT_WINE;
+					font-family: $ROBOTO_REGULAR;
+					border-bottom: 1px solid $INPUTBORDER;
+					&:last-child{
+						border: none;
+					}
+					&:hover {
+						background: $BG_BLUE;
+						color: $TXT_WHITE;
+					}
+					&:active {
+						color: Black;
+					}
+					&:first-child {
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+				}
+			}
+		}
+		&.selected {
+			.btn-primary {
+				color: $TXT_WINE !important;
+			}
+		}
+		&.show {
+			.btn-primary {
+				&:after {
+					color: $TXT_WINE;
+				}
+			}
+		}
+	}
+}

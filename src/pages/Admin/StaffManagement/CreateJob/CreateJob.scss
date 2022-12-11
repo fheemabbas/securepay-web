@@ -1,0 +1,627 @@
+@import "../../../../assets//scss/variables.scss";
+.createJobPage {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 60px;
+	height: 100vh;
+	.createJobForm {
+		max-width: 806px;
+		width: 100%;
+		background-color: $BG_WHITE;
+		padding: 40px 0 40px 40px;
+		display: block;
+		border-radius: 8px;
+		-webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+		-moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+		box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+		.innerTxt {
+			font-size: $FONT_16;
+			color: $CHECKBOXBORDER;
+			font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+			text-align: left;
+			margin: 0;
+			padding-bottom: 34px;
+		}
+		.formSection {
+			.formmain {
+				.formLeft {
+					width: 50%;
+					position: relative;
+					float: left;
+					padding-right: 20px;
+					.innerTitle {
+						font-size: $FONT_14;
+						color: $TXT_BLUE;
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						text-align: left;
+						margin: 0;
+						padding-bottom: 14px;
+						margin-bottom: 16px;
+						line-height: 20px;
+						position: relative;
+						&::after {
+							position: absolute;
+							content: '';
+							bottom: -3px;
+							right: 0;
+							width: 100%;
+							height: 1px;
+							border-bottom: 1px solid $INPUTBORDER;
+						}
+					}
+					.customDropdown {
+						.dropdown {
+							.btn-primary {
+								padding: 13px 16px !important;
+								&:after {
+									top: 16px;
+								}
+							}
+						}
+					}
+					textarea {
+						height: 108px !important;
+						resize: none !important;
+					}
+					.autoComplete {
+						position: relative;
+						display: flex;
+						input {
+							background: $BG_WHITE;
+							font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+							color: $TXT_WINE;
+							font-size: $FONT_16;
+							padding: 11px 12px;
+							height: auto;
+							outline: 0px;
+							width: 100%;
+							border-radius: 5px;
+							border: 1px solid $INPUTBORDER;
+							outline: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							&:focus {
+								outline: none;
+							}
+							&::-webkit-input-placeholder {
+								color: $TXT_LIGHTGRAY;
+							}
+							&::-moz-placeholder {
+								color: $TXT_LIGHTGRAY;
+							}
+							&:-ms-input-placeholder {
+								color: $TXT_LIGHTGRAY;
+							}
+							&:-moz-placeholder {
+								color: $TXT_LIGHTGRAY;
+							}
+						}
+						.dropdownItem {
+							border-bottom: 1px solid $INPUTBORDER;
+							padding: 8px;
+							padding-left: 16px;
+							cursor: pointer;
+							color: $TXT_WINE;
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+							&:last-child {
+								border: none;
+							}
+							&:hover {
+								background: $TXT_BLUE;
+								color: $TXT_WHITE;
+							}
+						}
+						::-webkit-scrollbar {
+							width: 4px;
+							display: none;
+						}
+						::-webkit-scrollbar-thumb {
+							background-color: #E4E4E4;
+						}
+						button {
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+							width: auto;
+							height: 28px;
+							padding: 0 18px !important;
+							font-size: $FONT_14 !important;
+							font-family: "source_sans_proregular";
+							background: $TXT_BLACK!important;
+							color: $TXT_WHITE!important;
+							position: absolute;
+							right: 15px;
+							top: 10px;
+						}
+					}
+					.autoComplete>div {
+						width: 100%;
+					}
+					.autoComplete>div>div {
+								overflow: hidden !important;
+								overflow-y: scroll !important;
+								scrollbar-color: #E4E4E4 transparent;
+								scrollbar-width: thin;
+							}
+				}
+				.formRight {
+					width: 50%;
+					position: relative;
+					float: left;
+					padding-left: 20px;
+					padding-right: 10px;
+					&::after {
+						position: absolute;
+						content: '';
+						top: 0;
+						left: 0;
+						width: 1px;
+						height: 100%;
+						background-color: $TXT_LIGHTGRAY;
+					}
+					.addMore {
+						.addMinuSection {
+							display: flex;
+							flex-direction: row;
+							justify-content: space-between;
+							margin-right: 30px;
+							position: relative;
+							&::after {
+								position: absolute;
+								content: '';
+								bottom: -6px;
+								right: 0;
+								width: 100%;
+								height: 1px;
+								border-bottom: 1px solid $INPUTBORDER;
+							}
+							.innerTitle {
+								border: none;
+								margin: 0;
+								padding-bottom: 0;
+								line-height: 30px;
+								font-size: $FONT_14;
+								color: $TXT_BLUE;
+								font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+							}
+							.addMinus {
+								display: flex;
+								flex-direction: row;
+								button {
+									background: transparent !important;
+									border: none!important;
+									color: $TXT_WINE !important;
+									padding: 10px 0 12px 0 !important;
+									width: auto;
+									padding: 0 !important;
+									i {
+										font-size: $FONT_26;
+									}
+								}
+								.inputTxt {
+									border: 2px solid $TXT_BLUE;
+									border-radius: 5px;
+									width: 40px;
+									min-width: auto;
+									padding: 0;
+									font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									font-size: $FONT_14;
+									display: table;
+									margin: 0 6px;
+									padding-top: 1px;
+								}
+							}
+						}
+					}
+				}
+				.listingScroll {
+					height: calc(100vh - 600px);
+					overflow: hidden;
+					overflow-y: scroll;
+					scrollbar-color: #E4E4E4 red;
+					scrollbar-width: thin;
+					&::-webkit-scrollbar {
+						width: 4px;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: #E4E4E4;
+					}
+					.addMilestone {
+						position: relative;
+						padding-right: 25px;
+						position: relative;
+						&:nth-child(1) {
+							margin-top: 20px;
+						}
+						p:empty:not(:focus)::before {
+							content: attr(data-placeholder);
+							color: $TXT_LIGHTGRAY;
+						}
+						&:hover {
+							.addBtn {
+								display: block;
+							}
+							.edit_Delete {
+								display: block;
+							}
+						}
+						.options {
+							background: $BG_WHITE;
+							font-family: "source_sans_prosemibold";
+							color: $TXT_WINE;
+							font-size: 16px;
+							padding: 11px 12px;
+							height: auto;
+							outline: 0px;
+							width: 100%;
+							border-radius: 5px;
+							border: 1px solid $INPUTBORDER;
+							outline: none;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							text-align: left;
+							margin-bottom: 16px;
+						}
+						.addBtn {
+							position: absolute;
+							right: 45px;
+							top: 10px;
+							display: none;
+							button {
+								font-family: $SOURCE_SANS_PRO_REGULAR;
+								width: auto;
+								height: 28px;
+								padding: 0 18px !important;
+								font-size: $FONT_14 !important;
+								font-family: "source_sans_proregular";
+								background: $TXT_BLUE_GREY!important;
+								color: $TXT_WHITE!important;
+								z-index: 11;
+							}
+						}
+						.edit_Delete {
+							display: flex;
+							justify-content: space-around;
+							position: absolute;
+							right: 45px;
+							top: 10px;
+							z-index: 11;
+							display: none;
+							button {
+								font-family: $SOURCE_SANS_PRO_REGULAR;
+								width: auto;
+								height: 28px;
+								padding: 0 9px !important;
+								font-size: $FONT_14 !important;
+								font-family: "source_sans_proregular";
+								background: $TXT_BLUE_GREY!important;
+								color: $TXT_WHITE!important;
+								&:last-child {
+									margin-left: 8px;
+									background: $TXT_RED !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.custombtnfield {
+				margin: 0;
+				padding-top: 30px;
+				float: left;
+				button {
+					width: 116px !important;
+				}
+				.cancelBtn {
+					margin-left: 8px;
+					border: 1px solid $TXT_LIGHTGRAY;
+					color: $TXT_WINE;
+					font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+					font-size: $FONT_16;
+					padding: 11px 34px 13px 35px;
+					border-radius: 5px;
+				}
+			}
+			.milestoneDetails {
+				display: flex;
+				flex-direction: column;
+				padding-right: 40px;
+				padding-top: 56px;
+				p {
+					margin: 0;
+					color: $TXT_DARKGREY;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					padding-bottom: 8px;
+					line-height: 20px;
+				}
+				.result {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					.title {
+						font-size: $FONT_14;
+					}
+					.bold {
+						font-size: $FONT_18;
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						padding-bottom: 4px;
+					}
+				}
+				.messageSection {
+					.message {
+						text-align: left;
+						font-family: $SOURCE_SANS_PRO_REGULAR;
+						font-size: $FONT_14;
+						color: $TXT_WINE;
+						padding-bottom: 0;
+					}
+				}
+				.highlight {
+					border: 1px solid $TXT_BLACK;
+					padding: 9px 15px;
+					border-radius: 8px;
+					.message {
+						text-align: left;
+						font-family: $SOURCE_SANS_PRO_REGULAR;
+						font-size: $FONT_14;
+						color: $TXT_WINE;
+						padding-bottom: 0;
+						.bold {
+							font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+							color: $TXT_BLACK;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.modalPopup {
+	&.confirmModal {
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						.messageSection {
+							padding: 33px;
+							.innerTxt {
+								text-align: left;
+							}
+							.innerSection {
+								.customBtn {
+									button {
+										padding: 11px 20px !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.createJobPage {
+		padding-left: 12px;
+		padding-right: 15px;
+		.createJobForm {
+			padding: 20px 0 20px 20px;
+			// display: flex;
+			// background: red;
+			.formSection {
+				.formmain {
+					.listingScroll {
+						// height: calc(100vh - 800px);
+						height: 140px;
+						.addMilestone {
+							.addBtn {
+								display: block !important;
+							}
+						}
+					}
+				}
+				.milestoneDetails {
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+	.createJobPage {
+		padding-left: 12px;
+		padding-right: 15px;
+		.createJobForm {
+			padding: 20px 0 20px 20px;
+			overflow: hidden;
+			overflow-y: scroll;
+			height: calc(100% - 150px);
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #E4E4E4;
+			}
+			.innerSection {
+				overflow: hidden;
+				overflow-y: scroll;
+				height: 100%;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: #E4E4E4;
+				}
+				.formSection {
+					.formmain {
+						.listingScroll {
+							.addMilestone {
+								.addBtn {
+									display: block !important;
+								}
+							}
+						}
+						.formLeft {
+							width: 100%;
+							.autoComplete>div>div {
+								min-width: 100% !important;
+								left: 1px !important;
+								border: none;
+							}
+						}
+						.formRight {
+							width: 100%;
+							padding: 0;
+							padding-top: 26px;
+							&::after {
+								display: none;
+							}
+							.listingScroll {
+								height: 100%;
+							}
+						}
+					}
+					.milestoneDetails {
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 476px) and (max-width: 575px) {
+	.createJobPage {
+		padding-left: 12px;
+		padding-right: 15px;
+		.createJobForm {
+			padding: 20px 0 20px 20px;
+			overflow: hidden;
+			overflow-y: scroll;
+			height: calc(100% - 150px);
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #E4E4E4;
+			}
+			.innerSection {
+				overflow: hidden;
+				overflow-y: scroll;
+				height: 100%;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: #E4E4E4;
+				}
+				.formSection {
+					.formmain {
+						.listingScroll {
+							.addMilestone {
+								.addBtn {
+									display: block !important;
+								}
+							}
+						}
+						.formLeft {
+							width: 100%;
+							.autoComplete>div>div {
+								min-width: 100% !important;
+								left: 1px !important;
+								border: none;
+							}
+						}
+						.formRight {
+							width: 100%;
+							padding: 0;
+							padding-top: 26px;
+							&::after {
+								display: none;
+							}
+							.listingScroll {
+								height: 100%;
+							}
+						}
+					}
+					.milestoneDetails {
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 475px) {
+	.createJobPage {
+		padding-left: 12px;
+		padding-right: 15px;
+		.createJobForm {
+			padding: 20px 0 20px 20px;
+			overflow: hidden;
+			overflow-y: scroll;
+			height: calc(100% - 150px);
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #E4E4E4;
+			}
+			.innerSection {
+				overflow: hidden;
+				overflow-y: scroll;
+				height: 100%;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: #E4E4E4;
+				}
+				.formSection {
+					.formmain {
+						.listingScroll {
+							.addMilestone {
+								.addBtn {
+									display: block !important;
+								}
+							}
+						}
+						.formLeft {
+							width: 100%;
+							.autoComplete>div>div {
+								min-width: 100% !important;
+								left: 1px !important;
+								border: none;
+							}
+						}
+						.formRight {
+							width: 100%;
+							padding: 0;
+							padding-top: 26px;
+							&::after {
+								display: none;
+							}
+							.listingScroll {
+								height: 100%;
+							}
+						}
+					}
+					.milestoneDetails {
+						padding-right: 20px;
+						.result {
+							.title {
+								width: 160px;
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

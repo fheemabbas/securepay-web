@@ -1,0 +1,343 @@
+@import "../../../../assets/scss/variables.scss";
+
+.staff_page_Main {
+	max-width: 1602px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin: 0 auto;
+	.jobInnerSection {
+		.titleText{
+			padding-top:24px ;
+			padding-right: 14px;
+			padding-left: 14px;
+		}		
+		.searchFilter {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			padding-right: 14px;
+			padding-left: 14px;
+			padding-bottom: 25px;
+			.searchSection {
+				display: flex;
+				.searchboxMain {
+					width: 623px;
+				}
+				.filterBtn {
+					position: relative;
+					.filterIcon {
+						position: relative;
+						margin-left: 15px;
+						background: $BG_WHITE;
+						width: 40px;
+						height: 40px;
+						border-radius: 8px;
+						border: none;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						-webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+						-moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+						box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+						&:focus {
+							outline: none;
+						}
+						i {
+							color: $TXT_BLUE_GREY;
+						}
+					}
+				}
+				.sortingIcon {
+					color: $TXT_BLUE;
+					padding: 14px 18px;
+					position: relative;
+					position: relative;
+					margin-left: 15px;
+					background: #ffffff;
+					width: 40px;
+					height: 40px;
+					border-radius: 8px;
+					border: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+					display: none;
+					.FilterSorting {
+						display: flex;
+						.filterItem {
+							padding: 0;
+							.headingUl {
+								display: flex;
+								flex-direction: column;
+								padding: 0;
+								list-style: none;
+								margin: 0;
+								.headingItem {
+									display: flex !important;
+									font-size: 14px !important;
+									color: $TXT_BLUE;
+									padding: 10px;
+									cursor: pointer;
+									width: 100% !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.custombtn {
+				width: 202px;
+				background-color: $BG_LIGHTWHITE;
+				border: 1px solid $TXT_BLUE !important;
+				color: $TXT_BLUE;
+				&:nth-child(2) {
+					margin-left: 8px;
+					background: transparent ;
+				}
+			}
+		}
+		.table_list_Main {
+			width: 100%;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			margin: 0px;
+			justify-content: space-between;
+
+			.table-row-inline {
+				display: flex;
+				flex-wrap: wrap;
+				width: 80%;
+				align-items: center;
+
+				&.cursurpointer {
+					cursor: pointer;
+				}
+
+				.Table-row-item {
+					&:nth-child(1) {
+						width: 12%;
+					}
+					&:nth-child(2) {
+						width: 28%;
+					}
+					&:nth-child(3) {
+						width: 30%;
+					}
+					&:nth-child(4) {
+						width: 30%;
+					}
+				}
+			}
+
+			.table-row-inline-action {
+				width: 20%;
+				.Table-row-item {
+					justify-content: flex-end;
+					.edit{
+						border: none;
+						background-color: $BG_GREYGREEN;
+						color: $TXT_WHITE;
+						border-radius: 5px;
+						text-transform: capitalize;
+						margin-right: 10px;
+						padding: 3px 8px;
+					}
+					.delete{
+						border: none;
+						background-color: $BG_RED;
+						color: $TXT_WHITE;
+						border-radius: 5px;
+						text-transform: capitalize;
+						padding: 3px 8px;
+					}
+				}
+			}
+
+			.Table-row {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0 14px 10px;
+				border-radius: 8px;
+				-webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				-moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				&:hover{
+					-webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+					-moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+					box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+					background: $BG_WHITE;
+				}
+				&.Table-header {
+					background-color: $BG_BLUE;
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+					border-top: 1px solid #e0e0e0;
+					border-bottom: none;
+					display: flex;
+					flex-wrap: wrap;
+					.table-row-inline{
+						padding-bottom: 0px;
+					}
+					.Table-row-item {
+						color: $TXT_WHITE;
+						font-size: $FONT_14;
+						padding: 18px 20px;
+						margin-bottom: 0px;
+						.icon-sort {
+							background-color: transparent;
+							border: none;
+							color: $TXT_WHITE;
+							font-size: $FONT_12;
+							margin-left: 4px;
+							padding: 0px;
+						}
+					}
+				}
+			}
+
+			.Table-row-item {
+				display: flex;
+				align-items: center;
+				padding: 6px 20px;
+				font-size: $FONT_14;
+
+				.imageCricle {
+					width: 40px;
+					height: 40px;
+					display: flex;
+					overflow: hidden;
+				}
+				.actiondropdown {
+					position: relative !important;
+					z-index: 99 !important;
+					right: 0;
+				}
+			}
+		}
+	}
+}
+.deleteModal {
+		.modal-dialog {
+			max-width: 323px;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						.messageSection {
+							padding: 34px;
+							.customBtn {
+								button {
+									&.custombtn {
+										padding: 11px 12px!important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.staff_page_Main{
+		padding-left: 8px;
+    	padding-right: 8px;
+		.jobInnerSection{
+			.titleText {
+    			padding-left: 8px;
+    			padding-right: 8px;
+			}
+			.searchFilter{
+				padding-left: 8px;
+    			padding-right: 8px;
+				.searchSection{
+					.searchboxMain {
+						width:400px;
+					}
+				}
+				.createJob{
+					.custombtn{
+						width: 190px;
+						padding: 6px 0 !important;
+					}
+				}
+			}
+			.table_list_Main{
+				.Table-row{
+					margin: 0 8px 10px;
+					&.Table-header{
+						.Table-row-item {
+							padding: 12px 10px;
+						}
+					}
+				}
+				.Table-row-item {
+					padding: 6px 10px;
+					.toggleMain{
+						.switch {
+							margin: 0 0px 0 10px;
+						}
+					} 
+				}
+			} 
+		}
+	}    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.staff_page_Main{
+		padding-left: 8px;
+		padding-right: 8px;
+		.jobInnerSection{
+			.titleText {
+    			padding-left: 8px;
+    			padding-right: 8px;
+			}
+			.searchFilter{
+				padding-left: 8px;
+    			padding-right: 8px;
+				.searchSection{
+					.searchboxMain {
+						width:300px;
+					}
+				}
+				.createJob{
+					.custombtn{
+						width: 190px;
+						padding: 6px 0 !important;
+					}
+				}
+			}
+			.table_list_Main{
+				.Table-row{
+					margin: 0 8px 10px;
+					&.Table-header{
+						.Table-row-item {
+							padding: 12px 8px;
+						}
+					}
+				}
+				.Table-row-item {
+					padding: 6px 8px;
+					&:nth-child(3){
+						text-align: left;
+						word-break: break-all;
+					}
+					.toggleMain{
+						.switch {
+							margin: 0 0px 0 10px;
+						}
+					} 
+				}
+			} 
+		}
+	} 
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+}

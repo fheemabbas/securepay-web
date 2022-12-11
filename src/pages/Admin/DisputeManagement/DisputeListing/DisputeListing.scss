@@ -1,0 +1,650 @@
+@import "../../../../assets/scss/variables.scss";
+
+.disputeListingMain {
+  max-width: 1602px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 0 auto;
+  .jobInnerSection {
+    .titleText {
+      padding-top: 24px;
+      padding-left: 12px;
+      padding-right: 12px;
+      width: 100%;
+    }
+    .searchFilter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 12px;
+      padding-left: 12px;
+      padding-bottom: 25px;
+      .searchSection {
+        display: flex;
+        .searchboxMain {
+          width: 623px;
+        }
+        .filterBtn {
+          position: relative;
+          .filterIcon {
+            position: relative;
+            margin-left: 15px;
+            background: $BG_WHITE;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            &:focus {
+              outline: none;
+            }
+            i {
+              color: $TXT_BLUE_GREY;
+            }
+            .dot_filter {
+              width: 5px;
+              height: 5px;
+              background-color: $TXT_BLUE;
+              border-radius: 50%;
+              top: 5px;
+              right: 3px;
+              position: absolute;
+            }
+          }
+        }
+        .sortingIcon {
+          color: $TXT_BLUE;
+          padding: 14px 18px;
+          position: relative;
+          position: relative;
+          margin-left: 15px;
+          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+            0px 0.5px 2px rgba(96, 97, 112, 0.16);
+          display: none;
+          .FilterSorting {
+            display: flex;
+            .filterItem {
+              padding: 0;
+              .headingUl {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                list-style: none;
+                margin: 0;
+                .headingItem {
+                  display: flex !important;
+                  font-size: 14px !important;
+                  color: $TXT_BLUE;
+                  padding: 10px;
+                  cursor: pointer;
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .table_list_Main {
+      width: 100%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      justify-content: space-between;
+
+      .table-row-inline {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+
+        &.cursurpointer {
+          cursor: pointer;
+        }
+
+        .Table-row-item {
+          flex: 1;
+          text-align: left;
+          .statusMain {
+            padding: 6px 14px;
+          }
+          &:nth-child(1) {
+            flex: 2.5;
+          }
+          &:nth-child(6) {
+            flex: 1.4;
+          }
+          &:nth-child(9) {
+            flex: 1.6;
+          }
+          &:last-child {
+            flex: 1.2;
+          }
+        }
+      }
+
+      .Table-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 12px 10px 12px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        &:hover {
+          -webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          -moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          background: $BG_WHITE;
+        }
+        &:first-child {
+          margin-top: 3px;
+        }
+        &.Table-header {
+          background-color: $BG_BLUE;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: none;
+          display: flex;
+          flex-wrap: wrap;
+          .table-row-inline {
+            padding-bottom: 0px;
+          }
+          .Table-row-item {
+            color: $TXT_WHITE;
+            font-size: $FONT_14;
+            padding: 18px 14px;
+            margin-bottom: 0px;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            .icon-sort {
+              background-color: transparent;
+              border: none;
+              color: $TXT_WHITE;
+              font-size: $FONT_10;
+              margin-left: 4px;
+              padding: 0px;
+            }
+          }
+        }
+      }
+
+      .Table-row-item {
+        display: flex;
+        align-items: center;
+        padding: 16px 14px;
+        font-size: $FONT_14;
+        color: $TXT_WINE;
+        text-align: left;
+        &:first-child {
+          color: $TXT_DARKGREY;
+          font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .disputeListingMain{
+    .jobInnerSection{
+      .table_list_Main{
+        .Table-row{
+          &.Table-header{
+            .table-row-inline{
+              &::before {
+                padding: 10px 20px;
+                position: relative;
+                content: 'Dispute Details';
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+              .Table-row-item{
+                display: none;
+              }
+            }
+          } 
+          .table-row-inline{
+            align-items: flex-start;
+            .Table-row-item{
+              width: 20%;
+              flex: inherit;
+              display: block;
+              .statusMain {
+                margin-top: 4px;
+              }
+              &:nth-child(1){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Title";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(2){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Disputed by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(3){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Created by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(4){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job For";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(5){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Staff Member";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(6){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Business Category";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(7){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(8){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(9){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Dispute Status";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .disputeListingMain{
+    .jobInnerSection{
+      .table_list_Main{
+        .Table-row{
+          &.Table-header{
+            .table-row-inline{
+              &::before {
+                padding: 10px 20px;
+                position: relative;
+                content: 'Dispute Details';
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+              .Table-row-item{
+                display: none;
+              }
+            }
+          } 
+          .table-row-inline{
+            align-items: flex-start;
+            .Table-row-item{
+              width: 33.333%;
+              flex: inherit;
+              display: block;
+              .statusMain {
+                margin-top: 4px;
+              }
+              &:nth-child(1){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Title";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(2){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Disputed by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(3){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Created by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(4){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job For";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(5){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Staff Member";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(6){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Business Category";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(7){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(8){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(9){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Dispute Status";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .disputeListingMain{
+    .jobInnerSection{
+      .searchFilter{
+        .searchSection{
+          .searchboxMain {
+            width: 380px;
+          }
+        }
+      }  
+      .table_list_Main{
+        .Table-row{
+          &.Table-header{
+            .table-row-inline{
+              &::before {
+                padding: 10px 20px;
+                position: relative;
+                content: 'Dispute Details';
+                font-size: $FONT_14;
+                color: $TXT_WHITE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+              .Table-row-item{
+                display: none;
+              }
+            }
+          } 
+          .table-row-inline{
+            align-items: flex-start;
+            .Table-row-item{
+              width: 33.333%;
+              flex: inherit;
+              display: block;
+              .statusMain {
+                margin-top: 5px;
+              }
+              &:nth-child(1){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Title";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(2){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Disputed by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(3){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Created by";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(4){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job For";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(5){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Staff Member";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(6){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Business Category";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(7){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(8){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Job Amount";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+              &:nth-child(9){
+                &::before {
+                  width: 100%;
+                  float: left;
+                  content: "Dispute Status";
+                  position: relative;
+                  top: 0px;
+                  font-size: $FONT_14;
+                  color: $TXT_BLUE;
+                  font-family:$SOURCE_SANS_PRO_SEMIBOLD;
+                }
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}

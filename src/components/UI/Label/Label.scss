@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variables.scss";
+.titleText{
+	font-size: $FONT_20;
+	color: $TXT_BLUE;
+	text-align: left;
+	padding-bottom: 24px;
+	font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+	margin: 0;
+	    display: table;
+    width: auto;
+}

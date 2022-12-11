@@ -1,0 +1,89 @@
+@import "../../assets/scss/variables.scss";
+.tableListing{
+    padding-bottom: 4px;
+    padding-right: 10px;
+    padding-left: 2px;
+    cursor: pointer;
+       position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+         display: flex;      
+         background: $BG_WHITE;
+        padding: 0;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+        margin-bottom: 8px;
+        &:hover{
+            -webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+            -moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+            box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+            background: $BG_WHITE;
+        }
+    .headingUl{
+        // position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+            width: 100%;
+        // text-align: left;
+        //  display: flex;
+        //  background: $BG_WHITE;
+        // padding: 14px 16px;
+        // border-radius: 8px;
+        // box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1); 
+        // -webkit-box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1);
+        // -moz-box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1);
+        // box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.1);
+        //   transition: box-shadow 0.3s ease-in-out;
+        //    transition: box-shadow 0.2s ease-in-out, transform 0.35s ease-in-out;
+        // &:hover{
+        //        box-shadow:  0px 6px 4px rgba(0, 0, 0, 0.1); 
+        // -webkit-box-shadow:  0px 6px 4px rgba(8, 4, 4, 0.1);
+        // -moz-box-shadow:  0px 6px 4px rgba(0, 4, 0, 0.1);
+        // box-shadow:  0px 6px 4px rgba(0, 6, 0, 0.1);
+        //  transform: translateY(-1px);
+        // }
+        .headingItem{
+            width: 10%;
+            float: left;
+            color:$TXT_WINE;
+            font-size: $FONT_14;
+            font-family: $SOURCE_SANS_PRO_REGULAR;           
+            padding-right: 15px;
+            &:nth-child(1){
+                width: 30%;
+                 color:$TXT_DARKGREY;
+                  font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            }
+            &:nth-child(2){
+                width: 16%;
+            }
+            &:nth-child(3){
+                width: 10%;
+            }
+            &:nth-child(4){
+                width: 12%;
+            }
+            &:nth-child(5){
+                width: 12%;
+            }
+            &:nth-child(6){
+                width: 12%;
+            }
+            &:last-child{
+                text-align: center;
+            }
+            i{
+                font-size: $FONT_10;
+                padding-left: 10px;
+            }
+           }
+        }
+            
+}

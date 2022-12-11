@@ -1,0 +1,78 @@
+@import "../../../../assets/scss/variables.scss";
+.rejectionComments {
+	float: left;
+	width: 100%;
+	.headerTitle{
+		font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+		font-size: 20px;
+		line-height: 150%;
+		color: #0F4C81;
+		padding: 0 24px;
+	}
+	.popupScroll{
+		height: 170px !important;
+	}
+	.boxContain{
+		width: 100%;
+		float: left;
+		padding: 0 24px;
+		.cardlist{
+			width: 100%;
+			float: left;
+			padding: 16px 0 0 0;
+			.countNumber{
+				font-size:$FONT_14;
+				line-height: 150%;
+				font-family: $SOURCE_SANS_PRO_REGULAR;
+				color: $TXT_WINE;
+			}	
+			.containRow {
+				display: flex;
+				align-items: center;
+				padding: 4px 0;
+				justify-content: space-between;
+				.leftPart{
+					font-size:$FONT_14;
+					line-height: 150%;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					color: $TXT_WINE;
+					padding-right: 20px;
+				}
+				.rightPart{
+					font-size:$FONT_14;
+					line-height: 150%;
+					font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+					color: $TXT_WINE;
+				}
+			}
+			.subTitle{
+				width: 100%;
+				float: left;
+				font-size:$FONT_14;
+				line-height: 150%;
+				font-family: $SOURCE_SANS_PRO_REGULAR;
+				color: $TXT_BLUE;
+				padding: 12px 0 0 0;
+			}
+			.disTxt{
+				width: 100%;
+				float: left;
+				font-size:$FONT_14;
+				line-height: 150%;
+				font-family: $SOURCE_SANS_PRO_REGULAR;
+				color: $TXT_WINE;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width:575px){
+	.rejectionComments{
+		.boxContain {
+			width: 100%;
+			float: left;
+			padding: 0 16px;
+			
+		}
+	} 
+}

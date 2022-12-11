@@ -1,0 +1,228 @@
+@import "../../../../../assets/scss/variables.scss";
+.modalPopup {
+	&.addCustomer {
+		.modal-dialog {
+			max-width: 423px;
+			margin: 0 auto;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						position: relative;
+						.closeBtn {
+							position: absolute;
+							right: 0;
+							top: 0;
+						}
+						.createMile {
+							padding: 40px;
+							display: table;
+							width: 100%;
+							.form {
+								.titleText {
+									line-height: 24px;
+								}
+								.filterItem {
+									.textField {
+										input {
+											font-family: $ROBOTO_MEDIUM;
+										}
+										textarea {
+											height: 108px;
+											resize: none;
+										}
+									}
+									.custombtnfield {
+										padding-top: 8px;
+										.custombtn {
+											width: 116px;
+											float: left;
+											padding: 11px 0!important;
+											line-height: 24px;
+											border: 1px solid transparent !important;
+											border-radius: 8px;
+											&:nth-child(2) {
+												margin-left: 8px;
+												background: transparent !important;
+												color: $TXT_BLUE !important;
+												border-color: $BG_BLUE !important;
+												height: 46px;
+											}
+										}
+									}
+									.countryPhoneGroup {
+										display: flex;
+										flex-direction: row;
+										justify-content: space-between;
+										.react-tel-input {
+											width: 32%;
+											margin-right: 8px;
+											.form-control {
+												padding: 0 20px 0 10px;
+												text-align: center;
+												height: 48px;
+												border-color: $INPUTBORDER;
+												color: $TXT_WINE;
+												font-family: $ROBOTO_MEDIUM;
+												font-size: $FONT_16;
+												 -webkit-appearance: none;
+   												 -moz-appearance: none;
+												&::-webkit-input-placeholder {
+													color: $CHECKBOXBORDER;
+													font-family: $ROBOTO_MEDIUM;
+													font-size: $FONT_16;
+												}
+												&::-moz-placeholder {
+													color: $CHECKBOXBORDER;
+													font-family: $ROBOTO_MEDIUM;
+													font-size: $FONT_16;
+												}
+												&:-ms-input-placeholder {
+													color: $CHECKBOXBORDER;
+													font-family: $ROBOTO_MEDIUM;
+													font-size: $FONT_16;
+												}
+												&:-moz-placeholder {
+													color: $CHECKBOXBORDER;
+													font-family: $ROBOTO_MEDIUM;
+													font-size: $FONT_16;
+												}
+												&:focus {
+													box-shadow: none;
+												}
+												&.form-control:disabled,
+												.form-control[readonly] {
+													background-color: black;
+												}
+											}
+											.flag-dropdown {
+												top: 5px;
+												z-index: 999;
+												border: none;
+												background: transparent;
+												.selected-flag {
+													width: 72px;
+													top: 0px;
+													height: 40px;
+													background: transparent;
+													position: relative;
+													&:before {
+														content: "+";
+														position: absolute;
+														top: 9px;
+														left: 9px;
+														display: none;
+													}
+													.flag {
+														background: transparent;
+														.arrow {
+															left: 56px;
+															margin-top: 0px;
+															border: none;
+															top: -4px;
+															left: 50px;
+															font-size: $FONT_12;
+															color: $TXT_BLUE;
+															&::before {
+																content: '\e904';
+																font-family: 'yatapay' !important;
+															}
+														}
+													}
+												}
+												&:hover {
+													.selected-flag {
+														background: transparent;
+													}
+												}
+												&:focus {
+													.selected-flag {
+														background: transparent;
+													}
+												}
+											}
+											.country-list {
+												top: 34px;
+												max-height: 150px;
+												border-radius: 8px;
+												// width: auto;
+												width: 240px;
+												.country {
+													&:focus {
+														outline: none;
+													}
+													&:hover {
+														background: transparent;
+													}
+													&.highlight {
+														background: white;
+													}
+												}
+												.flag {
+													display: none;
+												}
+												&::-webkit-scrollbar {
+													width: 4px;
+													display: none;
+												}
+												&::-webkit-scrollbar-thumb {
+													background-color: #E4E4E4;
+												}
+											}
+										}
+										input {
+											width: 100%;
+										}
+									}
+									.react-tel-input {
+										width: 20%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width:300px) and (max-width:475px) {
+	.modalPopup{
+		&.addCustomer {
+			.modal-dialog{
+				 .modal-content{
+					  .modalInner{
+						   .modal-body{
+							   padding: 18px;
+							   .createMile{
+								   padding: 0;
+								   form{
+									   .filterItem{
+										   .countryPhoneGroup{
+											   .react-tel-input{
+												    //    width: 35% !important;
+												.form-control{
+														padding: 0 15px 0 3px !important;
+														
+												}
+												.flag-dropdown{
+															.selected-flag{
+																.flag{
+																	.arrow{
+																		left: 42px !important;
+																	}
+																}
+															}
+														}
+											   }
+										   }
+									   }
+								   }
+							   }
+						   }
+					  }
+				 }
+			}
+		}
+	}
+}

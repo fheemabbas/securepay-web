@@ -1,0 +1,197 @@
+@import "../../../../assets/scss/variables.scss";
+
+.modalPopup {
+    &.raiseMilestone {
+        .modal-dialog {
+            width: 520px;
+            max-width: 100%;
+
+            .modal-content {
+                .modalInner {
+                    .modal-body {
+                        padding: 40px;
+                        position: relative;
+                        display: table;
+
+                        .closeBtn {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                        }
+
+                        .disputeSection {
+                            .form {
+                                .titleText {
+                                    line-height: 24px;
+                                }
+
+                                .filterItem {
+                                    .messageAttched {
+                                        position: relative;
+
+                                        .textField {
+                                            textarea {
+                                                height: 108px;
+                                                resize: none;
+                                                padding: 11px 8px;
+                                                padding-right: 20px;
+                                            }
+                                        }
+
+                                        .uploadImgSection {
+                                            display: flex;
+                                            padding-bottom: 16px;
+
+                                            img {
+                                                width: 20px;
+                                            }
+
+                                            .uploadedImg {
+                                                display: flex;
+                                                align-items: center;
+                                                flex: 1 1;
+
+                                                i {
+                                                    font-size: $FONT_30;
+                                                    color: $TXT_BLUE_GREY;
+                                                }
+
+                                                .fileName {
+                                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                                    font-size: $FONT_16;
+                                                    color: $TXT_WINE;
+                                                    margin: 0;
+                                                    padding: 0 8px;
+                                                    text-align: left;
+                                                    max-width: 375px;
+                                                    word-break: break-all;
+                                                    white-space: nowrap;
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                }
+
+                                                span {
+                                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                                    font-size: $FONT_14;
+                                                    line-height: 24px;
+                                                }
+                                            }
+                                        }
+
+                                        .fileInput {
+                                            position: absolute;
+                                            top: 75px;
+                                            right: 10px;
+
+                                            .fileUploadMain {
+                                                .dropzoneCustom {
+                                                    padding: 0;
+                                                    margin: 0;
+
+                                                    .txtDropzone {
+                                                        .uploadtxt {
+                                                            i {
+                                                                font-size: $FONT_20;
+                                                                color: $TXT_BLUE;
+                                                                font-weight: 500;
+                                                            }
+                                                        }
+
+                                                        .imgBoxEmpty {
+                                                            display: flex;
+
+                                                            img {
+                                                                width: 20px;
+                                                            }
+
+                                                            .uploadedImg {
+                                                                display: flex;
+                                                                align-items: center;
+
+                                                                .fileName {
+                                                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                                                    font-size: $FONT_16;
+                                                                    color: $TXT_WINE;
+                                                                    margin: 0;
+                                                                    padding: 0 8px;
+                                                                    text-align: left;
+                                                                    width: 285px;
+                                                                    word-break: break-all;
+                                                                    white-space: nowrap;
+                                                                    overflow: hidden;
+                                                                    text-overflow: ellipsis;
+                                                                }
+
+                                                                span {
+                                                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                                                    font-size: $FONT_14;
+                                                                    line-height: 24px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .disputeDetails {
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        p {
+                                            margin: 0;
+                                        }
+
+                                        .details {
+                                            padding-bottom: 40px;
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            .innterTxt {
+                                                flex: 1 1;
+
+                                                .txt {
+                                                    font-family: $SOURCE_SANS_PRO_REGULAR;
+                                                    font-size: $FONT_14;
+                                                    color: $TXT_WINE;
+                                                    line-height: 21px;
+
+                                                    &.bold {
+                                                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                                    }
+                                                }
+                                            }
+
+                                            &:last-child {
+                                                padding-bottom: 32px;
+                                            }
+                                        }
+                                    }
+
+                                    .custombtnfield {
+                                        .custombtn {
+                                            width: 116px;
+                                            float: left;
+                                            padding: 11px 0 !important;
+                                            line-height: 24px;
+                                            border: 1px solid transparent !important;
+
+                                            &:nth-child(2) {
+                                                margin-left: 8px;
+                                                background: transparent !important;
+                                                color: $TXT_BLUE !important;
+                                                border-color: $BG_BLUE !important;
+                                                height: 46px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

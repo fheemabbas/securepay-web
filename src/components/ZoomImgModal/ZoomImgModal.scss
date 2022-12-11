@@ -1,0 +1,171 @@
+@import "../../assets/scss/variables.scss";
+.modalPopup {
+	&.zoomImg {
+		.modal-dialog {
+			max-width: 752px;
+			min-height: calc(100% - 60px);
+			margin: 30px auto;
+			padding: 0 20px;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 24px 24px 24px 24px;
+						display: inline-block;
+						.closeBtn {
+							padding-right: 0px;
+							padding-top: 0px;
+							top: -10px;
+							right: -10px;
+							position: relative;
+							i {
+								font-size: $FONT_14;
+								color: $TXT_WINE;
+							}
+						}
+						.messageSection {
+							.title{
+								margin: 0;
+								font-size: $FONT_16 !important;
+								font-family: $ROBOTO_REGULAR  !important;
+								color: $TXT_BLUE !important;
+								line-height: 30px;
+								padding-bottom: 17px;
+								line-height: 24px;
+								text-align: left !important;
+							}
+							.zoomImg {
+								width: 100%;
+								// height: 368px;
+								margin: 0 auto;
+								.customeSlider {
+									width: 100%;
+									float: left;	
+									overflow: hidden;
+									.slick-list{
+										width: 100%;
+										float: left;
+										height: 600px;
+										border-radius: 8px;
+										overflow: hidden;
+									}				
+									.slick-slide{
+										float: left;
+										overflow: hidden;
+									}	
+									.slide_item{
+										outline: none !important;
+										text-align: center;
+										background-color: #fff;
+										height: 600px;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+									}
+									.slick-dots {
+										width: 100%;
+										justify-content: center;
+										display: flex !important;
+										margin-bottom: 0px;
+										padding:0 10px;
+										align-items: center;
+										position: absolute;
+										bottom: 8px;
+
+										li {
+											margin: 0 10px;
+											float: none;
+											list-style: none;
+											width: 8px;
+											height: 8px;
+											border-radius: 50%;
+											background-color: $BG_BLUE_LIGHT;
+											&.slick-active{
+												background-color:$BG_BLUE ;
+											}
+											button{
+												display: none;
+												&::before {
+													color: $TXT_BLUE;
+													font-size: $FONT_10;
+												}
+											}
+										}
+									}
+									.imagebg{
+										max-width: 100%;
+										height: 600px;
+										display: block;
+										margin: 0 auto;
+										border-radius: 8px;
+									}
+									img {
+										max-width: 100%;
+										max-height: 600px;
+										display: inline-block;
+										border-radius: 8px;
+										&:focus {
+											outline: none !important;
+										}
+									}
+									.slick-arrow{
+										display: none !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.modalPopup{
+		&.zoomImg {
+			.modal-dialog{
+				max-width: 94% !important;
+				margin: 0 3%;
+				min-height: 100%;
+				.modal-content{
+					.modalInner{
+						.modal-body{
+							.messageSection{
+								.zoomImg{
+									width: auto;
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 479px){
+	.modalPopup{
+		&.zoomImg {
+			.modal-dialog{
+				max-width: 94% !important;
+				margin: 0 3%;
+				min-height: 100%;
+				.modal-content{
+					.modalInner{
+						.modal-body{
+							padding:24px 24px 16px 24px;
+							.messageSection{
+								.zoomImg{
+									.customeSlider{
+										.slick-dots{
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

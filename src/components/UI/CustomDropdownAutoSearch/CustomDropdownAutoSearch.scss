@@ -1,0 +1,121 @@
+@import "../../../assets/scss/variables.scss";
+
+.searchMainDropdown {
+  margin-bottom: 16px;
+    .titleText{
+      &.dropdownLabel {
+        font-size: 16px;
+        font-family:$SOURCE_SANS_PRO_REGULAR;
+        color: $TXT_WINE;
+        line-height: 24px;
+        padding-bottom: 17px;
+        padding-left: 15px;
+      }
+    }
+
+
+  .select-search {
+    width: 100%;
+    height:48;
+    .select-search__value {
+      input:disabled {
+        background: #d6d6d6;
+        color: #8b959e;
+
+        &::-webkit-input-placeholder {
+          color: #8b959e;
+        }
+
+        &::-moz-placeholder {
+          color: #8b959e;
+        }
+
+        &:-ms-input-placeholder {
+          color: #8b959e;
+        }
+
+        &:-moz-placeholder {
+          color: #8b959e;
+        }
+      }
+
+      .select-search__input {
+        height: 48px;
+        background: #ffffff;
+        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+        color: #191919;
+        font-size: $FONT_16;
+        padding: 14px 12px;
+        padding-right: 55px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #cfdbe6;
+        outline: none;
+        -webkit-appearance: none;
+        box-shadow: none;
+
+        &:hover {
+          border: 1px solid #cfdbe6;
+        }
+
+        &::-webkit-input-placeholder {
+          color: $TXT_LIGHTGRAY;
+        }
+
+        &::-moz-placeholder {
+          color: $TXT_LIGHTGRAY;
+        }
+
+        &:-ms-input-placeholder {
+          color: $TXT_LIGHTGRAY;
+        }
+
+        &:-moz-placeholder {
+          color: $TXT_LIGHTGRAY;
+        }
+      }
+
+      &::after {
+        border-right: 3px solid #8b959e !important;
+        border-bottom: 3px solid #8b959e !important;
+      }
+    }
+    .select-search__select {
+      top: 50px !important;
+      border: 1px solid #cfdbe6;
+      .select-search__options {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-height: 200px !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .select-search__row {
+          border: none;
+          &:first-child{
+            .select-search__option{
+              background-color: $BG_WHITE !important;
+              color: $TXT_YELLOW;
+            }
+          }
+
+          .select-search__option {
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            font-size: $FONT_16;
+            &:hover {
+              background: #f3f5f8;
+            }
+          }
+
+          .is-selected {
+            background: #033d72;
+
+            &:hover {
+              background: #033d72;
+            }
+          }
+        }
+      }
+    }
+  }
+}

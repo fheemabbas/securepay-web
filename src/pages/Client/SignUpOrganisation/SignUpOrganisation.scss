@@ -1,0 +1,167 @@
+@import "../../../assets/scss/variables.scss";
+.SignUpOrganisation {
+	position: relative;
+	width: 100%;
+	float: left;
+	.signupemailCenter {
+		width: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: flex-start;
+		height: 100%;
+		.signupemailBox {
+			max-width: 438px;
+			width: 92%;
+			margin-left: 4%;
+			margin-right: 4%;
+			background-color: $BG_WHITE;
+			padding: 40px;
+			display: block;
+			border-radius: 8px;
+			-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+			margin-top: 80px;
+			margin-bottom: 80px;
+			position: relative;
+			// overflow: hidden;
+			.icon-yatapay-brand {
+				font-size: 66px;
+				color: $BG_GREEN;
+			}
+			.logo{
+				margin-bottom: 80px;
+			}
+			.skip_txt {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				border: none;
+				background: transparent;
+				outline: none;
+				color: #0f4c81;
+				text-transform: capitalize;
+				padding: 0;
+			}
+			.formSection {
+				display: block;
+				width: 100%;
+				float: left;
+				
+				.react-datepicker-popper{
+					width:100%;
+				}
+				.nav-tabs {
+					border-bottom: 1px solid $TXT_LIGHTGRAY;
+					.nav-item {
+						border-radius: 0;
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						font-size: $FONT_14;
+						color: $TXT_WINE;
+						border-color: transparent;
+						outline: none;
+						&.active {
+							border-bottom-color: $BG_BLUE;
+							color: $TXT_BLUE;
+						}
+					}
+				}
+				.tab-content {
+					width: 100%;
+					float: left;
+					position: relative;
+					margin-top: 16px;
+				}
+			}
+			.back {
+				margin-top: 10px;
+				text-align: center;
+				width: 100%;
+				float: left;
+
+				p {
+					margin: 0;
+					color: $TXT_WINE;
+					font-size: $FONT_16;
+					text-align: center;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+
+					.newuser {
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						font-size: $FONT_16;
+						color: $TXT_BLUE;
+						text-align: center;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	.signupemailPage{
+		.signupemailCenter {
+			height: 100%;
+			.signupemailBox {
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+		}
+	} 
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	.signupemailPage{
+		.signupemailCenter {
+			height: 100%;
+			align-items: center;
+			.signupemailBox {
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+		}
+	} 
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+	.SignUpOrganisation{
+		.signupemailCenter {
+			height: auto;
+			.signupemailBox {
+				margin-top:40px;
+				margin-bottom: 40px;
+			}
+		}
+	} 
+}
+@media (max-width: 575px) {
+	.SignUpOrganisation{
+		.signupemailCenter {
+			height: 100%;
+			.signupemailBox {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width: 92%;
+				margin-left: 4%;
+				margin-right: 4%;
+				padding: 40px 20px;
+				.formmain{
+					.formleft{
+						width: 100%;
+						padding-right: 0px;
+						&::after{
+							display: none;
+						}
+					}
+					.formright{
+						width: 100%;
+						padding-left: 0px;
+					}
+				} 
+				.signbtnfield{
+					padding-right: 0px;
+				}
+			}
+		}
+	} 
+}

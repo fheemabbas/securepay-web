@@ -1,0 +1,57 @@
+@import "../../assets/scss/variables.scss";
+
+.CustomSideBar {
+	overflow-y: hidden !important;
+	position: absolute;
+	top: 60px;
+	max-width: 452px;
+	width: 100%;
+	right: 0;
+	z-index: 999;
+	transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	z-index: 11111;
+	background: $BG_WHITE;
+	height: calc(100% - 60px);
+	&.show {
+		transform: translateX(0%);
+		-webkit-transform: translateX(0%);
+		box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+		-ms-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+		-o-box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+	}
+	.sidebarInner {
+		border-radius: 0;
+		position: relative;
+		.headerBar {
+			width: 100%;
+			float: left;
+			background: $BG_WHITE;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 16px 20px;
+			.iconClose {
+				cursor: pointer;
+				.icon-close{
+					color: $CHECKBOXBORDER;
+					font-size: $FONT_14;
+				}
+			}
+		}
+	}
+	
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1785px){
+	.headerAdmin .CustomSideBar{
+		height: calc(100% - 84px);
+		top: 84px;
+	}
+}

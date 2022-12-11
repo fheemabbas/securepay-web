@@ -1,0 +1,2234 @@
+@import "../../../../assets/scss/variables.scss";
+.jobdetailMain {
+	width: 100%;
+	float: left;
+	.backTo {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+		padding-bottom: 24px;
+		padding-top: 24px;
+		.backTxt {
+			margin: 0;
+			padding-left: 8px;
+			font-family: $SOURCE_SANS_PRO_REGULAR;
+			font-size: $FONT_14;
+			color: $TXT_BLUE_GREY;
+		}
+		i {
+			font-size: $FONT_14;
+			color: $TXT_BLUE_GREY;
+		}
+	}
+	.innerSection {
+		max-width: 1602px;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin: 0 auto;
+	}
+	.listingScroll {
+		
+		.jobDetialInner {
+			
+			.jobDetails {
+				display: flex;
+				justify-content: space-between;
+				.innerLeft {
+					width: 620px;
+					.txtBtn {
+						display: flex;
+						flex-direction: row;
+						.titleText {
+							min-width: 200px;
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+							padding-right: 25px;
+							padding-bottom: 8px;
+						}
+						button {
+							width: auto;
+							font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+							font-size: $FONT_14 !important;
+							background: transparent !important;
+							color: $TXT_RED !important;
+							border: 1px solid $TXT_RED !important;
+							line-height: 21px;
+							height: 24px;
+							padding: 0 18px !important;
+						}
+					}
+					.desc {
+						width: 100%;
+						.txt {
+							text-align: left;
+							margin: 0;
+							padding-bottom: 24px;
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+							font-size: $FONT_14;
+							color: $TXT_WINE;
+							line-height: 21px;
+						}
+					}
+				}
+				.innerRight {
+					padding-right: 12px;
+					.noTxt {
+						margin: 0;
+						font-family: $SOURCE_SANS_PRO_REGULAR;
+						font-size: $FONT_14;
+						color: $TXT_WINE;
+						text-align: right;
+						padding-bottom: 6px;
+						line-height: 21px;
+						&:last-child {
+							padding-bottom: 0;
+						}
+					}
+					.bold {
+						color: $TXT_DARKGREY;
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						padding-left: 12px;
+						line-height: 21px;
+					}
+				}
+			}
+			.customerDetails {
+				display: flex;
+				justify-content: space-between;
+				.detailsLeft {
+					text-align: left;
+					width: 300px;
+					.title {
+						font-size: $FONT_14;
+						font-family: $SOURCE_SANS_PRO_REGULAR;
+						padding-bottom: 12px;
+						border-bottom: 1px solid $TXT_LIGHTGRAY;
+						margin: 0;
+						margin-bottom: 15px;
+						line-height: 21px;
+						width: 100%;
+					}
+					.bold {
+						color: $TXT_DARKGREY;
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						margin: 0;
+						padding-bottom: 8px;
+						line-height: 21px;
+					}
+				}
+				.btnRight {
+					display: flex;
+					flex-direction: row;
+					align-self: flex-end;
+					padding-right: 12px;
+					button {
+						font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+						font-size: $FONT_14 !important;
+						background: transparent !important;
+						color: $TXT_BLUE !important;
+						border: 1px solid $TXT_BLUE !important;
+						line-height: 21px;
+						height: 40px;
+						padding: 0 36px!important;
+						width: auto;
+						&:first-child {
+							margin-right: 16px;
+							border-color: $TXT_RED !important;
+							color: $TXT_RED !important;
+						}
+					}
+				}
+			}
+			.tableSection {
+				padding-top: 32px;
+				.header {
+					padding-right: 12px;
+					.headItem {
+						.headingListing {
+							.headingTable {
+								.headingItem {
+									width: 15%;
+									i {
+										padding-left: 0;
+									}
+									&:nth-child(1) {
+										width: 15%;
+									}
+									&:nth-child(2) {
+										width: 7%;
+										position: relative;
+										i {
+											position: absolute;
+											top: 6px;
+											left: 62px;
+										}
+									}
+									&:nth-child(3) {
+										width: 18%;
+									}
+									&:nth-child(4) {
+										width: 10%;
+										position: relative;
+										i {
+											position: absolute;
+											top: 6px;
+											left: 120px;
+											padding: 0;
+										}
+									}
+									&:nth-child(5) {
+										width: 13%;
+									}
+									&:nth-child(6) {
+										width: 13%;
+									}
+									&:nth-child(7) {
+										width: 23%;
+										padding-right: 0;
+									}
+								}
+							}
+							&.pendingHeader {
+								.headingTable {
+									.headingItem {
+										&:nth-child(1) {
+											width: 9%;
+										}
+										&:nth-child(2) {
+											width: 20%;
+											i {
+												left: 135px;
+											}
+										}
+										&:nth-child(3) {
+											width: 10%;
+											position: relative;
+											i {
+												position: absolute;
+												top: 5.5px;
+												left: 113px;
+											}
+										}
+										&:nth-child(4) {
+											width: 10%;
+										}
+										&:nth-child(5) {
+											width: 10%;
+											position: relative;
+											i {
+												position: absolute;
+												top: 6px;
+												left: 120px;
+											}
+										}
+										&:nth-child(6) {
+											width: 10%;
+										}
+										&:nth-child(7) {
+											width: 15%;
+										}
+										&:nth-child(8) {
+											width: 16%;
+											padding-right: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.listing {
+					padding-top: 8px;
+					.tableListing {
+						margin-right: 12px;
+						margin-left: 2px;
+						background: $BG_WHITE;
+						cursor: auto;
+						&:hover {
+							box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+							-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+							-moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+							box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+						}
+						.headingUl {
+							.liPadding {
+								padding: 14px 16px;
+								display: flex;
+								flex: 1
+							}
+							.headingItem {
+								width: auto;
+								width: 15%;
+								&:nth-child(1) {
+									display: flex;
+									width: 50%;
+									padding-right: 0;
+									p {
+										margin: 0;
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+										color: $TXT_WINE;
+										padding-right: 15px;
+									}
+									.mileTitle {
+										width: 30%;
+									}
+									.mileAmt {
+										width: 14%;
+									}
+									.mileDesp {
+										width: 36%;
+									}
+									.paidAmt {
+										width: 20%;
+									}
+								}
+								&:nth-child(2) {
+									width: 13%;
+								}
+								&:nth-child(3) {
+									width: 13%;
+								}
+								&:nth-child(4) {
+									width: 23%;
+									text-align: left;
+									display: flex;
+									padding-right: 0;
+									.actionBtn {
+										.statusMain {
+											margin-right: 15px;
+											border-radius: 5px;
+											cursor: pointer;
+										}
+										.buttonSection {
+											float: right;
+											.custombtn {
+												width: auto;
+												height: 28px;
+												padding: 0 10px!important;
+												font-size: $FONT_14 !important;
+												font-family: $SOURCE_SANS_PRO_REGULAR;
+												background: $TXT_BLUE !important;
+												color: $TXT_WHITE !important;
+												&:last-child {
+													background: $TXT_RED !important;
+													margin-left: 16px !important;
+												}
+												&:active {
+													background: transparent !important;
+												}
+											}
+										}
+									}
+								}
+								&:last-child {
+									text-align: left;
+								}
+							}
+							.actionLi {
+								width: 100% !important;
+								margin-top: 0px;
+								padding-right: 0px;
+								.statusMain {
+									display: flex;
+									justify-content: center;
+									border-radius: 0;
+									span {
+										background: transparent;
+									}
+								}
+							}
+						}
+						&.pendingListing {
+							.headingUl {
+								.liPadding {
+									.headingItem {
+										&:nth-child(1) {
+											width: 59%;
+											.mileTitle {
+												width: 15%;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+											}
+											.mileDesp {
+												width: 34%;
+											}
+											.mileAmt {
+												width: 17%;
+											}
+											.adminComm {
+												width: 17%;
+											}
+											.paidAmt {
+												width: 17%;
+											}
+										}
+										&:nth-child(2) {
+											width: 10%;
+										}
+										&:nth-child(3) {
+											width: 15%;
+										}
+										&:nth-child(4) {
+											width: 16%;
+											display: flex;
+											justify-content: flex-end;
+											align-self: center;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.modalPopup {
+	&.deleteModal {
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						.messageSection {
+							padding: 34px;
+							.customBtn {
+								button {
+									&.custombtn {
+										padding: 11px 12px!important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.RejectionCommentsModal {
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px;
+						display: table;
+						width: 100%;
+						.closeBtn {
+							top: 0;
+							right: 0;
+						}
+						.rejectionComments {
+							.headerTitle {
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.ModificationModal {
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px;
+						display: table;
+						width: 100%;
+						.closeBtn {
+							top: 0;
+							right: 0;
+						}
+						.milestoneModification {
+							.headerTitle {
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.modalPopup {
+	&.actionModal {
+		.modal-dialog {
+			max-width: 285px;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						.messageSection {
+							padding: 26px;
+							.innerSection {
+								.custBtn {
+									button {
+										width: 159px !important;
+										&.custombtn {
+											padding: 11px 12px!important;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1400px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									.headingItem {
+										&:nth-child(4) {
+											width: 11%;
+										}
+										&:nth-child(7) {
+											width: 21%;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										.headingItem {
+											&:nth-child(2) {
+												width: 22%;
+											}
+											&:nth-child(3) {
+												width: 9%;
+												i {
+													left: 65px;
+												}
+											}
+											&:nth-child(4) {
+												width: 9%;
+												i {
+													left: 45px;
+												}
+											}
+											&:nth-child(6) {
+												width: 12%;
+											}
+											&:nth-child(5) {
+												width: 8%;
+												i {
+													left: 65px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.headingItem {
+									&:nth-child(1) {
+										width: 51%;
+										.mileTitle {
+											width: 29%;
+										}
+										.mileDesp {
+											width: 35%;
+										}
+										.paidAmt {
+											width: 22%;
+										}
+									}
+									&:nth-child(4) {
+										width: 21%;
+										.actionBtn {
+											.buttonSection {
+												.custombtn {
+													&:last-child {
+														margin-left: 12px !important;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 57%;
+												.mileTitle {
+													width: 16%;
+												}
+												.mileDesp {
+													width: 38%;
+												}
+												.mileAmt {
+													width: 16%;
+												}
+												.adminComm {
+													width: 16%;
+												}
+												.paidAmt {
+													width: 14%;
+												}
+											}
+											&:nth-child(2) {
+												width: 12%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									.headingItem {
+										&:nth-child(4) {
+											width: 10%;
+											i {
+												left: 60px;
+											}
+										}
+										&:nth-child(2) {
+											width: 8%;
+										}
+										&:nth-child(5) {
+											width: 9%;
+										}
+										&:nth-child(6) {
+											width: 17%;
+										}
+										&:nth-child(7) {
+											width: 25%;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										.headingItem {
+											&:nth-child(1) {
+												width: 10%;
+											}
+											&:nth-child(2) {
+												width: 22%;
+											}
+											&:nth-child(3) {
+												width: 9%;
+												i {
+													left: 65px;
+												}
+											}
+											&:nth-child(4) {
+												width: 9%;
+												i {
+													left: 45px;
+												}
+											}
+											&:nth-child(6) {
+												width: 13%;
+											}
+											&:nth-child(5) {
+												width: 10%;
+												i {
+													left: 65px;
+												}
+											}
+											&:nth-child(7) {
+												width: 17%;
+											}
+											&:nth-child(8) {
+												width: 10%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.headingItem {
+									&:nth-child(1) {
+										width: 50%;
+										.mileTitle {
+											width: 29%;
+										}
+										.mileDesp {
+											width: 36%;
+										}
+										.paidAmt {
+											width: 21%;
+										}
+										.mileAmt {
+											width: 15%;
+										}
+									}
+									&:nth-child(2) {
+										width: 9%;
+									}
+									&:nth-child(3) {
+										width: 17%;
+									}
+									&:nth-child(4) {
+										width: 24%;
+										.actionBtn {
+											.statusMain {
+												margin-right: 10px;
+											}
+											.buttonSection {
+												.custombtn {
+													padding: 0 6px !important;
+													&:last-child {
+														margin-left: 12px !important;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 60%;
+												.mileTitle {
+													width: 16%;
+												}
+												.mileDesp {
+													width: 39%;
+												}
+												.mileAmt {
+													width: 15%;
+												}
+												.adminComm {
+													width: 15%;
+												}
+												.paidAmt {
+													width: 18%;
+												}
+											}
+											&:nth-child(2) {
+												width: 13%;
+											}
+											&:nth-child(3) {
+												width: 17%;
+											}
+											&:nth-child(4) {
+												width: 10%;
+												.actionBtn {
+													.buttonSection {
+														.custombtn {
+															&:last-child {
+																margin-left: 10px !important;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									padding: 11px 16px;
+									.headingItem {
+										&:nth-child(1) {
+											width: 35%;
+											font-size: 0;
+											display: flex;
+											position: relative;
+											&[data-content]:before {
+												content: 'Milestone Details';
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												padding-right: 0;
+												top: 0px;
+												left: 15px;
+											}
+											i {
+												left: 125px;
+												position: absolute;
+												top: 6px;
+											}
+										}
+										&:nth-child(2) {
+											display: none;
+										}
+										&:nth-child(3) {
+											display: none;
+										}
+										&:nth-child(4) {
+											display: none;
+										}
+										&:nth-child(5) {
+											width: 16%;
+										}
+										&:nth-child(6) {
+											width: 20%;
+										}
+										&:nth-child(7) {
+											width: 29%;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										padding: 5px 16px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 48%;
+												&::before {
+													top: 16px;
+												}
+												i {
+													top: 22px;
+												}
+											}
+											&:nth-child(5) {
+												display: none;
+											}
+											&:nth-child(6) {
+												width: 12%;
+												line-height: 17px;
+											}
+											&:nth-child(7) {
+												width: 20%;
+												display: flex;
+												align-self: center;
+											}
+											&:nth-child(8) {
+												width: 20%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.liPadding {
+									.headingItem {
+										&:nth-child(1) {
+											width: 35%;
+											display: flex;
+											flex-direction: column;
+											.mileTitle {
+												width: 100%;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+											}
+											.mileDesp {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 140px;
+												position: relative;
+												word-break: break-all;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											.mileAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 120px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											.paidAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 100px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+										}
+										&:nth-child(2) {
+											width: 16%;
+										}
+										&:nth-child(3) {
+											width: 20%;
+										}
+										&:nth-child(4) {
+											width: 29%;
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 48%;
+												.mileTitle {
+													width: 100%;
+												}
+												.mileDesp {
+													width: 100%;
+												}
+												.mileAmt {
+													width: 100%;
+												}
+												.adminComm {
+													width: 100%;
+													position: relative;
+													padding-left: 125px;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+													}
+												}
+												.paidAmt {
+													width: 100%;
+												}
+											}
+											&:nth-child(2) {
+												width: 12%;
+											}
+											&:nth-child(3) {
+												width: 20%;
+											}
+											&:nth-child(4) {
+												width: 20%;
+												.actionBtn {
+													.buttonSection {
+														.custombtn {
+															&:last-child {
+																margin-left: 10px !important;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									padding: 11px 16px;
+									.headingItem {
+										&:nth-child(1) {
+											width: 30%;
+											font-size: 0;
+											display: flex;
+											position: relative;
+											&[data-content]:before {
+												content: 'Milestone Details';
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												padding-right: 0;
+												top: 0px;
+												left: 15px;
+											}
+											i {
+												left: 125px;
+												position: absolute;
+												top: 6px;
+											}
+										}
+										&:nth-child(2) {
+											display: none;
+										}
+										&:nth-child(3) {
+											display: none;
+										}
+										&:nth-child(4) {
+											display: none;
+										}
+										&:nth-child(5) {
+											width: 14%;
+										}
+										&:nth-child(6) {
+											width: 23%;
+										}
+										&:nth-child(7) {
+											width: 33%;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										padding: 5px 16px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 47%;
+												&::before {
+													top: 16px;
+												}
+												i {
+													top: 22px;
+												}
+											}
+											&:nth-child(5) {
+												display: none;
+											}
+											&:nth-child(6) {
+												width: 13%;
+												line-height: 17px;
+											}
+											&:nth-child(7) {
+												width: 23%;
+												display: flex;
+												align-self: center;
+											}
+											&:nth-child(8) {
+												width: 17%;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.liPadding {
+									.headingItem {
+										&:nth-child(1) {
+											width: 30%;
+											display: flex;
+											flex-direction: column;
+											.mileTitle {
+												width: 100%;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+											}
+											.mileDesp {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 140px;
+												position: relative;
+												word-break: break-all;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+													color: $TXT_WINE;
+												}
+											}
+											.mileAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 120px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											.paidAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 100px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+										}
+										&:nth-child(2) {
+											width: 14%;
+										}
+										&:nth-child(3) {
+											width: 23%;
+										}
+										&:nth-child(4) {
+											width: 33%;
+											.actionBtn {
+												.statusMain {
+													margin-right: 11px;
+												}
+												.buttonSection {
+													.custombtn {
+														padding: 0 6px !important;
+														&:last-child {
+															margin-left: 12px !important;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 47%;
+												.mileTitle {
+													width: 100%;
+												}
+												.mileDesp {
+													width: 100%;
+												}
+												.mileAmt {
+													width: 100%;
+												}
+												.adminComm {
+													width: 100%;
+													position: relative;
+													padding-left: 125px;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+													}
+												}
+												.paidAmt {
+													width: 100%;
+												}
+											}
+											&:nth-child(2) {
+												width: 13%;
+											}
+											&:nth-child(3) {
+												width: 23%;
+											}
+											&:nth-child(4) {
+												width: 17%;
+												.actionBtn {
+													.buttonSection {
+														.custombtn {
+															&:last-child {
+																margin-left: 10px !important;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				padding-left: 10px;
+				padding-right: 10px;
+				.jobDetails {
+					.innerLeft {
+						width: 328px;
+						.desc {
+							width: 100%;
+						}
+					}
+				}
+				.customerDetails {
+					.detailsLeft {
+						width: 270px;
+					}
+					.btnRight {
+						button {
+							padding: 0 4px !important;
+							font-size: 13px !important;
+						}
+					}
+				}
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									padding: 0;
+									height: 52px;
+									.headingItem {
+										&:nth-child(1) {
+											width: 100%;
+											font-size: 0;
+											padding-right: 0;
+											display: flex;
+											position: relative;
+											&[data-content]:before {
+												content: 'Dispute Management Details';
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												padding-right: 0;
+												top: 15px;
+												left: 15px;
+											}
+											i {
+												left: 190px;
+												position: absolute;
+												top: 21px;
+											}
+										}
+										&:nth-child(2) {
+											display: none;
+										}
+										&:nth-child(3) {
+											display: none;
+										}
+										&:nth-child(4) {
+											display: none;
+										}
+										&:nth-child(5) {
+											display: none;
+										}
+										&:nth-child(6) {
+											display: none;
+										}
+										&:nth-child(7) {
+											display: none;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										padding: 5px 0px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 70%;
+												&::before {
+													top: 10px;
+												}
+												i {
+													top: 16px;
+												}
+											}
+											&:nth-child(5) {
+												display: none;
+											}
+											&:nth-child(6) {
+												display: none;
+											}
+											&:nth-child(7) {
+												display: none;
+											}
+											&:nth-child(8) {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.liPadding {
+									display: block;
+									.headingItem {
+										&:nth-child(1) {
+											width: 70%;
+											display: flex;
+											flex-direction: column;
+											.mileTitle {
+												width: 100%;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+											}
+											.mileDesp {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 140px;
+												position: relative;
+												word-break: break-all;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+													color: $TXT_WINE;
+												}
+											}
+											.mileAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 120px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+													color: $TXT_BLUE;
+												}
+											}
+											.paidAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 100px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+													color: $TXT_BLUE;
+												}
+											}
+										}
+										&:nth-child(2) {
+											width: 30%;
+											position: relative;
+											padding-top: 20px;
+											text-align: right;
+											&[data-content]:before {
+												content: attr(data-content);
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_REGULAR;
+												color: $TXT_BLUE;
+												padding-right: 0;
+												top: 0;
+												right: 0;
+											}
+										}
+										&:nth-child(3) {
+											width: 50%;
+											clear: both;
+											padding-top: 20px;
+											margin-top: 16px;
+											position: relative;
+											&[data-content]:before {
+												content: attr(data-content);
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_REGULAR;
+												color: $TXT_BLUE;
+												padding-right: 0;
+												top: 0;
+												left: 0;
+											}
+										}
+										&:nth-child(4) {
+											width: 50%;
+											justify-content: flex-end;
+											margin-top: 20px;
+											.actionBtn {
+												.statusMain {
+													margin-right: 11px;
+													margin-top: 0px;
+												}
+												.buttonSection {
+													.custombtn {
+														padding: 0 6px !important;
+														&:last-child {
+															margin-left: 12px !important;
+														}
+													}
+												}
+											}
+										}
+										.statusMain {
+											margin-top: 8px;
+											margin-bottom: 8px;
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 70%;
+												.mileTitle {
+													width: 100%;
+												}
+												.mileDesp {
+													width: 100%;
+												}
+												.mileAmt {
+													width: 100%;
+													&::before {
+														color: $TXT_WINE;
+													}
+												}
+												.adminComm {
+													width: 100%;
+													position: relative;
+													padding-left: 125px;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+														color: $TXT_WINE;
+													}
+												}
+												.paidAmt {
+													width: 100%;
+													&::before {
+														color: $TXT_WINE;
+													}
+												}
+											}
+											&:nth-child(2) {
+												width: 30%;
+												padding-right: 0;
+												&::before {
+													font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												}
+											}
+											&:nth-child(3) {
+												width: 50%;
+												margin-bottom: 8px;
+												&::before {
+													font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												}
+											}
+											&:nth-child(4) {
+												width: 50%;
+												.actionBtn {
+													.buttonSection {
+														.custombtn {
+															&:last-child {
+																margin-left: 10px !important;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 476px) and (max-width: 575px) {
+	.jobdetailMain {
+		.listingScroll {
+			.jobDetialInner {
+				padding-left: 10px;
+				padding-right: 10px;
+				.jobDetails {
+					flex-direction: column;
+					.innerLeft {
+						width: 100%;
+						.desc {
+							width: 100%;
+							.txt {
+								padding-bottom: 16px;
+							}
+						}
+					}
+					.innerRight {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+					}
+				}
+				.customerDetails {
+					flex-direction: column;
+					.detailsLeft {
+						width: 100%;
+						.title {
+							width: 100%;
+						}
+					}
+					.btnRight {
+						align-self: flex-start;
+						padding-top: 8px;
+						padding-right: 0;
+						button {
+							padding: 0 20px !important;
+						}
+					}
+				}
+				.tableSection {
+					.header {
+						.headItem {
+							.headingListing {
+								.headingTable {
+									padding: 0;
+									height: 52px;
+									.headingItem {
+										&:nth-child(1) {
+											width: 100%;
+											font-size: 0;
+											padding-right: 0;
+											display: flex;
+											position: relative;
+											&[data-content]:before {
+												content: 'Dispute Management Details';
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+												padding-right: 0;
+												top: 15px;
+												left: 15px;
+											}
+											i {
+												left: 190px;
+												position: absolute;
+												top: 21px;
+											}
+										}
+										&:nth-child(2) {
+											display: none;
+										}
+										&:nth-child(3) {
+											display: none;
+										}
+										&:nth-child(4) {
+											display: none;
+										}
+										&:nth-child(5) {
+											display: none;
+										}
+										&:nth-child(6) {
+											display: none;
+										}
+										&:nth-child(7) {
+											display: none;
+										}
+									}
+								}
+								&.pendingHeader {
+									.headingTable {
+										padding: 5px 0px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 70%;
+												&::before {
+													top: 10px;
+												}
+												i {
+													top: 16px;
+												}
+											}
+											&:nth-child(5) {
+												display: none;
+											}
+											&:nth-child(6) {
+												display: none;
+											}
+											&:nth-child(7) {
+												display: none;
+											}
+											&:nth-child(8) {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.listing {
+						.tableListing {
+							.headingUl {
+								.liPadding {
+									display: block;
+									.headingItem {
+										&:nth-child(1) {
+											width: 100%;
+											display: flex;
+											flex-direction: column;
+											.mileTitle {
+												width: 100%;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+											}
+											.mileDesp {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 140px;
+												position: relative;
+												word-break: break-all;
+												white-space: nowrap;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											.mileAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 120px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											.paidAmt {
+												width: 100%;
+												padding-right: 15px;
+												padding-left: 100px;
+												position: relative;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+										}
+										&:nth-child(2) {
+											width: 40%;
+											position: relative;
+											padding-top: 20px;
+											text-align: left;
+											margin-top: 10px;
+											&[data-content]:before {
+												content: attr(data-content);
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_REGULAR;
+												color: $TXT_BLUE;
+												padding-right: 0;
+												top: 0;
+												left: 0;
+											}
+										}
+										&:nth-child(3) {
+											width: 60%;
+											clear: none;
+											padding-top: 20px;
+											margin-top: 16px;
+											position: relative;
+											text-align: right;
+											padding-right: 0;
+											&[data-content]:before {
+												content: attr(data-content);
+												position: absolute;
+												font-size: $FONT_14;
+												font-family: $SOURCE_SANS_PRO_REGULAR;
+												color: $TXT_BLUE;
+												padding-right: 0;
+												top: 0;
+												right: 0;
+											}
+										}
+										&:nth-child(4) {
+											width: 60%;
+											justify-content: flex-start;
+											margin-top: 16px;
+											margin-bottom: 8px;
+											.actionBtn {
+												.statusMain {
+													margin-right: 11px;
+													margin-top: 0px;
+												}
+												.buttonSection {
+													.custombtn {
+														padding: 0 6px !important;
+														&:last-child {
+															margin-left: 12px !important;
+														}
+													}
+												}
+											}
+										}
+										.statusMain {
+											margin-top: 0px;
+											margin-bottom: 8px;
+										}
+									}
+								}
+							}
+							&.pendingListing {
+								.headingUl {
+									.liPadding {
+										.headingItem {
+											&:nth-child(1) {
+												width: 70%;
+												.mileTitle {
+													width: 100%;
+												}
+												.mileDesp {
+													width: 100%;
+												}
+												.mileAmt {
+													width: 100%;
+													&::before {
+														color: $TXT_WINE;
+													}
+												}
+												.adminComm {
+													width: 100%;
+													position: relative;
+													padding-left: 125px;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+														color: $TXT_WINE;
+													}
+												}
+												.paidAmt {
+													width: 100%;
+													&::before {
+														color: $TXT_WINE;
+													}
+												}
+											}
+											&:nth-child(2) {
+												width: 30%;
+												padding-right: 0;
+												margin: 0;
+												text-align: right;
+												&::before {
+													font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+													right: 0;
+												}
+											}
+											&:nth-child(3) {
+												width: 50%;
+												margin-bottom: 8px;
+												text-align: left;
+												&::before {
+													font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+													left: 0;
+												}
+											}
+											&:nth-child(4) {
+												width: 50%;
+												.actionBtn {
+													.buttonSection {
+														.custombtn {
+															&:last-child {
+																margin-left: 10px !important;
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 475px) {
+	.jobdetailMain {
+		.listingScroll {
+			.innerSection {
+				padding-left: 10px;
+				padding-right: 10px;
+				.jobDetialInner {
+					padding-left: 0px;
+					padding-right: 0px;
+					.jobDetails {
+						flex-direction: column;
+						.innerLeft {
+							width: 100%;
+							.desc {
+								width: 100%;
+								.txt {
+									padding-bottom: 16px;
+								}
+							}
+							.txtBtn {
+								.titleText {
+									padding-right: 6px;
+								}
+								button {
+									padding: 0 10px !important;
+								}
+							}
+						}
+						.innerRight {
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							.noTxt {
+								width: 100%;
+								text-align: left;
+								.bold {
+									float: right;
+								}
+							}
+						}
+					}
+					.customerDetails {
+						flex-direction: column;
+						.detailsLeft {
+							width: 100%;
+							.title {
+								width: 100%;
+							}
+						}
+						.btnRight {
+							align-self: flex-start;
+							padding-top: 8px;
+							padding-right: 0;
+							button {
+								padding: 0 10px !important;
+							}
+						}
+					}
+					.tableSection {
+						.header {
+							padding-right: 0;
+							.headItem {
+								.headingListing {
+									.headingTable {
+										padding: 0;
+										height: 52px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 100%;
+												font-size: 0;
+												padding-right: 0;
+												display: flex;
+												position: relative;
+												&[data-content]:before {
+													content: 'Dispute Management Details';
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+													padding-right: 0;
+													top: 15px;
+													left: 15px;
+												}
+												i {
+													left: 190px;
+													position: absolute;
+													top: 21px;
+												}
+											}
+											&:nth-child(2) {
+												display: none;
+											}
+											&:nth-child(3) {
+												display: none;
+											}
+											&:nth-child(4) {
+												display: none;
+											}
+											&:nth-child(5) {
+												display: none;
+											}
+											&:nth-child(6) {
+												display: none;
+											}
+											&:nth-child(7) {
+												display: none;
+											}
+										}
+									}
+									&.pendingHeader {
+										.headingTable {
+											padding: 5px 0px;
+											.headingItem {
+												&:nth-child(1) {
+													width: 70%;
+													&::before {
+														top: 10px;
+													}
+													i {
+														top: 16px;
+													}
+												}
+												&:nth-child(5) {
+													display: none;
+												}
+												&:nth-child(6) {
+													display: none;
+												}
+												&:nth-child(7) {
+													display: none;
+												}
+												&:nth-child(8) {
+													display: none;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						.listing {
+							.tableListing {
+								margin-right: 0;
+								.headingUl {
+									.liPadding {
+										display: block;
+										padding: 14px 8px;
+										.headingItem {
+											&:nth-child(1) {
+												width: 100%;
+												display: flex;
+												flex-direction: column;
+												.mileTitle {
+													width: 100%;
+													white-space: nowrap;
+													overflow: hidden;
+													text-overflow: ellipsis;
+												}
+												.mileDesp {
+													width: 100%;
+													padding-right: 15px;
+													padding-left: 140px;
+													position: relative;
+													word-break: break-all;
+													white-space: nowrap;
+													overflow: hidden;
+													text-overflow: ellipsis;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+													}
+												}
+												.mileAmt {
+													width: 100%;
+													padding-right: 15px;
+													padding-left: 120px;
+													position: relative;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+													}
+												}
+												.paidAmt {
+													width: 100%;
+													padding-right: 15px;
+													padding-left: 100px;
+													position: relative;
+													&[data-content]:before {
+														content: attr(data-content);
+														position: absolute;
+														font-size: $FONT_14;
+														font-family: $SOURCE_SANS_PRO_REGULAR;
+														padding-right: 0;
+														top: 0;
+														left: 0;
+													}
+												}
+											}
+											&:nth-child(2) {
+												width: 40%;
+												position: relative;
+												padding-top: 20px;
+												text-align: left;
+												margin-top: 10px;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													color: $TXT_BLUE;
+													padding-right: 0;
+													top: 0;
+													left: 0;
+												}
+											}
+											&:nth-child(3) {
+												width: 60%;
+												clear: none;
+												padding-top: 20px;
+												margin-top: 16px;
+												position: relative;
+												text-align: right;
+												padding-right: 0;
+												&[data-content]:before {
+													content: attr(data-content);
+													position: absolute;
+													font-size: $FONT_14;
+													font-family: $SOURCE_SANS_PRO_REGULAR;
+													color: $TXT_BLUE;
+													padding-right: 0;
+													top: 0;
+													right: 0;
+												}
+											}
+											&:nth-child(4) {
+												width: 100%;
+												justify-content: flex-start;
+												margin-top: 16px;
+												margin-bottom: 8px;
+												.actionBtn {
+													.statusMain {
+														margin-right: 11px;
+														margin-top: 0px;
+													}
+													.buttonSection {
+														.custombtn {
+															padding: 0 6px !important;
+															&:last-child {
+																margin-left: 12px !important;
+															}
+														}
+													}
+												}
+											}
+											.statusMain {
+												margin-top: 0px;
+												margin-bottom: 8px;
+											}
+										}
+									}
+								}
+								&.pendingListing {
+									.headingUl {
+										.liPadding {
+											.headingItem {
+												&:nth-child(1) {
+													width: 100%;
+													.mileTitle {
+														width: 100%;
+													}
+													.mileDesp {
+														width: 100%;
+													}
+													.mileAmt {
+														width: 100%;
+														&::before {
+															color: $TXT_WINE;
+														}
+													}
+													.adminComm {
+														width: 100%;
+														position: relative;
+														padding-left: 125px;
+														&[data-content]:before {
+															content: attr(data-content);
+															position: absolute;
+															font-size: $FONT_14;
+															font-family: $SOURCE_SANS_PRO_REGULAR;
+															padding-right: 0;
+															top: 0;
+															left: 0;
+															color: $TXT_WINE;
+														}
+													}
+													.paidAmt {
+														width: 100%;
+														&::before {
+															color: $TXT_WINE;
+														}
+													}
+												}
+												&:nth-child(2) {
+													width: 40%;
+													padding-right: 0;
+													text-align: left;
+													margin: 0;
+													margin-top: 8px;
+													&::before {
+														font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+														left: 0;
+													}
+												}
+												&:nth-child(3) {
+													width: 60%;
+													margin-bottom: 8px;
+													text-align: right;
+													margin-top: 8px;
+													&::before {
+														font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+														right: 0;
+													}
+												}
+												&:nth-child(4) {
+													width: 50%;
+													justify-content: flex-start;
+													margin-top: 8px;
+													margin-bottom: 12px;
+													.actionBtn {
+														.buttonSection {
+															.custombtn {
+																&:last-child {
+																	margin-left: 10px !important;
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

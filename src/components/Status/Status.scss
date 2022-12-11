@@ -1,0 +1,55 @@
+@import "../../assets/scss/variables.scss";
+.statusMain {
+  background: #fff8e8;
+  padding: 6px 7px;
+  border-radius: 50px;
+  display: inline-block;
+  min-width: 120px;
+  .statusTxt {
+    font-size: $FONT_14;
+    font-family: $SOURCE_SANS_PRO_REGULAR;
+    text-align: center;
+    margin: 0;
+  }
+  &.cancel {
+    background: #fdecee !important;
+    .statusTxt {
+      color: $TXT_RED !important;
+    }
+  }
+  &.complete {
+    background: #edf1f1 !important;
+    .statusTxt {
+      color: $TXT_GREEN !important;
+    }
+  }
+  &.amount {
+    background: #edf1f1 !important;
+    .statusTxt {
+      color: $TXT_BLUE_GREY !important;
+    }
+  }
+  &.suggested {
+    background: #e7edf2 !important;
+    .statusTxt {
+      color: $TXT_BLUE !important;
+    }
+  }
+  &.pending {
+    background: #fff8e8 !important;
+    .statusTxt {
+      color: $TXT_YELLOW !important;
+    }
+  }
+  &.disputed {
+    .statusTxt {
+      color: #494864 !important;
+    }
+  }
+  &.resolved {
+    background: #eaefef !important;
+    .statusTxt {
+      color: $TXT_GREEN !important;
+    }
+  }
+}

@@ -1,0 +1,813 @@
+@import "../../../../assets/scss/variables.scss";
+
+.jobdetailMain {
+  width: 100%;
+  float: left;
+
+  .backTo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+
+    .backTxt {
+      margin: 0;
+      padding-left: 8px;
+      font-family: $SOURCE_SANS_PRO_REGULAR;
+      font-size: $FONT_14;
+      color: $TXT_BLUE_GREY;
+    }
+
+    i {
+      font-size: $FONT_14;
+      color: $TXT_BLUE_GREY;
+    }
+  }
+
+  .innerSection {
+    max-width: 1602px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0 auto;
+  }
+
+  .listingScroll {
+    .jobDetialInner {
+      .jobDetails {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        .innerLeft {
+          width: 620px;
+
+          .txtBtn {
+            display: flex;
+            flex-direction: row;
+
+            .titleText {
+              min-width: 200px;
+              font-family: $SOURCE_SANS_PRO_REGULAR;
+              padding-right: 25px;
+              padding-bottom: 8px;
+            }
+
+            button {
+              width: auto;
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              font-size: $FONT_14 !important;
+              background: transparent !important;
+              color: $TXT_RED !important;
+              border: 1px solid $TXT_RED !important;
+              line-height: 21px;
+              height: 24px;
+              padding: 0 18px !important;
+            }
+          }
+
+          .desc {
+            width: 100%;
+
+            .txt {
+              text-align: left;
+              margin: 0;
+              padding-bottom: 24px;
+              font-family: $SOURCE_SANS_PRO_REGULAR;
+              font-size: $FONT_14;
+              color: $TXT_WINE;
+              line-height: 21px;
+            }
+          }
+        }
+
+        .innerRight {
+          padding-right: 0px;
+          .noTxt {
+            margin: 0;
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            font-size: $FONT_14;
+            color: $TXT_WINE;
+            text-align: right;
+            padding-bottom: 6px;
+            line-height: 21px;
+
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+
+          .bold {
+            color: $TXT_DARKGREY;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            padding-left: 12px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      .customerDetails {
+        display: flex;
+        padding-left: 12px;
+        padding-right: 12px;
+        .detailsLeft {
+          text-align: left;
+          width: 300px;
+          margin-right: 24px;
+
+          .title {
+            font-size: $FONT_14;
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            padding-bottom: 12px;
+            border-bottom: 1px solid $TXT_LIGHTGRAY;
+            margin: 0;
+            margin-bottom: 15px;
+            line-height: 21px;
+            width: 100%;
+          }
+
+          .bold {
+            color: $TXT_DARKGREY;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            margin: 0;
+            padding-bottom: 8px;
+            line-height: 21px;
+          }
+        }
+
+        .btnRight {
+          display: flex;
+          flex-direction: row;
+          align-self: flex-end;
+          padding-right: 12px;
+
+          button {
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            font-size: $FONT_14 !important;
+            background: transparent !important;
+            color: $TXT_BLUE !important;
+            border: 1px solid $TXT_BLUE !important;
+            line-height: 21px;
+            height: 40px;
+            padding: 0 36px !important;
+            width: auto;
+
+            &:first-child {
+              margin-right: 16px;
+              border-color: $TXT_RED !important;
+              color: $TXT_RED !important;
+            }
+          }
+        }
+      }
+
+      .tableSection {
+        padding-top: 32px;
+
+        .header {
+          padding-right: 12px;
+          padding-left: 12px;
+          .headItem {
+            .headingListing {
+              .headingTable {
+                .headingItem {
+                  flex: 1;
+                  width: auto;
+                  text-align: left;
+
+                  &:nth-child(1) {
+                    flex: 1.8;
+                  }
+
+                  &:nth-child(2) {
+                    flex: 0.8;
+                  }
+
+                  &:nth-child(3) {
+                    flex: 0.8;
+                  }
+
+                  &:nth-child(4) {
+                    flex: 1.5;
+                  }
+
+                  &:nth-child(6) {
+                    flex: 0.6;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .listing {
+          padding-top: 8px;
+
+          .tableListing {
+            margin-right: 12px;
+            margin-left: 12px;
+            background: $BG_WHITE;
+            cursor: auto;
+
+            &:hover {
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+              -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+              -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .headingUl {
+              .liPadding {
+                padding: 14px 16px;
+                display: flex;
+                align-items: center;
+              }
+
+              .headingItem {
+                flex: 1;
+                text-align: left;
+
+                &:nth-child(1) {
+                  flex: 1.8;
+                }
+
+                &:nth-child(2) {
+                  flex: 0.8;
+                }
+
+                &:nth-child(3) {
+                  flex: 0.8;
+                }
+
+                &:nth-child(4) {
+                  flex: 1.5;
+                }
+
+                &:nth-child(6) {
+                  flex: 0.6;
+                }
+
+                .status {
+                  width: 100%;
+                  float: left;
+                  padding-top: 10px;
+                }
+              }
+
+              .actionLi {
+                width: 100% !important;
+                margin-top: 0px;
+                padding-right: 0px;
+
+                .statusMain {
+                  display: flex;
+                  justify-content: center;
+                  border-radius: 0;
+
+                  span {
+                    background: transparent;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalPopup {
+  &.deleteModal {
+    .modal-dialog {
+      .modal-content {
+        .modalInner {
+          .modal-body {
+            .messageSection {
+              padding: 34px;
+
+              .customBtn {
+                button {
+                  &.custombtn {
+                    padding: 11px 12px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.RejectionCommentsModal {
+    .modal-dialog {
+      .modal-content {
+        .modalInner {
+          .modal-body {
+            padding: 40px;
+            display: table;
+            width: 100%;
+
+            .closeBtn {
+              top: 0;
+              right: 0;
+            }
+
+            .rejectionComments {
+              .headerTitle {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.ModificationModal {
+    .modal-dialog {
+      .modal-content {
+        .modalInner {
+          .modal-body {
+            padding: 40px;
+            display: table;
+            width: 100%;
+
+            .closeBtn {
+              top: 0;
+              right: 0;
+            }
+
+            .milestoneModification {
+              .headerTitle {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalPopup {
+  &.actionModal {
+    .modal-dialog {
+      max-width: 285px;
+
+      .modal-content {
+        .modalInner {
+          .modal-body {
+            .messageSection {
+              padding: 26px;
+
+              .innerSection {
+                .custBtn {
+                  button {
+                    width: 159px !important;
+
+                    &.custombtn {
+                      padding: 11px 12px !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+  .jobdetailMain {
+    .listingScroll {
+      .jobDetialInner {
+        .tableSection {
+          .header {
+            .headItem {
+              .headingListing {
+                .headingTable {
+                  .headingItem {
+                    &:nth-child(4) {
+                      width: 10%;
+
+                      i {
+                        left: 60px;
+                      }
+                    }
+
+                    &:nth-child(2) {
+                      width: 8%;
+                    }
+
+                    &:nth-child(5) {
+                      width: 9%;
+                    }
+
+                    &:nth-child(6) {
+                      width: 17%;
+                    }
+
+                    &:nth-child(7) {
+                      width: 25%;
+                    }
+                  }
+                }
+
+                &.pendingHeader {
+                  .headingTable {
+                    .headingItem {
+                      &:nth-child(1) {
+                        width: 10%;
+                      }
+
+                      &:nth-child(2) {
+                        width: 22%;
+                      }
+
+                      &:nth-child(3) {
+                        width: 9%;
+
+                        i {
+                          left: 65px;
+                        }
+                      }
+
+                      &:nth-child(4) {
+                        width: 9%;
+
+                        i {
+                          left: 45px;
+                        }
+                      }
+
+                      &:nth-child(6) {
+                        width: 13%;
+                      }
+
+                      &:nth-child(5) {
+                        width: 10%;
+
+                        i {
+                          left: 65px;
+                        }
+                      }
+
+                      &:nth-child(7) {
+                        width: 17%;
+                      }
+
+                      &:nth-child(8) {
+                        width: 10%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .listing {
+            .tableListing {
+              .headingUl {
+                .headingItem {
+                  &:nth-child(1) {
+                    width: 50%;
+
+                    .mileTitle {
+                      width: 29%;
+                    }
+
+                    .mileDesp {
+                      width: 36%;
+                    }
+
+                    .paidAmt {
+                      width: 21%;
+                    }
+
+                    .mileAmt {
+                      width: 15%;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    width: 9%;
+                  }
+
+                  &:nth-child(3) {
+                    width: 17%;
+                  }
+
+                  &:nth-child(4) {
+                    width: 24%;
+
+                    .actionBtn {
+                      .statusMain {
+                        margin-right: 10px;
+                      }
+
+                      .buttonSection {
+                        .custombtn {
+                          padding: 0 6px !important;
+
+                          &:last-child {
+                            margin-left: 12px !important;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.pendingListing {
+                .headingUl {
+                  .liPadding {
+                    .headingItem {
+                      &:nth-child(1) {
+                        width: 60%;
+
+                        .mileTitle {
+                          width: 16%;
+                        }
+
+                        .mileDesp {
+                          width: 39%;
+                        }
+
+                        .mileAmt {
+                          width: 15%;
+                        }
+
+                        .adminComm {
+                          width: 15%;
+                        }
+
+                        .paidAmt {
+                          width: 18%;
+                        }
+                      }
+
+                      &:nth-child(2) {
+                        width: 13%;
+                      }
+
+                      &:nth-child(3) {
+                        width: 17%;
+                      }
+
+                      &:nth-child(4) {
+                        width: 10%;
+
+                        .actionBtn {
+                          .buttonSection {
+                            .custombtn {
+                              &:last-child {
+                                margin-left: 10px !important;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .jobdetailMain{
+    .listingScroll{
+      .jobDetialInner{
+        .tableSection{
+          .header{
+            .headItem{
+              .headingListing{
+                .headingTable{
+                  &::before{
+                    content: 'Milestone Details';
+                    font-size: $FONT_14;
+                    font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    color: $TXT_WHITE;
+                  }
+                  .headingItem{
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+          .listing{
+            .tableListing{
+              .headingUl{
+                .liPadding{
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                }
+                .headingItem{
+                  flex: inherit !important;
+                  .status {
+                    padding-top: 2px;
+                    padding-bottom: 20px;
+                  }
+                  &:first-child{
+                    width: 50%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Title / status";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(2){
+                    width: 25%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Amount";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(3){
+                    width: 25%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Escrowed Amount / Paid Amount";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(4){
+                    width: 50%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Description";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(5){
+                    width: 25%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Expected Completion Date";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              } 
+            } 
+          } 
+        }
+      }
+    }
+  }        
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .jobdetailMain{
+    .listingScroll{
+      .jobDetialInner{
+        .tableSection{
+          .header{
+            .headItem{
+              .headingListing{
+                .headingTable{
+                  &::before{
+                    content: 'Milestone Details';
+                    font-size: $FONT_14;
+                    font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    color: $TXT_WHITE;
+                  }
+                  .headingItem{
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+          .listing{
+            .tableListing{
+              .headingUl{
+                .liPadding{
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                }
+                .headingItem{
+                  flex: inherit !important;
+                  .status {
+                    padding-top: 2px;
+                    padding-bottom: 20px;
+                  }
+                  &:first-child{
+                    width: 50%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Title / status";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(2){
+                    width: 50%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Amount";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(3){
+                    width: 50%;
+                    margin-bottom: 20px;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Escrowed Amount / Paid Amount";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(4){
+                    width: 50%;
+                    margin-bottom: 20px;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Milestone Description";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                  &:nth-child(5){
+                    width: 50%;
+                    &::before {
+                      width: 100%;
+                      float: left;
+                      content: "Expected Completion Date";
+                      position: relative;
+                      top:0px;
+                      font-size: $FONT_14;
+                      color: $TXT_BLUE;
+                      font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                    }
+                  }
+                }
+              } 
+            } 
+          } 
+        }
+      }
+    }
+  } 
+}

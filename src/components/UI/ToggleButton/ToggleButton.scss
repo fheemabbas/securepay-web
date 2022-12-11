@@ -1,0 +1,81 @@
+@import "../../../assets/scss/variables.scss";
+
+.toggleMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .approveTxt{
+        font-weight: normal;
+        font-size: $FONT_14;
+        line-height: 24px;
+        color: $TXT_BLUE;
+        position: relative;
+        left: 0px;
+        padding-top: 0px;
+    }
+    .rejectTxt{
+        font-weight: normal;
+        font-size: $FONT_14;
+        line-height: 24px;
+        color: $TXT_WINE;
+        position: relative;
+        left: 0px;
+        padding-top:0px;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 38px;
+        height: 18px;
+        margin: 0 10px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            &:checked + .slider {
+                background-color: $BG_BLUE;
+                border-color: $TXT_BLUE;
+            }
+
+            &:checked + .slider:before {
+                transform: translateX(20px);
+                background-color:$BG_WHITE;
+            }
+
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $BORDERCOLOR;
+            transition: .4s;
+            border: 1px solid $INPUTBORDER;
+            &:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 2px;
+                bottom: 1px;
+                background-color:$BG_BLUE;
+                transition: .4s;
+                transform: translateX(0px);
+            }
+            &.round {
+                border-radius: 34px;
+                &:before {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

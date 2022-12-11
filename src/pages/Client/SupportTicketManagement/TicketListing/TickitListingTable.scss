@@ -1,0 +1,458 @@
+@import "../../../../assets/scss/variables.scss";
+.tableSection {
+			.header {
+				padding-top: 25px;
+				padding-right: 12px;
+				.headingItem {
+					.headingTable {
+						.headingItem {
+							width: 20%;
+							&:nth-child(1) {
+								width: 10%;
+							}
+							&:nth-child(2) {
+								width: 30%;
+							}
+							&:last-child {
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+			.listing {
+				padding-top: 8px;
+				.listingScroll {
+					.tableListing {
+						padding-top: 4px;
+						margin-right: 12px;
+						margin-left: 2px;
+						.headingUl {
+							padding: 14px 16px;
+							.headingItem {
+								width: 20%;
+								p {
+									margin: 0;
+								}
+								&:nth-child(1) {
+									width: 60%;
+									display: flex;
+									padding-right: 6px;
+									.ticketNo {
+										width: 17%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+										padding-right: 15px;
+									}
+									.subjectTxt {
+										width: 50%;
+										padding-right: 15px;
+										margin: 0;
+									}
+									.createdOn {
+										width: 25%;
+										padding-right: 15px;
+										margin: 0;
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+									}
+                                   
+								}
+								&:nth-child(3) {
+									width: 20%;
+								}
+								&:last-child {
+									text-align: left;
+								}
+								i {
+									color: $TXT_YELLOW;
+									font-size: $FONT_18;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.tableSection {
+    .header {
+        .headingItem {
+            .headingListing {
+                .headingTable {
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 55%;
+                            position: relative;
+                            .headerTitle {
+                                font-size: 0;
+                            }
+                            &[data-content]:before {
+                                content: attr(data-content);
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0px;
+                                left: 0;
+                            }
+                            i {
+                                position: absolute;
+                                left: 78px;
+                                top: 7px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .listing {
+        .listingScroll {
+            .tableListing {
+                .headingUl {
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 55%;
+                            flex-direction: column;
+                            .ticketNo {
+                                width: 100%;
+                            }
+                            .subjectTxt {
+                                width: 100%;
+                            }
+                            .createdOn {
+                                width: 100%;
+                            }
+                        }
+                        &:last-child {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+.tableSection {
+    .header {
+        .headingItem {
+            .headingListing {
+                .headingTable {
+                    height: 52px;
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 48%;
+                            position: relative;
+                            .headerTitle {
+                                font-size: 0;
+                            }
+                            &[data-content]:before {
+                                content: 'Job Management Details';
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0px;
+                                left: 0px;
+                            }
+                            i {
+                                display: none;
+                            }
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                        &:nth-child(4) {
+                            display: none;
+                        }
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .listing {
+        .listingScroll {
+            .tableListing {
+                .headingUl {
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 50%;
+                            flex-direction: column;
+                            padding-bottom: 16px;
+                            .ticketNo {
+                                width: 100%;
+                            }
+                            .subjectTxt {
+                                width: 100%;
+                            }
+                            .createdOn {
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(2) {
+                            width: 50%;
+                            padding-top: 20px;
+                            padding-right: 0;
+                            text-align: right;
+                            position: relative;
+                            padding-bottom: 16px;
+                            &[data-content]:before {
+                                content: attr(data-content);
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+                        &:last-child {
+                            width: 100%;
+                            padding-right: 0;
+                            position: relative;
+                            padding-top: 25px;
+                            &[data-content]:before {
+                                content: attr(data-content);
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+
+.tableSection {
+    .header {
+        .headingItem {
+            .headingListing {
+                .headingTable {
+                    height: 52px;
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 48%;
+                            position: relative;
+                            .headerTitle {
+                                font-size: 0;
+                            }
+                            &[data-content]:before {
+                                content: 'Job Management Details';
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0px;
+                                left: 0px;
+                            }
+                            i {
+                                display: none;
+                            }
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                        &:nth-child(4) {
+                            display: none;
+                        }
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .listing {
+        .listingScroll {
+            .tableListing {
+                .headingUl {
+                    .headingItem {
+                        &:nth-child(1) {
+                            width: 50%;
+                            flex-direction: column;
+                            padding-bottom: 16px;
+                            .ticketNo {
+                                width: 100%;
+                            }
+                            .subjectTxt {
+                                width: 100%;
+                            }
+                            .createdOn {
+                                width: 100%;
+                            }
+                        }
+                        &:nth-child(2) {
+                            width: 50%;
+                            padding-top: 20px;
+                            padding-right: 0;
+                            text-align: right;
+                            position: relative;
+                            padding-bottom: 16px;
+                            &[data-content]:before {
+                                content: attr(data-content);
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+                        &:last-child {
+                            width: 100%;
+                            padding-right: 0;
+                            position: relative;
+                            padding-top: 25px;
+                            &[data-content]:before {
+                                content: attr(data-content);
+                                position: absolute;
+                                font-size: $FONT_14;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                padding-right: 0;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+		
+}
+
+@media only screen and (max-width: 479px) {
+
+.tableSection {
+.header {
+    padding-right: 12px;
+    .headingItem {
+        .headingListing {
+            .headingTable {
+                height: 52px;
+                .headingItem {
+                    &:nth-child(1) {
+                        width: 100%;
+                        position: relative;
+                        .headerTitle {
+                            font-size: 0;
+                        }
+                        &[data-content]:before {
+                            content: 'Job Management Details';
+                            position: absolute;
+                            font-size: $FONT_14;
+                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            padding-right: 0;
+                            top: 0px;
+                            left: 0px;
+                        }
+                        i {
+                            display: none;
+                        }
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.listing {
+    .listingScroll {
+        .tableListing {
+            .headingUl {
+                .headingItem {
+                    &:nth-child(1) {
+                        width: 100%;
+                        flex-direction: column;
+                        padding-bottom: 16px;
+                        .ticketNo {
+                            width: 100%;
+                        }
+                        .subjectTxt {
+                            width: 100%;
+                        }
+                        .createdOn {
+                            width: 100%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        width: 100%;
+                        padding-top: 20px;
+                        padding-right: 0;
+                        text-align: left;
+                        position: relative;
+                        padding-bottom: 16px;
+                        &[data-content]:before {
+                            content: attr(data-content);
+                            position: absolute;
+                            font-size: $FONT_14;
+                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            padding-right: 0;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    &:last-child {
+                        width: 100%;
+                        padding-right: 0;
+                        position: relative;
+                        padding-top: 25px;
+                        &[data-content]:before {
+                            content: attr(data-content);
+                            position: absolute;
+                            font-size: $FONT_14;
+                            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            padding-right: 0;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+}

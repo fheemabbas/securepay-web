@@ -1,0 +1,800 @@
+@import "../../../../assets/scss/variables.scss";
+
+.client_user_page {
+  max-width: 1602px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin: 0 auto;
+
+  .jobInnerSection {
+    padding-top: 24px;
+
+    .titleText {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .searchFilter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 14px;
+      padding-left: 14px;
+      padding-bottom: 25px;
+
+      .searchSection {
+        display: flex;
+
+        .searchboxMain {
+          width: 623px;
+        }
+
+        .filterBtn {
+          position: relative;
+
+          .filterIcon {
+            position: relative;
+            margin-left: 15px;
+            background: $BG_WHITE;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+            box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+              0px 0.5px 2px rgba(96, 97, 112, 0.16);
+
+            &:focus {
+              outline: none;
+            }
+
+            i {
+              color: $TXT_BLUE_GREY;
+            }
+
+            .dot_filter {
+              width: 5px;
+              height: 5px;
+              background-color: $TXT_BLUE;
+              border-radius: 50%;
+              top: 5px;
+              right: 3px;
+              position: absolute;
+            }
+          }
+        }
+
+        .sortingIcon {
+          color: $TXT_BLUE;
+          padding: 14px 18px;
+          position: relative;
+          position: relative;
+          margin-left: 15px;
+          background: #ffffff;
+          width: 40px;
+          height: 40px;
+          border-radius: 8px;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+            0px 0.5px 2px rgba(96, 97, 112, 0.16);
+          display: none;
+
+          .FilterSorting {
+            display: flex;
+
+            .filterItem {
+              padding: 0;
+
+              .headingUl {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                list-style: none;
+                margin: 0;
+
+                .headingItem {
+                  display: flex !important;
+                  font-size: 14px !important;
+                  color: $TXT_BLUE;
+                  padding: 10px;
+                  cursor: pointer;
+                  width: 100% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .createJob {
+        .custombtn {
+          width: 202px;
+          background-color: $BG_LIGHTWHITE;
+          border: 1px solid $TXT_BLUE !important;
+          color: $TXT_BLUE;
+          font-size: $FONT_14 !important;
+
+          &:nth-child(2) {
+            margin-left: 8px;
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .table_list_Main {
+      width: 100%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      justify-content: space-between;
+
+      .table-row-inline {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+
+        &.cursurpointer {
+          cursor: pointer;
+        }
+
+        .Table-row-item {
+          flex: 1;
+          color: $TXT_WINE;
+
+          &:nth-child(1) {
+            flex: 2;
+            text-align: left;
+          }
+
+          .right_part {
+            padding-left: 16px;
+
+            .title {
+              font-size: $FONT_14;
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              color: $TXT_DARKGREY;
+            }
+          }
+
+          .icon_row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .icon-Union {
+              font-size: 35px;
+              color: $TXT_DARKGREEN;
+              border: none;
+              background-color: transparent;
+              padding: 0px;
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .Table-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 14px 10px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+
+        &:hover {
+          -webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          -moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+          background: $BG_WHITE;
+        }
+
+        &.Table-header {
+          background-color: $BG_BLUE;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: none;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 10px;
+
+          .table-row-inline {
+            padding-bottom: 0px;
+          }
+
+          .Table-row-item {
+            color: $TXT_WHITE;
+            font-size: $FONT_14;
+            padding: 18px 12px;
+            margin-bottom: 0px;
+
+            .icon-sort {
+              background-color: transparent;
+              border: none;
+              color: $TXT_WHITE;
+              font-size: $FONT_12;
+              margin-left: 4px;
+              padding: 0px;
+            }
+          }
+        }
+      }
+
+      .Table-row-item {
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        font-size: $FONT_14;
+
+        .imageCricle {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          overflow: hidden;
+        }
+
+        .actiondropdown {
+          position: relative !important;
+          z-index: 99 !important;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.deleteModal {
+  .modal-dialog {
+    max-width: 323px;
+
+    .modal-content {
+      .modalInner {
+        .modal-body {
+          .messageSection {
+            padding: 34px;
+
+            .customBtn {
+              button {
+                &.custombtn {
+                  padding: 11px 12px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .client_user_page {
+    .jobInnerSection {
+      .table_list_Main {
+        .Table-row {
+          &.Table-header {
+            &::before {
+              content: "User Details";
+              font-size: $FONT_16;
+              color: $TXT_WHITE;
+              position: relative;
+              padding: 10px 12px;
+            }
+
+            .Table-row-item {
+              text-align: left;
+              display: none;
+            }
+          }
+        }
+
+        .table-row-inline {
+          align-items: flex-start;
+
+          .Table-row-item {
+            flex: inherit !important;
+            align-items: flex-start;
+            position: relative;
+            width: 25%;
+            text-align: left;
+
+            .icon_row {
+              justify-content: flex-start;
+            }
+
+            &:first-child {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Client Details";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(2) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Company Name";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(3) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Ongoing Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(4) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(5) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Completed Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(6) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Jobs in Dispute";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(7) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Income";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(8) {
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "% of commission";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .client_user_page {
+    .jobInnerSection {
+      .table_list_Main {
+        .Table-row {
+          &.Table-header {
+            &::before {
+              content: "User Details";
+              font-size: $FONT_16;
+              color: $TXT_WHITE;
+              position: relative;
+              padding: 10px 12px;
+            }
+
+            .Table-row-item {
+              text-align: left;
+              display: none;
+            }
+          }
+        }
+
+        .table-row-inline {
+          align-items: flex-start;
+
+          .Table-row-item {
+            flex: inherit !important;
+            align-items: flex-start;
+            position: relative;
+            width: 25%;
+            text-align: left;
+
+            .icon_row {
+              justify-content: flex-start;
+            }
+
+            &:first-child {
+              width: 34%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Client Details";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(2) {
+              padding-top: 32px;
+              width: 22%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Company Name";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(3) {
+              width: 22%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Ongoing Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(4) {
+              width: 22%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(5) {
+              width: 34%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Completed Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(6) {
+              padding-top: 32px;
+              width: 22%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Jobs in Dispute";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(7) {
+              padding-top: 32px;
+              width: 22%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Income";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(8) {
+              width: 22%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "% of commission";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .client_user_page {
+    .jobInnerSection {
+      .searchFilter {
+        .searchSection {
+          .searchboxMain {
+            width: 400px;
+          }
+        }
+      }
+
+      .table_list_Main {
+        .Table-row {
+          &.Table-header {
+            &::before {
+              content: "User Details";
+              font-size: $FONT_16;
+              color: $TXT_WHITE;
+              position: relative;
+              padding: 10px 12px;
+            }
+
+            .Table-row-item {
+              text-align: left;
+              display: none;
+            }
+          }
+        }
+
+        .table-row-inline {
+          align-items: flex-start;
+
+          .Table-row-item {
+            flex: inherit !important;
+            align-items: flex-start;
+            position: relative;
+            width: 25%;
+            text-align: left;
+
+            .right_part {
+              padding-left: 10px;
+            }
+
+            .icon_row {
+              justify-content: flex-start;
+            }
+
+            &:first-child {
+              width: 40%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Client Details";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(2) {
+              padding-top: 32px;
+              width: 20%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Company Name";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(3) {
+              width: 20%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Ongoing Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(4) {
+              width: 20%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(5) {
+              width: 40%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Completed Jobs";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(6) {
+              padding-top: 32px;
+              width: 20%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Jobs in Dispute";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(7) {
+              padding-top: 32px;
+              width: 20%;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "Total Income";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+
+            &:nth-child(8) {
+              width: 20%;
+              padding-top: 32px;
+
+              &::before {
+                width: 100%;
+                float: left;
+                content: "% of commission";
+                position: absolute;
+                top: 6px;
+                font-size: $FONT_14;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {}

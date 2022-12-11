@@ -1,0 +1,66 @@
+@import "../../../assets/scss/variables.scss";
+.btn {
+	&.custombtn{
+		background: $BG_YELLOW;
+		width: 100%;
+		font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+		border: none !important;
+		font-size: $FONT_16 !important;
+		font-weight: normal;
+		border-radius: 5px !important;
+		padding: 12px 0 12px 0 !important;
+		color: $TXT_WHITE;
+		&:not(:disabled){
+			background: $BG_YELLOW ;
+		}
+		&:not(.disabled):active{
+			background: $BG_YELLOW !important;
+		}
+		&.btn-loading{
+			&:disabled{
+				background: transparent;
+			}
+		}
+		&:disabled {
+			background: $BG_LIGHTGRAY ;
+			color: $TXT_DISABLEDGRAY;
+			opacity: 1 !important;
+			// cursor: not-allowed;
+			&:not(:disabled){
+				background: $BG_LIGHTGRAY ;
+				color: $TXT_DISABLEDGRAY;
+			}
+			&:not(.disabled):active{
+				background: $BG_LIGHTGRAY ;
+				color: $TXT_DISABLEDGRAY;
+			}
+			&:hover {
+				background: $BG_LIGHTGRAY ;
+				color: $TXT_DISABLEDGRAY;
+			}	
+			&:focus {
+				outline: none !important;
+				box-shadow: none !important;
+			}
+			&.active {
+				box-shadow: none !important;
+			}
+		}
+		&:focus {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+		&.active {
+			box-shadow: none !important;
+			
+		}		
+		&:hover {
+			background: $BG_YELLOW;
+			color: $TXT_WHITE;
+		}					
+	}
+	
+	&:active{
+		background-color: $TXT_BLUE!important;
+	}
+}

@@ -1,0 +1,574 @@
+@import "../../../../assets/scss/variables.scss";
+.ticketdetailMain {
+  width: 100%;
+  float: left;
+  p {
+    margin: 0;
+  }
+  // .listingScroll {
+  //   height: calc(100vh - 129px) !important;
+  // }
+  .innerContainer {
+    max-width: 1602px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 0 auto;
+    .backTo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-left: 12px;
+      padding-right: 12px;
+      .backTxt {
+        margin: 0;
+        padding-left: 8px;
+        font-family: $SOURCE_SANS_PRO_REGULAR;
+        font-size: $FONT_14;
+        color: $TXT_BLUE_GREY;
+      }
+      i {
+        font-size: $FONT_14;
+        color: $TXT_BLUE_GREY;
+      }
+    }
+  }
+  .jobDetialInner {
+    padding-top: 0px;
+
+    .paddSection {
+      padding-right: 12px;
+      padding-left: 12px;
+      .jobDetails {
+        display: flex;
+        justify-content: space-between;
+        .innerLeft {
+          .txtBtn {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 45px;
+            .titleText {
+              min-width: 200px;
+              font-family: $SOURCE_SANS_PRO_REGULAR;
+              padding-bottom: 0;
+            }
+            .idNos {
+              margin: 0;
+              text-align: left;
+              padding-bottom: 8px;
+            }
+          }
+        }
+        .innerRight {
+          .btn_resolve {
+            border: none;
+            background-color: $BG_YELLOW;
+            color: $TXT_WHITE;
+            border-radius: 8px;
+            font-size: $FONT_14;
+            line-height: 21px;
+            padding: 14px 30px;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            outline: none;
+            margin-left: 15px;
+          }
+        }
+      }
+      .customerDetails {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        .columnLeft {
+          width: 40%;
+          justify-content: space-between;
+          display: flex;
+        }
+        .detailsLeft {
+          text-align: left;
+          padding-right: 24px;
+          .title {
+            font-size: $FONT_14;
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            padding-bottom: 13px;
+            border-bottom: 1px solid $TXT_LIGHTGRAY;
+            margin: 0;
+            margin-bottom: 15px;
+            line-height: 21px;
+            width: 300px;
+          }
+          .bold {
+            color: $TXT_DARKGREY;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            margin: 0;
+            padding-bottom: 8px;
+            line-height: 21px;
+          }
+        }
+        .rightSection {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+          padding-right: 12px;
+          .title {
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            font-family: $SOURCE_SANS_PRO_REGULAR;
+            font-size: $FONT_14;
+            line-height: 21px;
+            color: $TXT_WINE;
+          }
+          .value {
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            font-size: $FONT_14;
+            line-height: 21px;
+            color: $TXT_DARKGREY;
+            padding-left: 14px;
+            &.color {
+              color: $TXT_YELLOW;
+            }
+          }
+        }
+      }
+      .imgSection {
+        box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -o-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        -ms-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+          0px 0.5px 2px rgba(96, 97, 112, 0.16);
+        display: block;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        margin: 0 2px 24px;
+        padding: 24px;
+        background-color: $BG_WHITE;
+        .innerDetails {
+          display: flex;
+          .txtDetails {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .title {
+              font-family: $SOURCE_SANS_PRO_REGULAR;
+              font-size: $FONT_14;
+              color: $TXT_WINE;
+              line-height: 21px;
+              padding-bottom: 6px;
+            }
+            .bold {
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              font-size: $FONT_14;
+              line-height: 21px;
+              color: $TXT_DARKGREY;
+              margin-left: 0px;
+            }
+            .leftPart {
+              width: 60%;
+              align-items: flex-start;
+              display: flex;
+              flex-direction: column;
+              padding-right: 20px;
+              .desp {
+                text-align: left;
+                padding-top: 24px;
+                padding-bottom: 32px;
+              }
+            }
+            .rightPart {
+              display: flex;
+              flex-direction: row;
+              .left {
+                text-align: left;
+                margin-right: 32px;
+              }
+              .right {
+                flex-direction: column;
+                display: flex;
+                p {
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }
+        .imagePart {
+          .imgUl {
+            display: table;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            .imgLi {
+              display: flex;
+              float: left;
+              margin-right: 8px;
+              margin-bottom: 8px;
+              width: 150px;
+              height: 150px;
+              border-radius: 8px;
+              cursor: pointer;
+              border: 1px solid $TXT_LIGHTGRAY;
+              overflow: hidden;
+              justify-content: center;
+              .imgClass {
+                max-width: 100%;
+                height: 150px;
+                object-fit: contain;
+              }
+              .download {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 8px;
+                .icon-pdf {
+                  font-size: 65px;
+                  color: $TXT_LIGHTGRAY;
+                }
+                .icon-doc {
+                  font-size: 65px;
+                  color: $TXT_LIGHTGRAY;
+                }
+                .icon-xls {
+                  font-size: 65px;
+                  color: $TXT_LIGHTGRAY;
+                }
+                .fileName {
+                  padding-top: 18px;
+                  font-family: $SOURCE_SANS_PRO_REGULAR;
+                  font-size: $FONT_14;
+                  line-height: 21px;
+                  color: $TXT_WINE;
+                }
+              }
+            }
+          }
+        }
+      }
+      .messageSection {
+        .messageAttched {
+          position: relative;
+          padding-top: 24px;
+          float: left;
+          width: 100%;
+          .textField {
+            margin-bottom: 8px;
+            textarea {
+              height: 108px;
+              resize: none;
+              padding: 11px 8px;
+              padding-right: 20px;
+            }
+          }
+          .uploadImgSection {
+            display: flex;
+            padding-bottom: 16px;
+            img {
+              width: 20px;
+            }
+            .uploadedImg {
+              display: flex;
+              align-items: center;
+              flex: 1 1;
+              .fileName {
+                font-family: $SOURCE_SANS_PRO_REGULAR;
+                font-size: $FONT_16;
+                color: $TXT_WINE;
+                margin: 0;
+                padding: 0 8px;
+                text-align: left;
+                max-width: 425px;
+                word-break: break-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              span {
+                font-family: $SOURCE_SANS_PRO_REGULAR;
+                font-size: $FONT_14;
+                line-height: 24px;
+              }
+            }
+          }
+          .fileInput {
+            position: absolute;
+            top: 91px;
+            right: 10px;
+            .fileUploadMain {
+              .dropzoneCustom {
+                padding: 0;
+                margin: 0;
+                .txtDropzone {
+                  .uploadtxt {
+                    i {
+                      font-size: $FONT_24;
+                      color: $TXT_BLUE;
+                      font-weight: 500;
+                    }
+                  }
+                  .imgBoxEmpty {
+                    display: flex;
+                    img {
+                      width: 20px;
+                    }
+                    .uploadedImg {
+                      display: flex;
+                      align-items: center;
+                      .fileName {
+                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                        font-size: $FONT_16;
+                        color: $TXT_WINE;
+                        margin: 0;
+                        padding: 0 8px;
+                        text-align: left;
+                        width: 285px;
+                        word-break: break-all;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                      }
+                      span {
+                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                        font-size: $FONT_14;
+                        line-height: 24px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          button {
+            &.custombtn {
+              width: 116px;
+              float: left;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalPopup {
+  &.zoomImg {
+    .modal-dialog {
+      max-width: 752px;
+      height: 449px;
+      min-height: 100%;
+      .modal-content {
+        .modalInner {
+          .modal-body {
+            padding: 24px 24px 24px 24px;
+            display: inline-block;
+            .messageSection {
+              .title {
+                margin: 0;
+                font-size: $FONT_16 !important;
+                font-family: $ROBOTO_REGULAR !important;
+                color: $TXT_BLUE !important;
+                line-height: 30px;
+                padding-bottom: 17px;
+                line-height: 24px;
+                text-align: left !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ticketdetailMain {
+    .jobDetialInner {
+      .paddSection {
+        .customerDetails {
+          flex-direction: column;
+          .columnLeft {
+            width: 100%;
+            justify-content: flex-start;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .ticketdetailMain {
+    .jobDetialInner {
+      .paddSection {
+        .customerDetails {
+          flex-direction: column;
+          .columnLeft {
+            width: 100%;
+            justify-content: flex-start;
+            display: flex;
+            .detailsLeft {
+              width: 50%;
+              .title {
+                width: 100%;
+              }
+            }
+          }
+          .rightSection {
+            padding-right: 0px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 476px) and (max-width: 575px) {
+//   .ticketdetailMain {
+//     .jobDetialInner {
+//       .listingScroll {
+//         .paddSection {
+//           .customerDetails {
+//             .detailsLeft {
+//               .title {
+//                 width: 250px;
+//               }
+//             }
+//           }
+//           .rightSection {
+//             .title {
+//               &:first-child {
+//                 flex-direction: column;
+//                 text-align: right;
+//               }
+//             }
+//           }
+//           .imgSection {
+//             padding: 15px;
+//             .innerDetails {
+//               .txtDetails {
+//                 .rightPart {
+//                   flex-direction: column;
+//                   .left {
+//                     padding-right: 0;
+//                     text-align: right;
+//                   }
+//                 }
+//               }
+//             }
+//             .imagePart {
+//               .imgUl {
+//                 .imgLi {
+//                   width: 100px;
+//                   height: 100px;
+//                   .download {
+//                     .icon-pdf {
+//                       font-size: $FONT_32;
+//                     }
+//                     .icon-doc {
+//                       font-size: $FONT_32;
+//                     }
+//                     .icon-xls {
+//                       font-size: $FONT_32;
+//                     }
+//                     .fileName {
+//                       padding-top: 5px;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (max-width: 475px) {
+//   .ticketdetailMain {
+//     .jobDetialInner {
+//       .listingScroll {
+//         .paddSection {
+//           .customerDetails {
+//             .detailsLeft {
+//               .title {
+//                 width: 190px;
+//               }
+//             }
+//           }
+//           .rightSection {
+//             .title {
+//               &:first-child {
+//                 flex-direction: column;
+//                 text-align: right;
+//               }
+//             }
+//           }
+//           .imgSection {
+//             padding: 12px;
+//             .innerDetails {
+//               .txtDetails {
+//                 flex-direction: column;
+//                 .leftPart {
+//                   width: 100%;
+//                   padding-right: 0;
+//                   .desp {
+//                     padding-top: 16px;
+//                     padding-bottom: 16px;
+//                   }
+//                 }
+//                 .rightPart {
+//                   flex-direction: column;
+//                   align-items: flex-start;
+//                   padding-bottom: 24px;
+//                   .left {
+//                     padding-right: 0;
+//                     text-align: left;
+//                   }
+//                   .right {
+//                     align-items: flex-start;
+//                   }
+//                 }
+//               }
+//             }
+//             .imagePart {
+//               .imgUl {
+//                 .imgLi {
+//                   width: 85px;
+//                   height: 85px;
+//                   .download {
+//                     .icon-pdf {
+//                       font-size: $FONT_32;
+//                     }
+//                     .icon-doc {
+//                       font-size: $FONT_32;
+//                     }
+//                     .icon-xls {
+//                       font-size: $FONT_32;
+//                     }
+//                     .fileName {
+//                       padding-top: 5px;
+//                     }
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

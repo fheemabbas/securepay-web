@@ -1,0 +1,115 @@
+@import "../../../../assets/scss/variables.scss";
+
+.modalPopup {
+    &.paymentHistory {
+        .modal-dialog {
+            max-width: 423px;
+
+            .modal-content {
+                .modalInner {
+                    .modal-body {
+                        position: relative;
+                        padding: 40px 40px;
+
+                        .closeBtn {
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            padding-right: 16px;
+                            padding-top: 16px;
+                        }
+
+                        .payment_history_modal {
+                            float: left;
+                            width: 100%;
+
+                            .headerTitle {
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                                font-size: 20px;
+                                line-height: 150%;
+                                color: #0F4C81;
+                                padding: 0 24px 31px;
+                            }
+
+                            .popupScroll {
+                                height: 124px !important;
+                            }
+
+                            .boxContain {
+                                width: 100%;
+                                float: left;
+                                padding: 0 24px;
+
+                                .cardlist {
+                                    width: 100%;
+                                    float: left;
+                                    padding: 16px 0 0 0;
+
+                                    .disTxt {
+                                        width: 100%;
+                                        float: left;
+                                        margin-bottom: 10px;
+                                        font-size: $FONT_14;
+                                        line-height: 150%;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_WINE;
+                                    }
+
+                                    .dateTxt {
+                                        width: 100%;
+                                        float: left;
+                                        padding: 24px 0 0 0;
+                                        font-size: $FONT_14;
+                                        line-height: 150%;
+                                        font-family: $SOURCE_SANS_PRO_REGULAR;
+                                        color: $TXT_WINE;
+
+                                        span {
+                                            color: $TXT_BLUE;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:480px) {
+    .modalPopup {
+        &.paymentHistory {
+            .modal-dialog {
+                max-width: 94%;
+                margin: 0 3%;
+                min-height: 100%;
+
+                .modal-content {
+                    .modalInner {
+                        .modal-body {
+                            padding: 24px 24px;
+
+                            .payment_history_modal {
+                                .headerTitle {
+                                    padding: 0 0px 16px;
+                                }
+
+                                .boxContain {
+                                    width: 100%;
+                                    float: left;
+                                    padding: 0 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

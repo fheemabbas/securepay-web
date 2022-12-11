@@ -1,0 +1,57 @@
+@import "../../assets/scss/variables.scss";
+.modalPopup {
+		.modal-dialog {
+			max-width: 285px;
+			margin: 0 auto;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 0;
+						.closeBtn {
+							padding-right: 16px;
+							padding-top: 16px;
+							i {
+								font-size: $FONT_14;
+							}
+						}
+						.messageSection {
+							padding: 32px;							
+							.mainTitle {
+								margin: 0;
+								font-size: $FONT_16;
+								font-family: $SOURCE_SANS_PRO_REGULAR;
+								color: $TXT_WINE;
+								text-align: left;
+								padding-bottom: 16px;
+								line-height: 21px;
+							}
+							.innerSection {
+								.custBtn {
+									display: flex;
+									margin: 0;
+									button {
+										width: auto;
+										height: auto;
+										padding: 11px 18px !important;
+										border: 1px solid transparent !important;
+										background: $TXT_BLUE !important;
+									
+								}
+								}
+								.confirmRadio {
+									display: flex;
+									margin-bottom: 10px;
+									    padding-left: 0;
+									.RadioButton {
+										&:first-child {
+											margin-right: 30px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}

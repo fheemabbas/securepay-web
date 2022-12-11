@@ -1,0 +1,1209 @@
+@import "../../../../assets/scss/variables.scss";
+@import "../../../../assets/scss/allModal.scss";
+.disputedetailMain {
+	width: 100%;
+	float: left;
+	padding-top: 60px;
+	margin: 0px;
+	position: relative;
+	overflow: hidden;
+	.container-row{
+		max-width: 1590px;
+		margin: 0 auto;
+	}
+	.backTo {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		cursor: pointer;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-left: 12px;
+		padding-right: 12px;
+		.backTxt {
+			margin: 0;
+			padding-left: 8px;
+			font-family: $SOURCE_SANS_PRO_REGULAR;
+			font-size: $FONT_14;
+			color: $TXT_BLUE_GREY;
+		}
+		i {
+			font-size: $FONT_14;
+			color: $TXT_BLUE_GREY;
+		}
+	}
+	.listingScroll {
+		height: calc(100vh - 130px) !important;
+	}
+	.jobDetails {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 12px;
+		padding-right: 12px;
+		.innerLeft {
+			.txtBtn {
+				display: flex;
+				flex-direction: row;
+				.titleText {
+					min-width: 200px;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					padding-right: 15px;
+					padding-bottom: 8px;
+					font-weight: bold;
+				}
+				button {
+					width: auto;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					font-size: $FONT_14 !important;
+					background: transparent !important;
+					color: $TXT_RED !important;
+					border: 1px solid $TXT_RED !important;
+					line-height: 21px;
+					height: 24px;
+					padding: 0 18px !important;
+				}
+			}
+			.desc {
+				width: 620px;
+				.txt {
+					text-align: left;
+					margin: 0;
+					padding-bottom: 24px;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					font-size: $FONT_14;
+					color: $TXT_WINE;
+					line-height: 21px;
+				}
+			}
+			.detailsLeft {
+				text-align: left;
+				.title {
+					font-size: $FONT_14;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					padding-bottom: 12px;
+					border-bottom: 1px solid $TXT_LIGHTGRAY;
+					margin: 0;
+					margin-bottom: 15px;
+					line-height: 21px;
+				}
+				.bold {
+					color: $TXT_DARKGREY;
+					font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+					margin: 0;
+					padding-bottom: 8px;
+					line-height: 21px;
+					font-size: $FONT_14;
+				}
+			}
+		}
+		.innerRight {
+			.noTxt {
+				margin: 0;
+				font-family: $SOURCE_SANS_PRO_REGULAR;
+				font-size: $FONT_14;
+				color: $TXT_WINE;
+				text-align: right;
+				padding-bottom: 6px;
+				line-height: 21px;
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+			.bold {
+				color: $TXT_DARKGREY;
+				font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+				padding-left: 12px;
+				line-height: 21px;
+			}
+			.btnRight {
+				display: flex;
+				justify-content: flex-end;
+				padding-top: 32px;
+				button {
+					font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+					font-size: $FONT_14 !important;
+					background: transparent !important;
+					color: $TXT_BLUE !important;
+					border: 1px solid $TXT_BLUE !important;
+					line-height: 21px;
+					height: 40px;
+					padding: 0 36px!important;
+					width: auto;
+				}
+			}
+		}
+	}
+	.tableSection {
+		padding-top: 32px;
+		.header {
+			padding-right: 12px;
+			padding-left: 12px;
+			.headingItem {
+				.headingListing {
+					.headingTable {
+						.headingItem {
+							display: flex;
+							align-items: center;
+							width: 15%;
+							&:nth-child(1){
+								width: 20%;
+							}
+							&:nth-child(3){
+								width: 18%;
+							}
+							&:nth-child(4){
+								width: 20%;
+							}
+							&:last-child{
+								width: 12%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.listing {
+			padding-top: 8px;
+			.tableListing {
+				margin-right: 12px;
+				margin-left: 12px;
+				.headingUl {
+					.liPadding{
+						padding: 14px 16px;
+						display: flex;
+						.headingItem {
+							width: 15%;
+							float: left;
+							display: flex;
+							align-items: flex-start;
+							&:nth-child(1){
+								width: 35%;
+								padding-right: 0px;
+								.listColumn{
+									width: 57.3%;
+									padding-right: 15px;
+									&:first-child{
+										white-space: nowrap;
+										overflow: hidden;
+										text-overflow: ellipsis;
+									}
+									&:nth-child(2){
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+										color: $TXT_WINE;
+										width: 42.7%;
+										padding-right: 15px;
+									}
+								}
+							}
+							&:nth-child(2){
+								width: 18%;
+							}
+							&:nth-child(3){
+								width: 20%;
+							}
+							&:last-child{
+								width: 12%;
+							}
+						}
+					}
+					.actionLi{
+						width: 100% !important;
+						margin-top: 0px;
+						padding-right: 0px;
+						.statusMain{
+							display: flex;
+							justify-content: center;
+							border-radius: 0;
+							span{
+								background: transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+		.disputeResultsSection{
+			width: 100%;
+			float: left;
+			padding: 8px 12px 0;
+			margin-bottom: 24px;
+			.titleResult{
+				width: 100%;
+				float: left;
+				font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+				font-size: $FONT_14;
+				line-height: 18px;
+				color: $CHECKBOXBORDER;
+				text-align: left;
+				padding-bottom: 6px;
+			}
+			.innerBox{
+				width: 100%;
+				float: left;
+				background:$BG_WHITE;
+				padding: 8px 16px;
+				-webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				-moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+				border-radius: 8px;
+				ul{
+					display: flex;
+					margin: 0px;
+					padding: 0px;
+					list-style: none;
+					li{
+						float: left;
+						padding: 0 15px 0 0px;
+						margin: 0 0 16px;
+						text-align: left;
+						.titleDispute{
+							font-size: 14px;
+							line-height: 150%;
+							color: #494B68;
+							font-family: $SOURCE_SANS_PRO_REGULAR;
+						}
+						.txtDispute{
+							font-size: 14px;
+							line-height: 150%;
+							color: #494B68;
+							font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+							&.Accepted{
+								color: $TXT_GREEN;
+							}
+							&.Pending{
+								color: $TXT_YELLOW;
+							}
+						}
+						&:first-child{
+							width: 20%;
+						}
+						&:nth-child(2){
+							width: 40%;
+						}
+						&:nth-child(3){
+							width: 12%;
+						}
+						&:nth-child(4){
+							width: 28%;
+						}
+					}
+				}
+			}
+			.btnMain{
+				width: 100%;
+				float: left;
+				margin-top: 24px;
+				text-align: left;
+				.custombtn{
+					width: auto;
+					padding: 12px 24px !important;
+					margin-right: 8px;
+					font-size: $FONT_14;
+					line-height: 150%;
+					font-family: $SOURCE_SANS_PRO_REGULAR;
+					border-radius: 8px !important;
+					&:nth-child(2){
+						border: 1px solid $INPUTREDBORDER !important;
+						color: $TXT_RED;
+						background:$BG_WHITE !important;
+						padding: 11px 24px !important;
+
+					}
+				}
+			}
+		}
+	}
+	.CustomSideBar{
+		.managementStstem{
+			width: 100%;
+			float: left;
+			padding: 0px 40px;
+			.disputeTitle{
+				width: 100%;
+				float: left;
+				font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+				font-size: $FONT_20;
+				line-height: 150%;
+				color:$TXT_BLUE;
+				text-align: left;
+			}
+			ul{
+				width: 100%;
+				float: left;
+				margin: 0px;
+				padding: 40px 0 0 0;
+				list-style: none;
+				li{
+					padding: 0px;
+					margin: 0px;
+					float: left;
+					text-align: left;
+					margin-bottom: 40px;
+					&:nth-child(odd){
+						width: 60%;
+					}
+					&:nth-child(even){
+						width: 40%;
+					}
+					.ListTitle{
+						font-size:$FONT_14;
+						line-height: 16px;
+						color: $TXT_WINE;
+						padding: 0 0 3px;
+					}
+					.ListTxt{
+						font-weight: 600;
+						font-size:$FONT_14;
+						line-height: 150%;
+						color: $TXT_DARKGREY;
+					}
+				}	
+			}
+			
+		}
+		.messageChatView {
+			width: 100%;
+			float: left;
+			margin: 0 auto;
+			background: white;
+			border-radius: 4px;
+			position: relative;
+			display: block;
+			.message-head {
+				position: sticky;
+				top: 0;
+				padding: 16px;
+				background: white;
+				.close-pbtn {
+				padding-right: 16px;
+				vertical-align: middle;
+				}
+				.tittle-msg {
+				font-weight: 500;
+				line-height: 20px;
+				vertical-align: middle;
+				}
+				.download-pbtn {
+				float: right;
+				vertical-align: middle;
+				}
+			}
+			.ChatContent {
+				padding: 0 40px 40px;
+				height: calc(100vh - 423px);
+				overflow-y: scroll;
+				&::-webkit-scrollbar {
+				display: none;
+				}
+				.date-content {
+				text-align: center;
+				margin: 30px 0 36px;
+				span {
+					background: #e6e6e6;
+					border-radius: 12px;
+					padding: 2px 15px;
+				}
+				}
+			}
+		}
+	}
+	
+}
+
+	.RejectionCommentsModal{
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px;
+						display: table;
+						width: 100%;
+						.closeBtn{
+							top:0;
+							right: 0;
+						}
+						.rejectionComments{
+							.headerTitle{
+								padding: 0;
+							}
+							.boxContain{
+								padding: 0;
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+			}
+	}
+}
+.ModificationModal{
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px;
+						display: table;
+						width: 100%;
+						.closeBtn{
+							top:0;
+							right: 0;
+						}
+						.milestoneModification{
+							.headerTitle{
+								padding: 0;
+							}
+							.boxContain{
+								padding: 0;
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+			}
+	}
+}
+.MilestoneAmountModal{
+		.modal-dialog {
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 40px 16px !important;						
+						display: table !important;
+						width: 100%;
+						.closeBtn{
+							top:0 !important;
+							right: 0 !important;
+						}
+						.milestoneModification{
+							.headerTitle{
+								padding: 0 ;
+							}
+							.boxContain{
+								padding: 0;
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+			}
+	}
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px){
+	.disputedetailMain{
+		.tableSection{
+			.header{
+				.headingItem{
+					.headingListing{
+						.headingTable{
+							.headingItem {
+								display: flex;
+								align-items: center;
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									width: 25%;
+								}
+								&:nth-child(4){
+									width: 20%;
+								}
+								&:nth-child(5){
+									width: 22%;
+								}
+								&:last-child{
+									width: 13%;
+								}
+							}
+						} 
+					}
+				}
+			}
+			.listing{
+				.tableListing{
+					.headingUl{
+						.liPadding{
+							.headingItem{
+								&:first-child{
+									width: 20%;
+									flex-direction: column;
+									padding-right: 15px;
+									.listColumn{
+										width: 100% !important;
+										padding-right: 0px !important;
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount: ";
+												position: relative;
+											}
+										}
+									}
+								}
+								&:nth-child(2){
+									width: 25%;
+								}
+								&:nth-child(3){
+									width: 20%;
+								}
+								&:nth-child(4){
+									width: 22%;
+								}
+								&:last-child{
+									width: 13%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.disputeResultsSection{
+				.innerBox{
+					ul{
+						li{
+							&:first-child{
+								width: 20%;
+							}
+							&:nth-child(2){
+								width: 40%;
+							}
+							&:nth-child(3){
+								width: 15%;
+							}
+							&:nth-child(4){
+								width: 25%;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px){
+	.disputedetailMain{
+		.jobDetails{
+			.innerLeft{
+				width: 50%;
+				.desc {
+					width: 100%;
+				}
+			}
+			.innerRight{
+				width: 50%;
+			}
+		}
+		.tableSection{
+			.header{
+				.headingItem{
+					.headingListing{
+						.headingTable{
+							.headingItem {
+								display: flex;
+								align-items: center;
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									width: 25%;
+									&::before{
+										content: 'Escrowed / Paid Amount ';
+										position: relative;
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(4){
+									width: 20%;
+								}
+								&:nth-child(5){
+									width: 22%;
+								}
+								&:last-child{
+									width: 13%;
+								}
+							}
+						} 
+					}
+				}
+			}
+			.listing{
+				.tableListing{
+					.headingUl{
+						.liPadding{
+							.headingItem{
+								&:first-child{
+									width: 20%;
+									flex-direction: column;
+									padding-right: 15px;
+									.listColumn{
+										width: 100% !important;
+										padding-right: 0px !important;
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount: ";
+												position: relative;
+											}
+										}
+									}
+								}
+								&:nth-child(2){
+									width: 25%;
+								}
+								&:nth-child(3){
+									width: 20%;
+								}
+								&:nth-child(4){
+									width: 22%;
+								}
+								&:last-child{
+									width: 13%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.disputeResultsSection{
+				.innerBox{
+					ul{
+						li{
+							&:first-child{
+								width: 20%;
+							}
+							&:nth-child(2){
+								width: 40%;
+							}
+							&:nth-child(3){
+								width: 15%;
+							}
+							&:nth-child(4){
+								width: 25%;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+	.disputedetailMain{
+		.jobDetails{
+			.innerLeft{
+				width: 40%;
+				.desc {
+					width: 100%;
+					.txt{
+						padding-bottom: 10px;
+					}
+				}
+			}
+			.innerRight{
+				width: 60%;
+			}
+		}
+		.tableSection{
+			.header{
+				.headingItem{
+					.headingListing{
+						.headingTable{
+							.headingItem {
+								display: flex;
+								align-items: center;
+								&:first-child{
+									width: 35%;
+									&::before{
+										content:'Milestone Details';
+										position: relative;
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								&:nth-child(2){
+									display: none;
+								}
+								&:nth-child(3){
+									display: none;
+								}
+								&:nth-child(4){
+									width: 25%;
+								}
+								&:nth-child(5){
+									width: 20%;
+								}
+								&:last-child{
+									width: 20%;
+								}
+							}
+						} 
+					}
+				}
+			}
+			.listing{
+				.tableListing{
+					.headingUl{
+						.liPadding{
+							position: relative;
+							.headingItem{
+								&:first-child{
+									width: 35%;
+									flex-direction: column;
+									padding-right: 15px;
+									.listColumn{
+										width: 100% !important;
+										padding-right: 0px !important;
+										&:nth-child(2){
+											&::before{
+												content: "Milestone Amount:";
+												position: relative;
+												margin-right: 5px;
+											}
+										}
+									}
+								}
+								&:nth-child(2){
+									width: 100%;
+									position: absolute;
+									left: 0px;
+									padding-left: 16px;
+									top: 55px;
+									&::before{
+										content: "Escrowed/Paid Amount:";
+										position: relative;
+										margin-right: 5px;
+									}
+								}
+								&:nth-child(3){
+									width: 25%;
+									
+								}
+								&:nth-child(4){
+									width: 20%;
+								}
+								&:last-child{
+									width: 20%;
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.disputeResultsSection{
+				.innerBox{
+					ul{
+						li{
+							&:first-child{
+								width: 20%;
+							}
+							&:nth-child(2){
+								width: 40%;
+							}
+							&:nth-child(3){
+								width: 20%;
+							}
+							&:nth-child(4){
+								width: 20%;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+	.disputedetailMain{
+		.jobDetails{
+			.innerLeft{
+				width: 40%;
+				.desc {
+					width: 100%;
+					.txt{
+						padding-bottom: 10px;
+					}
+				}
+			}
+			.innerRight{
+				width: 60%;
+			}
+		}
+		.tableSection{
+			.header{
+				.headingItem{
+					.headingListing{
+						.headingTable{
+							.headingItem {
+								display: flex;
+								align-items: center;
+								display: none;
+								&:first-child{
+									width: 100%;
+									display: flex;
+									&::before{
+										content:'Dispute Management Details';
+										position: relative;
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								
+							}
+						} 
+					}
+				}
+			}
+			.listing{
+				.tableListing{
+					.headingUl{
+						.liPadding{
+							position: relative;
+							flex-direction: column;
+							display: block;
+							.headingItem{
+								flex-direction: column;
+								margin-bottom: 20px;
+								&:first-child{
+									width: 100%;
+									flex-direction: row;
+									padding-right: 0px;
+									.listColumn{
+										width: 50% !important;
+										float: left;
+										flex-direction: column;
+										display: flex;
+										padding-right: 15px !important;
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+										&::before{
+											content: "Milestone Title";
+											font-size: $FONT_14;
+											color: $TXT_BLUE;
+											position: relative;
+											margin-right: 0px;
+											width: 100%;
+											float: left;
+											font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+										}
+										&:nth-child(2){
+											padding-right: 0px !important;
+											&::before{
+												content: "Milestone Amount";
+												font-size: $FONT_14;
+												color: $TXT_BLUE;
+												position: relative;
+												margin-right: 0px;
+												width: 100%;
+												float: left;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+											}
+										}
+									}
+								}
+								&:nth-child(2){
+									width: 50%;
+									float: left;
+									&::before{
+										content: "Escrowed Amount / Paid Amount";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+								&:nth-child(3){
+									width: 50%;
+									float: left;
+									&::before{
+										content: "Milestone Description";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+									
+								}
+								&:nth-child(4){
+									width: 50%;
+									&::before{
+										content: "Expected Completion Date";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+								&:last-child{
+									width: 50%;
+									&::before{
+										content: "Status";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										text-align: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.disputeResultsSection{
+				.innerBox{
+					ul{
+						display: block;
+						li{
+							&:first-child{
+								width: 50%;
+							}
+							&:nth-child(2){
+								width: 50%;
+							}
+							&:nth-child(3){
+								width: 50%;
+							}
+							&:nth-child(4){
+								width: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (max-width:575px){
+	.disputedetailMain{
+		.jobDetails{
+			display: flex;
+			flex-direction: column;
+			.innerLeft{
+				width: 100%;
+				.desc {
+					width: 100%;
+					.txt{
+						padding-bottom: 10px;
+					}
+				}
+			}
+			.innerRight{
+				width: 100%;
+				padding-top: 5px;
+				.btnRight {
+					padding-top: 16px;
+				}
+				.noTxt {
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+		}
+		.tableSection{
+			padding-top: 16px;
+			.header{
+				.headingItem{
+					.headingListing{
+						.headingTable{
+							.headingItem {
+								display: flex;
+								align-items: center;
+								display: none;
+								&:first-child{
+									width: 100%;
+									display: flex;
+									&::before{
+										content:'Dispute Management Details';
+										position: relative;
+									}
+									.headingTitle{
+										display: none;
+									}
+								}
+								
+							}
+						} 
+					}
+				}
+			}
+			.listing{
+				.tableListing{
+					.headingUl{
+						.liPadding{
+							position: relative;
+							flex-direction: column;
+							display: block;
+							.headingItem{
+								flex-direction: column;
+								margin-bottom: 20px;
+								&:first-child{
+									width: 100%;
+									flex-direction: row;
+									padding-right: 0px;
+									.listColumn{
+										width: 50% !important;
+										float: left;
+										flex-direction: column;
+										display: flex;
+										padding-right: 15px !important;
+										font-family: $SOURCE_SANS_PRO_REGULAR;
+										&::before{
+											content: "Milestone Title";
+											font-size: $FONT_14;
+											color: $TXT_BLUE;
+											position: relative;
+											margin-right: 0px;
+											width: 100%;
+											float: left;
+											font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+										}
+										&:nth-child(2){
+											padding-right: 0px !important;
+											&::before{
+												content: "Milestone Amount";
+												font-size: $FONT_14;
+												color: $TXT_BLUE;
+												position: relative;
+												margin-right: 0px;
+												width: 100%;
+												float: left;
+												font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+											}
+										}
+									}
+								}
+								&:nth-child(2){
+									width: 50%;
+									float: left;
+									&::before{
+										content: "Escrowed Amount / Paid Amount";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+								&:nth-child(3){
+									width: 50%;
+									float: left;
+									&::before{
+										content: "Milestone Description";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+									
+								}
+								&:nth-child(4){
+									width: 50%;
+									&::before{
+										content: "Expected Completion Date";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+								&:last-child{
+									width: 50%;
+									&::before{
+										content: "Status";
+										position: relative;
+										font-size: $FONT_14;
+										color: $TXT_BLUE;
+										margin-right: 0px;
+										width: 100%;
+										float: left;
+										text-align: left;
+										font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+									}
+								}
+							}
+						} 
+					} 
+				} 
+			} 
+			.disputeResultsSection{
+				.innerBox{
+					ul{
+						display: block;
+						li{
+							&:first-child{
+								width: 100%;
+							}
+							&:nth-child(2){
+								width: 100%;
+							}
+							&:nth-child(3){
+								width: 100%;
+							}
+							&:nth-child(4){
+								width: 100%;
+							}
+						}
+					}
+				}
+				.btnMain{
+					.custombtn{
+						width: 100%;
+						margin-right: 0px;
+						margin-bottom: 8px;
+					}
+				}
+			}
+		}
+		.CustomSideBar{
+			top: 0;
+			height: 100% !important;
+			.sidebarInner{
+				.headerBar {
+					padding: 10px 20px 5px;
+				}
+			} 
+			.managementStstem{
+				padding: 0 20px;
+				ul{
+					padding: 20px 0 0 0;
+					li{
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.messageChatView{
+				.ChatContent {
+					padding: 0 40px 40px;
+					height: calc(100vh - 255px) !important;
+					overflow-y: scroll;
+					
+				}
+			} 
+		} 
+	}
+}

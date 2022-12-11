@@ -1,0 +1,12 @@
+@import "../../../assets/scss/variables.scss";
+.customProgressBar {
+	width: 160px;
+}
+.textStyle {
+	display: flex;
+	flex-direction: column;
+	p {
+		margin: 0;
+		font-family: $SOURCE_SANS_PRO_REGULAR;
+	}
+}

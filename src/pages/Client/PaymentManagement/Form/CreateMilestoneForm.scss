@@ -1,0 +1,124 @@
+@import "../../../../assets/scss/variables.scss";
+.modalPopup {
+	&.addInterimPayment {
+		.modal-dialog {
+			max-width: 423px;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						position: relative;
+						.closeBtn {
+							position: absolute;
+							right: 0;
+							top: 0;
+						}
+						.createMile {
+							padding: 40px;
+							display: table;
+							width: 100%;
+							.form {
+								.titleText {
+									line-height: 24px;
+								}
+								.filterItem {
+									.textField {
+										textarea {
+											height: 108px;
+											resize: none;
+										}
+									}
+									.custombtnfield {
+										padding-top: 8px;
+										.custombtn {
+											width: 116px;
+											float: left;
+											padding: 11px 0!important;
+											line-height: 24px;
+											border: 1px solid transparent !important;
+											border-radius: 8px;
+											&:nth-child(2) {
+												margin-left: 8px;
+												background: transparent !important;
+												color: $TXT_BLUE !important;
+												border-color: $BG_BLUE !important;
+												height: 46px;
+											}
+										}
+									}
+								}
+								.calenderMain {
+									width: 100%;
+									margin-bottom: 16px;
+									.react-datepicker-wrapper {
+										display: block;
+										input {
+											background: $BG_WHITE;
+											font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+											color: $TXT_WINE;
+											font-size: $FONT_16;
+											padding: 11px 12px;
+											height: auto;
+											outline: 0px;
+											width: 100%;
+											border-radius: 5px;
+											border: 1px solid $INPUTBORDER;
+											outline: none;
+											-webkit-appearance: none;
+											-moz-appearance: none;
+											&::-webkit-input-placeholder {
+												color: $TXT_LIGHTGRAY;
+											}
+											&::-moz-placeholder {
+												color: $TXT_LIGHTGRAY;
+											}
+											&:-ms-input-placeholder {
+												color: $TXT_LIGHTGRAY;
+											}
+											&:-moz-placeholder {
+												color: $TXT_LIGHTGRAY;
+											}
+											&:focus {
+												outline: 0;
+												box-shadow: none;
+												border-color: $INPUTBORDER;
+											}
+											&.error {
+												border-color: $INPUTREDBORDER;
+											}
+										}
+									}
+									.react-datepicker-popper {
+										width: auto;
+									}
+								}
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width:480px){
+	.modalPopup{
+		&.addInterimPayment{
+			.modal-dialog{
+				max-width: 94%;
+				margin: 0 3%;
+				min-height: 100%;
+				.modal-content{
+					.modalInner{
+						.modal-body{
+							.createMile{
+								padding: 24px;
+							}
+						} 
+					} 
+				} 
+			}
+		} 
+	}
+}

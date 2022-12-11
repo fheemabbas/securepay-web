@@ -1,0 +1,324 @@
+@import "../../../assets/scss/variables.scss";
+
+.signupemailPage {
+    position: relative;
+    width: 100%;
+    float: left;
+
+    .signupemailCenter {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .signupemailBox {
+            max-width: 438px;
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+            background-color: $BG_WHITE;
+            padding: 40px;
+            display: block;
+            border-radius: 8px;
+            -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            .icon-yatapay-brand {
+                font-size: 66px;
+                color: $BG_GREEN;
+            }
+
+            h1 {
+                margin: 22px 0 8px;
+                font-size: $FONT_24;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                text-align: left;
+            }
+
+            p {
+                margin: 0 0 15px 0;
+                font-size: $FONT_16;
+                color: $TXT_WINE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                text-align: left;
+
+                &.welcome_txt {
+                    margin: 0 0 25px 0;
+                }
+            }
+
+            .subheader {
+                margin: 0 0 30px 0;
+                font-size: $FONT_16;
+                color: $TXT_WINE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                text-align: left;
+                width: 100%;
+                float: left;
+            }
+
+            .formSection {
+                display: block;
+                position: relative;
+                width: 100%;
+                float: left;
+
+                .categoryBtn {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .btnCustom {
+                        width: 100%;
+                        border-radius: 5px;
+                        border: 1px solid;
+                        font-size: $FONT_20;
+                        line-height: normal;
+                        color: $BG_WHITE;
+                        height: 100px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        outline: none;
+
+                        &.individual {
+                            background-color: $BG_BLUE;
+                            margin-bottom: 24px;
+                            border: 1px solid #B8B8B8;
+                        }
+
+                        &.organisation {
+                            background-color: $BG_GREYGREEN;
+                            border: 1px solid #2D5F5D;
+                        }
+                    }
+                }
+
+                .react-datepicker-popper {
+                    width: calc(100% - 20px);
+                }
+
+                .nav-tabs {
+                    border-bottom: none;
+
+                    .nav-item {
+                        border-radius: 0;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                        font-size: $FONT_16;
+                        color: $TXT_WINE;
+                        border-color: transparent;
+                        outline: none;
+                        width: 50%;
+                        background-color: $BG_BLUE_LIGHT;
+                        padding: 12px 0;
+
+                        &:first-child {
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+
+                        &:last-child {
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+
+                        &.active {
+                            border-bottom-color: $BG_BLUE;
+                            color: $TXT_WHITE;
+                            background-color: $BG_BLUE;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    width: 100%;
+                    float: left;
+                    position: relative;
+                    margin-top: 16px;
+
+                    .title_tab {
+                        color: $TXT_WINE;
+                        font-size: $FONT_16;
+                        line-height: 20px;
+                        text-align: left;
+                        margin: 10px 0 30px;
+                    }
+
+                    .terms-condition {
+                        text-align: left;
+                        margin-bottom: 20px;
+                        color: $TXT_WINE;
+                        display: flex;
+
+                        .checkboxMain {
+                            label {
+                                font-size: $FONT_14;
+                            }
+
+                            input:checked+label:after {
+                                top: 5px !important;
+                            }
+                        }
+
+                        a {
+                            font-size: $FONT_14;
+                            padding: 2px 4px 0 4px;
+                        }
+                    }
+
+                    .btnCustomStarted {
+                        width: 100%;
+                        color: $TXT_WHITE;
+                        background-color: $BG_YELLOW;
+                        border-radius: 5px;
+                        padding: 10px 14px;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+
+                        &:disabled {
+                            background: $BG_LIGHTGRAY;
+                            color: $TXT_DISABLEDGRAY;
+                            opacity: 1 !important;
+
+                            // cursor: not-allowed;
+                            &:not(:disabled) {
+                                background: $BG_LIGHTGRAY;
+                                color: $TXT_DISABLEDGRAY;
+                            }
+
+                            &:not(.disabled):active {
+                                background: $BG_LIGHTGRAY;
+                                color: $TXT_DISABLEDGRAY;
+                            }
+
+                            &:hover {
+                                background: $BG_LIGHTGRAY;
+                                color: $TXT_DISABLEDGRAY;
+                            }
+
+                            &:focus {
+                                outline: none !important;
+                                box-shadow: none !important;
+                            }
+
+                            &.active {
+                                box-shadow: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .back {
+                margin-top: 10px;
+                text-align: center;
+                width: 100%;
+                float: left;
+
+                p {
+                    margin: 0;
+                    color: $TXT_GRAY;
+                    font-size: $FONT_16;
+                    font-family: $SOURCE_SANS_PRO_REGULAR;
+
+                    .newuser {
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                        font-size: $FONT_16;
+                        color: $TXT_GRAY;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .signupemailPage {
+        .signupemailCenter {
+            height: 100%;
+
+            .signupemailBox {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .signupemailPage {
+        .signupemailCenter {
+            height: 100%;
+            align-items: center;
+
+            .signupemailBox {
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .signupemailPage {
+        .signupemailCenter {
+            height: auto;
+            align-items: flex-start;
+
+            .signupemailBox {
+                width: 92%;
+                margin-left: 4%;
+                margin-right: 4%;
+                padding: 40px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .signupemailPage {
+        .signupemailCenter {
+            height: auto;
+
+            .signupemailBox {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 92%;
+                margin-left: 4%;
+                margin-right: 4%;
+                padding: 40px 20px;
+
+                .formmain {
+                    .formleft {
+                        width: 100%;
+                        padding-right: 0px;
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+
+                    .formright {
+                        width: 100%;
+                        padding-left: 0px;
+                    }
+                }
+
+                .signbtnfield {
+                    padding-right: 0px;
+
+                    .custombtn {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

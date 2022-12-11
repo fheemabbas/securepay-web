@@ -1,0 +1,916 @@
+@import "../../../assets/scss/variables.scss";
+
+.signGooglePage {
+  position: relative;
+  width: 100%;
+  float: left;
+
+  .signGoogleCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .signGoogleBox {
+      max-width: 425px;
+      width: 100%;
+      background-color: $BG_WHITE;
+      padding: 40px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      display: block;
+      border-radius: 8px;
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+      position: relative;
+
+      .logo {
+        margin-bottom: 60px;
+      }
+
+      .icon-yatapay-brand {
+        font-size: 66px;
+        color: $BG_GREEN;
+      }
+
+      .skip_txt {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background: transparent;
+        outline: none;
+        color: #0f4c81;
+        text-transform: capitalize;
+        padding: 0;
+      }
+
+      h1 {
+        margin: 22px 0;
+        font-size: $FONT_24;
+        color: $TXT_BLUE;
+        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+        text-align: left;
+      }
+
+      p {
+        margin: 0 0 16px 0;
+        font-size: $FONT_16;
+        color: $TXT_WINE;
+        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+        text-align: left;
+      }
+
+      .formSection {
+        .signup_google {
+          .form_inner {
+            .fieldText {
+              width: 100%;
+              float: left;
+              font-size: $FONT_16;
+              line-height: 24px;
+              color: $TXT_GREEN;
+              font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+              margin-top: 24px;
+              margin-bottom: 40px;
+
+              span {
+                width: 100%;
+                float: left;
+                font-family: $SOURCE_SANS_PRO_REGULAR;
+                color: $TXT_BLUE_GREY;
+              }
+            }
+
+            section {
+              width: 100%;
+              position: inherit;
+              display: none;
+
+              &.showStep2 {
+                padding-bottom: 0px;
+                // height: 332px;
+                flex-direction: column;
+
+                .inputLabel {
+                  margin: 0px;
+                  padding-bottom: 16px;
+                  font-size: $FONT_24;
+                }
+              }
+
+              &.active1 {
+                display: inline-flex;
+                height: auto;
+              }
+
+              &.active2 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                justify-content: center;
+
+                .fieldText {
+                  margin-top: 40px;
+                  margin-bottom: 40px;
+                }
+
+                // .react-datepicker-popper{
+                // 	position: relative !important;
+                // 	transform: none !important;
+                // }
+              }
+
+              &.active3 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+
+                .fieldText {
+                  margin-top: 24px;
+                  margin-bottom: 40px;
+                }
+              }
+
+              &.active4 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+
+                .fieldText {
+                  margin-top: 24px;
+                  margin-bottom: 40px;
+                }
+              }
+
+              &.active5 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+
+                .fieldText {
+                  margin-top: 40px;
+                  margin-bottom: 40px;
+                }
+              }
+
+              &.active6 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                z-index: 1;
+                padding-bottom: 0px;
+                height: auto;
+                top: 0px;
+
+                .inputLabel {
+                  width: 100%;
+                  text-align: left;
+                }
+
+                .txt {
+                  padding-top: 16px;
+                  font-size: $FONT_16;
+                  line-height: 24px;
+                  color: $TXT_WINE;
+                  font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                }
+
+                .customDropdown {
+                  .dropdown {
+                    .dropdown-menu {
+                      .dropdownData {
+                        max-height: 175px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.active7 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+
+                .fileInput {
+                  .fileUploadMain {
+                    .dropzoneCustom {
+                      border: 1px dashed $TXT_BLUE;
+                      height: 180px;
+                      padding: 0;
+                      overflow: hidden;
+
+                      .imgBoxEmpty {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 178px;
+
+                        .uploadedImg {
+                          height: 100%;
+                          width: 100%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+
+                          img {
+                            width: 100%;
+                            height: 178px;
+                            object-fit: contain;
+                            display: block;
+                          }
+                        }
+
+                        .uploadtxt {
+                          font-size: $FONT_14;
+                          color: $TXT_WINE;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .signbtnfield {
+                  width: 100%;
+                  float: left;
+                  margin: 16px 0 0px 0;
+                  padding-left: 0px;
+                  display: flex;
+                  flex-direction: column-reverse;
+                  position: relative;
+                  align-items: flex-start;
+
+                  .custombtn {
+                    &.back {
+                      color: $TXT_GRAY !important;
+                      width: auto !important;
+                      padding: 0px !important;
+                      background-color: $BG_WHITE !important;
+                      float: left;
+                      margin-bottom: 0px;
+                    }
+                  }
+
+                  .custombtn {
+                    background-color: $BG_YELLOW !important;
+                    color: $TXT_WHITE !important;
+                    padding: 12px 12px !important;
+                    border-radius: 5px !important;
+                    margin-bottom: 20px;
+                    width: 100% !important;
+
+                    &:disabled {
+                      background: $BG_LIGHTGRAY !important;
+                      color: $TXT_DISABLEDGRAY !important;
+                      opacity: 1 !important;
+
+                      // cursor: not-allowed;
+                      &:not(:disabled) {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY;
+                      }
+
+                      &:not(.disabled):active {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:hover {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:focus {
+                        outline: none !important;
+                        box-shadow: none !important;
+                      }
+
+                      &.active {
+                        box-shadow: none !important;
+                      }
+                    }
+                  }
+
+                  a {
+                    display: flex;
+                  }
+                }
+
+                .fileInput {
+                  .fileUploadMain {
+                    .dropzoneCustom {
+                      border: 1px dashed $TXT_BLUE;
+                      height: 180px;
+                      padding: 0;
+                      overflow: hidden;
+
+                      .imgBoxEmpty {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 178px;
+
+                        .uploadtxt {
+                          font-size: $FONT_14;
+                          color: $TXT_WINE;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.active11 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+                margin-top: -45px;
+
+                .inputLabel {
+                  text-align: left;
+                  font-size: $FONT_22;
+                }
+
+                .txt {
+                  padding-bottom: 24px;
+                }
+
+                .clienttyperight {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  margin-bottom: 40px;
+                  margin-top: 20px;
+                  flex-direction: column;
+
+                  .RadioButton {
+                    margin-bottom: 15px;
+
+                    &:first-child {
+                      margin-right: 15px;
+                    }
+                  }
+                }
+
+                .fileInput {
+                  .fileUploadMain {
+                    .dropzoneCustom {
+                      border: 1px dashed $TXT_BLUE;
+                      height: 180px;
+                      padding: 0;
+                      overflow: hidden;
+
+                      .imgBoxEmpty {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 178px;
+
+                        .uploadtxt {
+                          font-size: $FONT_14;
+                          color: $TXT_WINE;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &.active12 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+                margin-top: -40px;
+
+                .inputLabel {
+                  text-align: center;
+                }
+
+                .txt {
+                  padding-bottom: 24px;
+                }
+
+                .signbtnfield {
+                  width: 100%;
+                  float: left;
+                  margin: 16px 0 0px 0;
+                  padding-left: 0px;
+                  display: flex;
+                  position: relative;
+                }
+              }
+
+              &.active13 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: 450px;
+                margin-top: -40px;
+
+                &.detailsheading {
+                  height: 600px !important;
+                }
+
+                .inputLabel {
+                  text-align: left;
+                  font-size: 20px;
+                  line-height: 24px;
+
+                  &.title_descreption {
+                    text-align: center;
+                    font-size: $FONT_24;
+                    color: $TXT_YELLOW;
+                  }
+                }
+
+                .calenderMain {
+                  margin-bottom: 16px;
+                }
+
+                .txt {
+                  padding-bottom: 24px;
+                }
+
+                .signbtnfield {
+                  width: 100%;
+                  float: left;
+                  margin: 16px 0 0px 0;
+                  padding-left: 0px;
+                  display: flex;
+                  flex-direction: column-reverse;
+                  position: relative;
+                  align-items: flex-start;
+
+                  .custombtn {
+                    &.back {
+                      color: $TXT_GRAY !important;
+                      width: auto !important;
+                      padding: 0px !important;
+                      background-color: $BG_WHITE !important;
+                      float: left;
+                      margin-bottom: 0px;
+                    }
+                  }
+
+                  .custombtn {
+                    background-color: $BG_YELLOW !important;
+                    color: $TXT_WHITE !important;
+                    padding: 12px 12px !important;
+                    border-radius: 5px !important;
+                    margin-bottom: 20px;
+                    width: 100% !important;
+
+                    &:disabled {
+                      background: $BG_LIGHTGRAY !important;
+                      color: $TXT_DISABLEDGRAY !important;
+                      opacity: 1 !important;
+
+                      // cursor: not-allowed;
+                      &:not(:disabled) {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY;
+                      }
+
+                      &:not(.disabled):active {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:hover {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:focus {
+                        outline: none !important;
+                        box-shadow: none !important;
+                      }
+
+                      &.active {
+                        box-shadow: none !important;
+                      }
+                    }
+                  }
+
+                  a {
+                    display: flex;
+                  }
+                }
+
+                .customUBOSCroll {
+                  .paddingScroll {
+                    padding-right: 14px;
+                  }
+                }
+              }
+
+              &.active14 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: 450px;
+                margin-top: -40px;
+
+                .inputLabel {
+                  text-align: left;
+                  font-size: 20px;
+                  line-height: 24px;
+
+                  &.title_descreption {
+                    text-align: center;
+                    font-size: $FONT_24;
+                    color: $TXT_YELLOW;
+                  }
+                }
+
+                .calenderMain {
+                  margin-bottom: 16px;
+                }
+
+                .txt {
+                  padding-bottom: 24px;
+                }
+
+                .back {
+                  color: $TXT_GRAY !important;
+                }
+
+                .signbtnfield {
+                  width: 100%;
+                  float: left;
+                  margin: 16px 0 0px 0;
+                  padding-left: 0px;
+                  display: flex;
+                  flex-direction: column-reverse;
+                  position: relative;
+                  align-items: flex-start;
+
+                  .custombtn {
+                    &.back {
+                      color: $TXT_GRAY !important;
+                      width: auto !important;
+                      padding: 0px !important;
+                      background-color: $BG_WHITE !important;
+                      float: left;
+                      margin-bottom: 0px;
+                    }
+                  }
+
+                  .custombtn {
+                    background-color: $BG_YELLOW !important;
+                    color: $TXT_WHITE !important;
+                    padding: 12px 12px !important;
+                    border-radius: 5px !important;
+                    margin-bottom: 20px;
+                    width: 100% !important;
+
+                    &:disabled {
+                      background: $BG_LIGHTGRAY !important;
+                      color: $TXT_DISABLEDGRAY !important;
+                      opacity: 1 !important;
+
+                      // cursor: not-allowed;
+                      &:not(:disabled) {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY;
+                      }
+
+                      &:not(.disabled):active {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:hover {
+                        background: $BG_LIGHTGRAY !important;
+                        color: $TXT_DISABLEDGRAY !important;
+                      }
+
+                      &:focus {
+                        outline: none !important;
+                        box-shadow: none !important;
+                      }
+
+                      &.active {
+                        box-shadow: none !important;
+                      }
+                    }
+                  }
+
+                  a {
+                    display: flex;
+                  }
+                }
+
+                .customUBOSCroll {
+                  .paddingScroll {
+                    padding-right: 14px;
+                  }
+                }
+              }
+
+              &.active8 {
+                display: inline-flex;
+                background-color: $BG_WHITE;
+                height: auto;
+
+                .inputLabel {
+                  text-align: center;
+                  padding-bottom: 24px;
+                }
+
+                .txt {
+                  padding-bottom: 24px;
+                }
+              }
+
+              .country_Selection {
+                position: relative;
+
+                &.filled {
+                  input {
+                    padding: 11px 24px 11px 16px;
+                  }
+                }
+
+                .flaimg {
+                  position: absolute;
+                  left: 15px;
+                  top: 16px;
+                  margin: 0;
+                  display: none;
+                }
+
+                .flaimg~div {
+                  position: relative;
+                  margin-bottom: 16px;
+
+                  &::before {
+                    position: absolute;
+                    right: 14px;
+                    top: 24px;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                  }
+
+                  &::before {
+                    border-top: 5px solid #4d4d4d;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 0;
+                  }
+                }
+
+                input {
+                  cursor: pointer;
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 11px 24px 11px 16px;
+                  font-size: $FONT_16;
+                  font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                  color: $TXT_WINE;
+                  border: 1px solid $INPUTBORDER;
+                  border-radius: 4px;
+                  background: transparent;
+                  appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  -ms-appearance: none;
+                  -o-appearance: none;
+
+                  &:focus {
+                    outline: none;
+                    box-shadow: none;
+                  }
+
+                  &::-webkit-input-placeholder {
+                    color: $TXT_LIGHTGRAY;
+                  }
+
+                  &::-moz-placeholder {
+                    color: $TXT_LIGHTGRAY;
+                  }
+
+                  &:-ms-input-placeholder {
+                    color: $TXT_LIGHTGRAY;
+                  }
+
+                  &:-moz-placeholder {
+                    color: $TXT_LIGHTGRAY;
+                  }
+                }
+
+                .country-list {
+                  padding: 10px 16px;
+                  font-family: $SOURCE_SANS_PRO_REGULAR;
+                  // font-weight: 600;
+                  font-size: $FONT_16;
+                  color: $TXT_WINE;
+                  cursor: pointer;
+                  text-align: left;
+
+                  span {
+                    display: none;
+                  }
+
+                  &.active,
+                  &:hover {
+                    background-color: $BG_BLUE;
+                    color: $TXT_WHITE;
+                  }
+
+                  span {
+                    position: relative;
+                    top: 1px;
+                    margin-right: 5px;
+                  }
+                }
+              }
+
+              .form-title {
+                font-size: $FONT_16;
+                line-height: 19px;
+                color: $TXT_BLUE;
+                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                padding: 0 0 16px;
+                margin: 0% !important;
+              }
+            }
+          }
+        }
+      }
+
+      .clienttype {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .clienttypeleft {
+          p {
+            margin: 0;
+            color: $TXT_BLUE;
+          }
+        }
+
+        .clienttyperight {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .RadioButton {
+            &:first-child {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+
+      .terms-condition {
+        text-align: left;
+        margin-bottom: 20px;
+        color: $TXT_WINE;
+        display: flex;
+
+        .checkboxMain {
+          label {
+            font-size: $FONT_14;
+          }
+
+          input:checked+label:after {
+            top: 5px !important;
+          }
+        }
+
+        a {
+          font-size: $FONT_14;
+          padding: 2px 4px 0 4px;
+        }
+      }
+
+      .signbtnfield {
+        width: 100%;
+        float: left;
+        margin: 0px 0 0px 0;
+        padding-left: 0px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        a {
+          width: auto !important;
+          padding: 0px !important;
+          color: $TXT_RED !important;
+          background-color: $BG_WHITE !important;
+          font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+          border-radius: 0px !important;
+        }
+
+        .custombtn {
+          width: auto !important;
+          padding: 0px !important;
+          color: $TXT_YELLOW !important;
+          background-color: $BG_WHITE !important;
+          font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+          border-radius: 0px !important;
+        }
+
+        .back {
+          color: $TXT_GRAY !important;
+        }
+      }
+    }
+  }
+
+  .close-icon {
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: none;
+    vertical-align: middle;
+    outline: 0;
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    line-height: 40px;
+    cursor: pointer;
+
+    &.iconEmpty {
+      display: none;
+    }
+
+    &:after {
+      content: "\e909";
+      font-family: "yatapay" !important;
+      display: block;
+      position: absolute;
+      z-index: 1;
+      right: 18px;
+      top: 5px;
+      margin: auto;
+      padding: 0px;
+      text-align: center;
+      color: $TXT_GRAY;
+      font-weight: normal;
+      font-size: $FONT_12;
+      cursor: pointer;
+      line-height: 38px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .signGooglePage {
+    .signGoogleCenter {
+      .signGoogleBox {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .signGooglePage {
+    .signGoogleCenter {
+      align-items: center;
+
+      .signGoogleBox {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .signGooglePage {
+    .signGoogleCenter {
+      .signGoogleBox {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        padding: 40px 20px;
+
+        .clienttype {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .clienttypeleft {
+            padding-bottom: 4px;
+          }
+
+          .clienttyperight {
+            width: 100%;
+
+            .RadioButton {
+              &:first-child {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

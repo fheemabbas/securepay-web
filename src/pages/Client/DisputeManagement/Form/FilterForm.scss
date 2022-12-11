@@ -1,0 +1,53 @@
+@import "../../../../assets/scss/variables.scss";
+.filterDispute {
+	display: table;
+	.form {
+		.filterItem {
+			width: 100%;
+			float: left;
+			padding: 16px;
+				.dropdownSection {
+				.titleText {
+					padding-top:0px;
+					padding-bottom: 8px;
+					padding-left: 0px;
+					font-size: $FONT_14;
+					font-family: $ROBOTO_REGULAR;
+					&.staffTitle{
+						padding-top: 16px;
+					}
+				}
+				.customDropdown{
+					.dropdown{
+						.dropdown-menu{
+							.dropdownData{
+								.dropdown-item{
+									font-size: $FONT_14;
+								}
+							} 
+						} 
+					} 
+				} 
+			}
+		}
+		.custombtnfield {
+			border-top: 1px solid $INPUTBORDER;
+			padding: 16px;
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			margin: 0;
+			.custombtn {
+				width: 48%;
+				float: left;
+				padding: 8px 0 8px 0 !important;
+				&:nth-child(2) {
+					margin-left: 8px;
+					background: transparent !important;
+					color: $TXT_BLUE !important;
+				}
+			}
+		}
+		
+	}
+}

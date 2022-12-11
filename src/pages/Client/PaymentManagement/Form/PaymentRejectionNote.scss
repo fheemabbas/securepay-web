@@ -1,0 +1,55 @@
+@import "../../../../assets/scss/variables.scss";
+
+.modalPopup {
+    &.paymentRejectionNote {
+        .modal-dialog {
+            max-width: 423px;
+
+            .modal-content {
+                .modalInner {
+                    .modal-body {
+                        position: relative;
+                        padding: 40px 40px;
+
+                        .closeBtn {
+                            position: absolute;
+                            right: 16px;
+                            top: 16px;
+                        }
+
+                        .rejection_note {
+                            width: 100%;
+
+                            .form {
+                                .titleText {
+                                    line-height: 24px;
+                                }
+
+                                .filterItem {
+                                    .textField {
+                                        textarea {
+                                            height: 108px;
+                                            resize: none;
+                                        }
+                                    }
+
+                                    .custombtnfield {
+                                        padding-top: 8px;
+
+                                        .custombtn {
+                                            width: 116px;
+                                            float: left;
+                                            padding: 11px 0 !important;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

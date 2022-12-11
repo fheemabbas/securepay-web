@@ -1,0 +1,527 @@
+@import "../../../../assets/scss/variables.scss";
+
+.admin_ticket_main {
+    max-width: 1602px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 auto;
+
+    .jobInnerSection {
+        .titleText {
+            padding-top: 24px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
+        .form-title {
+            padding: 0 14px 24px 14px !important;
+            font-size: $FONT_16;
+            line-height: 19px;
+            color: $TXT_BLUE;
+            font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+            padding: 0 0 16px;
+        }
+
+        .searchFilter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-bottom: 25px;
+
+            .searchSection {
+                display: flex;
+
+                .searchboxMain {
+                    width: 623px;
+                }
+
+                .filterBtn {
+                    position: relative;
+
+                    .filterIcon {
+                        position: relative;
+                        margin-left: 15px;
+                        background: $BG_WHITE;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 8px;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                        -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                        box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        i {
+                            color: $TXT_BLUE_GREY;
+                        }
+
+                        .dot_filter {
+                            width: 5px;
+                            height: 5px;
+                            background-color: $TXT_BLUE;
+                            border-radius: 50%;
+                            top: 5px;
+                            right: 3px;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .sortingIcon {
+                    color: $TXT_BLUE;
+                    padding: 14px 18px;
+                    position: relative;
+                    position: relative;
+                    margin-left: 15px;
+                    background: #ffffff;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 8px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                    display: none;
+
+                    .FilterSorting {
+                        display: flex;
+
+                        .filterItem {
+                            padding: 0;
+
+                            .headingUl {
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0;
+                                list-style: none;
+                                margin: 0;
+
+                                .headingItem {
+                                    display: flex !important;
+                                    font-size: 14px !important;
+                                    color: $TXT_BLUE;
+                                    padding: 10px;
+                                    cursor: pointer;
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .custombtn {
+                width: 202px;
+                background-color: $BG_LIGHTWHITE;
+                border: 1px solid $TXT_BLUE !important;
+                color: $TXT_BLUE;
+
+                &:nth-child(2) {
+                    margin-left: 8px;
+                    background: transparent;
+                }
+            }
+        }
+
+        .table_list_Main {
+            width: 100%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            justify-content: space-between;
+
+            .table-row-inline {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                align-items: center;
+
+                &.cursurpointer {
+                    cursor: pointer;
+                }
+
+                .Table-row-item {
+                    flex: 1;
+                    color: $TXT_WINE;
+
+                    &:nth-child(1) {
+                        flex: 0.6;
+
+                    }
+
+                    &:nth-child(2) {
+                        flex: 1.5;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                        color: $TXT_DARKGREY;
+                    }
+
+                    // &:nth-child(3) {
+                    // 	width: 30%;
+                    // }
+                    // &:nth-child(4) {
+                    // 	width: 30%;
+                    // }
+                }
+            }
+
+            .Table-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 14px 10px;
+                border-radius: 8px;
+                -webkit-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                -moz-box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+                box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08), 0px 0.5px 2px rgba(96, 97, 112, 0.16);
+
+                &:first-child {
+                    margin-top: 3px;
+                }
+
+                &:hover {
+                    -webkit-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                    -moz-box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                    box-shadow: 0px 3px 8px rgba(84, 95, 122, 0.12);
+                    background: $BG_WHITE;
+                }
+
+                &.Table-header {
+                    background-color: $BG_BLUE;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-top: 1px solid #e0e0e0;
+                    border-bottom: none;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .table-row-inline {
+                        padding-bottom: 0px;
+                    }
+
+                    .Table-row-item {
+                        color: $TXT_WHITE;
+                        font-size: $FONT_14;
+                        padding: 18px 20px;
+                        margin-bottom: 0px;
+                        font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+
+                        .icon-sort {
+                            background-color: transparent;
+                            border: none;
+                            color: $TXT_WHITE;
+                            font-size: $FONT_12;
+                            margin-left: 4px;
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+
+            .Table-row-item {
+                display: flex;
+                text-align: left;
+                align-items: center;
+                padding: 12px 20px;
+                font-size: $FONT_14;
+
+                .imageCricle {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    overflow: hidden;
+                }
+
+                .actiondropdown {
+                    position: relative !important;
+                    z-index: 99 !important;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+.deleteModal {
+    .modal-dialog {
+        max-width: 323px;
+
+        .modal-content {
+            .modalInner {
+                .modal-body {
+                    .messageSection {
+                        padding: 34px;
+
+                        .customBtn {
+                            button {
+                                &.custombtn {
+                                    padding: 11px 12px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+@media (min-width: 992px) and (max-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .admin_ticket_main {
+        .jobInnerSection {
+            .table_list_Main {
+                .Table-row {
+                    &.Table-header {
+                        .table-row-inline {
+                            &::before {
+                                padding: 10px 20px;
+                                position: relative;
+                                content: 'Support and Ticket Management';
+                                font-size: $FONT_14;
+                                color: #ffffff;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            }
+
+                            .Table-row-item {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .table-row-inline {
+                        .Table-row-item {
+                            width: 33.333%;
+                            flex: inherit;
+                            flex-wrap: wrap;
+
+                            .statusMain {
+                                margin-top: 5px;
+                            }
+
+                            &:nth-child(1) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Ticket Id";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Subject";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Assigned To";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Created By";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(5) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Created On";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(6) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Status";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .admin_ticket_main {
+        .jobInnerSection {
+            .searchFilter {
+                .searchSection {
+                    .searchboxMain {
+                        width: 400px;
+
+                        .searchInput {
+                            padding: 9px 16px 8px;
+                        }
+                    }
+                }
+            }
+
+            .table_list_Main {
+                .Table-row {
+                    &.Table-header {
+                        .table-row-inline {
+                            &::before {
+                                padding: 10px 20px;
+                                position: relative;
+                                content: 'Support and Ticket Details';
+                                font-size: $FONT_14;
+                                color: $TXT_WHITE;
+                                font-family: $SOURCE_SANS_PRO_SEMIBOLD;
+                            }
+
+                            .Table-row-item {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .table-row-inline {
+                        .Table-row-item {
+                            width: 50%;
+                            flex: inherit;
+                            flex-wrap: wrap;
+
+                            .statusMain {
+                                margin-top: 5px;
+                            }
+
+                            &:nth-child(1) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Ticket Id";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Subject";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(3) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Assigned To";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Created By";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(5) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Created On";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+
+                            &:nth-child(6) {
+                                &::before {
+                                    width: 100%;
+                                    float: left;
+                                    content: "Status";
+                                    position: relative;
+                                    top: 0px;
+                                    font-size: 14px;
+                                    color: $TXT_BLUE;
+                                    font-family: "source_sans_prosemibold";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

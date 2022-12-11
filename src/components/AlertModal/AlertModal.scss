@@ -1,0 +1,61 @@
+@import "../../assets/scss/variables.scss";
+.modalPopup {
+		.modal-dialog {
+			max-width: 344px;
+				margin: 0 auto;
+			.modal-content {
+				.modalInner {
+					.modal-body {
+						padding: 0;
+						.closeBtn {
+							padding-right: 16px;
+							padding-top: 16px;
+							i {
+								font-size: $FONT_14;
+							}
+						}
+						.messageSection {
+							padding: 40px;
+							.title {
+								margin: 0;
+								font-size: $FONT_20 !important;
+								font-family: $SOURCE_SANS_PRO_SEMIBOLD !important;
+								color: $TXT_YELLOW !important;
+								line-height: 30px !important;
+								padding-bottom: 16px;
+								text-align: center !important;
+								
+							}
+							.innerTxt{
+								margin: 0;
+								font-size: $FONT_14;
+								font-family: $SOURCE_SANS_PRO_REGULAR;
+								color: $TXT_WINE;
+								padding-bottom: 16px;
+									text-align: center !important;
+
+							}
+								.customBtn {
+									display: table;
+									margin: 0 auto;
+									button {
+										width: 116px;
+										height: auto;
+										padding: 11px 16px !important;
+										border: 1px solid transparent !important;
+										&:last-child {
+											margin-left: 8px;
+											background: transparent !important;
+											color: $TXT_BLUE !important;
+											border-color: $INPUTBORDER !important;
+										}
+									}
+								}
+						
+						}
+					}
+				}
+			}
+		}
+	
+}
