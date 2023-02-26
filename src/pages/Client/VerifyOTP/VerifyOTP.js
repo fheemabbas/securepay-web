@@ -15,6 +15,7 @@ import {
 import "./VerifyOTP.scss";
 import { get } from "lodash";
 import MetaTags from 'react-meta-tags';
+import logo from '../../../assets/images/trustpay1.png';
 
 const loginForm = {
     OTP: {
@@ -64,9 +65,9 @@ function VerifyOTP(props) {
     return (
         <div className="verifyPage">
             <MetaTags>
-                <title>Welcome Back To TrustPay - Sign In To Your Account</title>
-                <meta name="description" content="Sign in to TrustPay to track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today." />
-                <meta property="og:title" content="Welcome Back To TrustPay - Sign In To Your Account" />
+                <title>Welcome Back To Securepay - Sign In To Your Account</title>
+                <meta name="description" content="Sign in to Securepay to track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today." />
+                <meta property="og:title" content="Welcome Back To Securepay - Sign In To Your Account" />
                 <meta property="og:image" content="https://res.cloudinary.com/zudu/image/upload/v1624874576/Yatapay/yatapay.png" />
             </MetaTags>
             <Scrollbars
@@ -76,7 +77,7 @@ function VerifyOTP(props) {
                 <div className="loginCenter">
                     <div className="loginBox">
                         <div className="logo">
-                            <span className="icon-yatapay-brand"></span>
+                            <img src={logo} alt="logo" width='100' />
                         </div>
                         <h1>Verify OTP</h1>
                         <div className="tabMain">

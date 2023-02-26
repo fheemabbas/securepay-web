@@ -4,7 +4,7 @@ import Scrollbars from "react-custom-scrollbars";
 import { withRouter, Link } from "react-router-dom";
 import { showToast } from "../../../state/ducks/utils/operations";
 
-import logo from "../../../assets/images/yatapaylogo.png";
+import logo from "../../../assets/images/trustpay1.png";
 import HookForm from "../../../components/HookForm/HookForm";
 import TextField from "../../../components/UI/TextField/TextField";
 import CustomButton from "../../../components/UI/CustomButton/CustomButton";

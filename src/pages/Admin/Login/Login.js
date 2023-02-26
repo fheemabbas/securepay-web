@@ -8,7 +8,7 @@ import Message from "../../../util/message";
 import Constant from "../../../util/constant";
 import { showToast } from "../../../state/ducks/utils/operations";
 import { get } from "lodash";
-import logo from "../../../assets/images/yatapaylogo.png";
+import logo from "../../../assets/images/trustpay1.png";
 import HookForm from "../../../components/HookForm/HookForm";
 import CheckBox from "../../../components/UI/CheckBox/CheckBox";
 import TextField from "../../../components/UI/TextField/TextField";
@@ -63,7 +63,7 @@ const itemsActivity = [
   },
   {
     id: "2",
-    value: "Yatapay Staff",
+    value: "Securepay Staff",
   },
 ];
 
@@ -112,6 +112,7 @@ function AdminLogin(props) {
       setTimeout(() => {
         // setBusy(false)
         props.history.push("/admin/verifyotp");
+        // props.history.push("/admin/dashboard");
       }, 1000);
     } catch (err) {
       setBusy(false);

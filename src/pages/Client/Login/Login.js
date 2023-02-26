@@ -68,8 +68,8 @@ function Login(props) {
         if (register_status && user.registerComplete) {
           props.initializeSession({ user, tokens });
           StorageService.setItem('activeTab', "Client")
-          // props.history.push("/verifyotp")
-          props.history.push("/payments")
+          props.history.push("/verifyotp")
+          // props.history.push("/payments")
           createUserForNotification(user)
           props.showToast({
             message: res.message,
@@ -130,8 +130,8 @@ function Login(props) {
       StorageService.setSessionItem("YataPay_remember_me", rememberMe);
       if (user.registerComplete) {
         StorageService.setItem('activeTab', "Client")
-        // props.history.push("/verifyotp");
-        props.history.push("/payments");
+        props.history.push("/verifyotp");
+        // props.history.push("/payments");
         createUserForNotification(user)
       } else {
         let userRidirect = user.accountType === 1 ? "/signup-individual" : "/signup-organisation"
@@ -161,10 +161,10 @@ function Login(props) {
   return (
     <div className="loginPage">
       <MetaTags>
-        <title>Welcome Back To TrustPay - Sign In To Your Account</title>
+        <title>Welcome Back To Securepay - Sign In To Your Account</title>
         <meta
           name="description"
-          content="Sign in to TrustPay to track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today."
+          content="Sign in to Securepay to track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today."
         />
       </MetaTags>
       <Scrollbars
@@ -244,7 +244,7 @@ function Login(props) {
                     <SocialButton icon="icon-facebook" className="loginwith" appId={process.env.REACT_APP_FACEBOOK_KEY} handleSocialLogin={(user, err) => handleGoogleLogin(user, err, 'facebookId')} lable="Sign in using Facebook" provider="facebook" />
                   </div>
                   <Link className="newuser" to="/sign-up">
-                    New to TrustPay?
+                    New to SecurePay?
                   </Link>
                 </div>
               </div>

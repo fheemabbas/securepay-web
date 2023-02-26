@@ -92,7 +92,7 @@ function SignUpEmail(props) {
                         setChecked(checked)
                       }
                     />
-                    <a href="https://dev.zudu.co.uk/yatapay/privacy-policy/" target="_blank">Terms and Privacy</a>
+                    <a href="#" target="_blank">Terms and Privacy</a>
                   </div>
                   <div className="categoryBtn">
                     <CustomButton
@@ -104,7 +104,7 @@ function SignUpEmail(props) {
                       }}>LET’S GET STARTED</CustomButton>
                   </div>
                 </Tab>
-                <Tab eventKey="organisation" title="Business">
+                {/* <Tab eventKey="organisation" title="Business">
                   <div className="title_tab">
                     Suitable for limited companies. Must have a valid companies house number.
                   </div>
@@ -132,7 +132,7 @@ function SignUpEmail(props) {
                       LET’S GET STARTED
                     </CustomButton>
                   </div>
-                </Tab>
+                </Tab> */}
               </Tabs>
             </div>
             <div className="back">

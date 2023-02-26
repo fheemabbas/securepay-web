@@ -81,8 +81,8 @@ const itemsCategory = [
 ]
 const FilterForm = (props) => {
     const currentDate = new Date().getDate();
-  const currentMonth = new Date().getMonth() + 1;
-  const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth() + 1;
+    const currentYear = new Date().getFullYear();
     const { startDate, endDate, setStartDate, staffMembers, selectedStaffMember, setSelectedStaffMember, setEndDate, isfilter, setShowFilterDropdown, setTickitStatus, status, setpage } = props
     const [job, setSelectedJob] = useState()
     const [form, setFilterForm] = React.useState()
@@ -154,13 +154,13 @@ const FilterForm = (props) => {
                                                         currantYear={currentYear}
                                                         maxDate={
                                                             new Date(
-                                                              currentYear +
-                                                              "/" +
-                                                              currentMonth +
-                                                              "/" +
-                                                              currentDate
+                                                                currentYear +
+                                                                "/" +
+                                                                currentMonth +
+                                                                "/" +
+                                                                currentDate
                                                             )
-                                                          }
+                                                        }
                                                     />
                                                 )} />
                                         </div>
@@ -181,20 +181,20 @@ const FilterForm = (props) => {
                                                         currantYear={currentYear}
                                                         maxDate={
                                                             new Date(
-                                                              currentYear +
-                                                              "/" +
-                                                              currentMonth +
-                                                              "/" +
-                                                              currentDate
+                                                                currentYear +
+                                                                "/" +
+                                                                currentMonth +
+                                                                "/" +
+                                                                currentDate
                                                             )
-                                                          }
+                                                        }
 
                                                     />
                                                 )} />
                                         </div>
                                     </div>
                                     {props.userRole === 1 && <div className='dropdownSection'>
-                                        <Label title='Assigned Yatapay Staff Member'></Label>
+                                        <Label title='Assigned Securepay Staff Member'></Label>
                                         <Controller as={<CustomDropdown />}
                                             defaultValue={''}
                                             control={formMethod.control}

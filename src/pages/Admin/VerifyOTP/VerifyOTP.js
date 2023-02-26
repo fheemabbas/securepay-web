@@ -15,6 +15,7 @@ import {
 import "./VerifyOTP.scss";
 import { get } from "lodash";
 import MetaTags from 'react-meta-tags';
+import logo from '../../../assets/images/trustpay1.png';
 
 const loginForm = {
     OTP: {
@@ -64,9 +65,9 @@ function AdminVerifyOTP(props) {
     return (
         <div className="verifyPage">
             <MetaTags>
-                <title>Welcome Back To YataPay - Sign In To Your Account</title>
-                <meta name="description" content="Sign in to YataPay to track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today." />
-                <meta property="og:title" content="Welcome Back To YataPay - Sign In To Your Account" />
+                <title>Welcome Back To Trustpay- Sign In To Your Account</title>
+                <meta name="description" content="Sign in to Trustpayto track the progress of your recent transactions, access our customer support system, and more. Don't have an account? Sign up today." />
+                <meta property="og:title" content="Welcome Back To Trustpay- Sign In To Your Account" />
                 <meta property="og:image" content="https://res.cloudinary.com/zudu/image/upload/v1624874576/Yatapay/yatapay.png" />
             </MetaTags>
             <Scrollbars
@@ -76,7 +77,7 @@ function AdminVerifyOTP(props) {
                 <div className="loginCenter">
                     <div className="loginBox">
                         <div className="logo">
-                            <span className="icon-yatapay-brand"></span>
+                            <img src={logo} alt="logo" width='100' />
                         </div>
                         <h1>Verify OTP</h1>
                         <div className="tabMain">
@@ -94,7 +95,7 @@ function AdminVerifyOTP(props) {
                                         onSubmit={(e) => onFormSubmit(e)}
                                     >
                                         {(formMethod) => {
-                                            console.log('Valid : ', formMethod ?.formState.isValid, formMethod ?.watch(loginForm.OTP.name) ?.toString().length)
+                                            console.log('Valid : ', formMethod?.formState.isValid, formMethod?.watch(loginForm.OTP.name)?.toString().length)
 
                                             const validateNumber = (value, name) => {
                                                 value = value.replace(/\D/g, "");
@@ -116,7 +117,7 @@ function AdminVerifyOTP(props) {
                                                         formMethod={formMethod}
                                                         rules={loginForm.OTP.validate}
                                                         name={loginForm.OTP.name}
-                                                        errors={formMethod ?.errors}
+                                                        errors={formMethod?.errors}
                                                         autoFocus={true}
                                                         // type="number"
                                                         maxLength={6}
@@ -130,7 +131,7 @@ function AdminVerifyOTP(props) {
                                                         <CustomButton
                                                             type="submit"
                                                             title="Verify OTP"
-                                                            disabled={!(formMethod ?.formState.isValid && formMethod ?.watch(loginForm.OTP.name) ?.toString().length === 6)}
+                                                            disabled={!(formMethod?.formState.isValid && formMethod?.watch(loginForm.OTP.name)?.toString().length === 6)}
                                                             loading={busy}
                                                         />
                                                     </div>

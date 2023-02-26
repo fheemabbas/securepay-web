@@ -277,7 +277,7 @@ const DisputeDetails = (props) => {
               <p className='noTxt'>Total Job Amount:<span className='bold'>£6700</span></p>
               <p className='noTxt'>Dispute Status:<span className='bold'>Open Dispute</span></p>
               <p className='noTxt'>Business Category:<span className='bold'>Architect</span></p>
-              <p className='noTxt'>Assigned Yatapay Staff Member:<span className='bold'>Leslie Alexander</span></p>
+              <p className='noTxt'>Assigned Securepay Staff Member:<span className='bold'>Leslie Alexander</span></p>
               <p className='noTxt'>Disputed By:<span className='bold'>Customer</span></p>
               <div className='btnRight'>
                 <CustomButton onClick={() => setShowDisputeSystemSidebar(!showDisputeSystemSidebar)} title='Dispute Management' ></CustomButton>
@@ -410,7 +410,7 @@ const DisputeDetails = (props) => {
               <div className="ListTxt">Cody Fisher</div>
             </li>
             <li>
-              <div className="ListTitle">Yatapay Staff Name</div>
+              <div className="ListTitle">Securepay Staff Name</div>
               <div className="ListTxt">Leslie Alexander</div>
             </li>
             <li>

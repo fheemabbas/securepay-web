@@ -1318,13 +1318,13 @@ function SignUpGoogle(props) {
                                   label="Individual"
                                   value="Individual"
                                 />
-                                <RadioButton
+                                {/* <RadioButton
                                   changed={ClientTypeHandler}
                                   id="2"
                                   isSelected={clientType === "ORG"}
                                   label="Business"
                                   value="ORG"
-                                />
+                                /> */}
                               </div>
                             </div>
                             <div className="fieldText">
@@ -2016,7 +2016,7 @@ function SignUpGoogle(props) {
                               title="Congratulations!"
                             ></Label>
                             <div className="txt">
-                              You have successfully signed up to TrustPay Secure.
+                              You have successfully signed up to Securepay Secure.
                               Now you can transact in confidence.
                             </div>
                             <div className="signbtnfield">

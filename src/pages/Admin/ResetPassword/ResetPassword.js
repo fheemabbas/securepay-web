@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import Scrollbars from "react-custom-scrollbars";
 
-import logo from "../../../assets/images/yatapaylogo.png";
+import logo from "../../../assets/images/trustpay1.png";
 
 import { showToast } from "../../../state/ducks/utils/operations";
 

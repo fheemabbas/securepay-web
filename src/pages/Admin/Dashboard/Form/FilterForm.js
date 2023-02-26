@@ -119,7 +119,7 @@ const FilterForm = (props) => {
                                         </div>
 
                                         <div className='dropdownSection'>
-                                            <Label className="staffTitle" title='Assigned Yatapay Staff Member'></Label>
+                                            <Label className="staffTitle" title='Assigned Securepay Staff Member'></Label>
                                             {/* <CustomDropdown
                                                 dropDownItems={itemsStaffMember}
                                                 placeholder="Choose Status"

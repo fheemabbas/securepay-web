@@ -4,7 +4,7 @@ import Scrollbars from "react-custom-scrollbars";
 import { withRouter } from "react-router-dom";
 import { hideLoader, showLoader, showToast } from "../../state/ducks/utils/operations";
 import { resendVerifyLink } from "../../state/ducks/auth/operations";
-// import logo from "../../assets/images/yatapaylogo.png";
+// import logo from "../../assets/images/trustpay1.png";
 import CustomButton from "../../components/UI/CustomButton/CustomButton";
 import useWindowDimension from "../../hooks/useWindowDimension";
 import "./verify.scss";

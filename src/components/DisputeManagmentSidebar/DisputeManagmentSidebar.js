@@ -101,7 +101,7 @@ const DisputeManagmentSidebar = (props) => {
                         <div className="ListTxt">{customerName ?? '-'}</div>
                     </li>
                     <li>
-                        <div className="ListTitle">Yatapay Staff Name</div>
+                        <div className="ListTitle">Securepay Staff Name</div>
                         <div className="ListTxt">{yatapayStaffName ?? '-'}</div>
                     </li>
                     <li>

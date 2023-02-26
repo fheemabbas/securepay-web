@@ -692,7 +692,7 @@ const PaymentDetails = (props) => {
                                             disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "ACCEPT" ? "Conclusion accpeted by both" :
                                               disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "REJECTED" ? "Conclusion rejected" :
                                                 disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "REJECTED" ? `Conclusion accepted by ${clientName} and rejected by ${customerName} ` :
-                                                  disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Yatapay team will be in touch to assist."}
+                                                  disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Securepay team will be in touch to assist."}
                                         </div>
                                         <div className="custom_tooltip">
                                           {['top'].map((placement) => (
@@ -706,7 +706,7 @@ const PaymentDetails = (props) => {
                                                     disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "ACCEPT" ? "Conclusion accpeted by both" :
                                                       disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "REJECTED" ? "Conclusion rejected" :
                                                         disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "REJECTED" ? `Conclusion accepted by ${clientName} and rejected by ${customerName} ` :
-                                                          disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Yatapay team will be in touch to assist."}
+                                                          disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Securepay team will be in touch to assist."}
                                                 </Tooltip>
                                               }
                                             >
@@ -924,7 +924,7 @@ const PaymentDetails = (props) => {
                                         disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "ACCEPT" ? "Conclusion accpeted by both" :
                                           disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "REJECTED" ? "Conclusion rejected" :
                                             disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "REJECTED" ? `Conclusion accepted by ${clientName} and rejected by ${customerName} ` :
-                                              disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Yatapay team will be in touch to assist."}
+                                              disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Securepay team will be in touch to assist."}
                                     </div>
                                     <div className="custom_tooltip">
                                       {['top'].map((placement) => (
@@ -938,7 +938,7 @@ const PaymentDetails = (props) => {
                                                 disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "ACCEPT" ? "Conclusion accpeted by both" :
                                                   disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "REJECTED" ? "Conclusion rejected" :
                                                     disputeDetails?.clientResponse === "ACCEPT" && disputeDetails?.customerResponse === "REJECTED" ? `Conclusion accepted by ${clientName} and rejected by ${customerName} ` :
-                                                      disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Yatapay team will be in touch to assist."}
+                                                      disputeDetails?.clientResponse === "REJECTED" && disputeDetails?.customerResponse === "ACCEPT" ? `Conclusion rejected by ${clientName} and accepted by ${customerName}` : "A member of the Securepay team will be in touch to assist."}
                                             </Tooltip>
                                           }
                                         >
@@ -1223,7 +1223,7 @@ const PaymentDetails = (props) => {
                       <img src={Bank} title="" alt="" />
                     </RadioButton>
 
-                    <RadioButton
+                    {/* <RadioButton
                       changed={radioChangeHandler}
                       id="2"
                       isSelected={confirmType === "CARD"}
@@ -1231,11 +1231,10 @@ const PaymentDetails = (props) => {
                       value="CARD"
                     >
 
-                      {/* <p style={{ margin: 0, paddingRight: '10px', fontSize: '13px' }} className='radio-text'>Pay via card (Additional 1.6% fee will be applied)</p> */}
                       <img src={Card} title="" alt="" />
-                    </RadioButton>
+                    </RadioButton> */}
                   </div>
-                  {confirmType === "CARD" &&
+                  {/* {confirmType === "CARD" &&
                     <CreditCardInput
                       cardNumberInputProps={{ value: cardNumber, onChange: e => setCardNumber(e.target.value) }}
                       cardExpiryInputProps={{ value: expiry, onChange: e => setExpiry(e.target.value) }}
@@ -1243,7 +1242,7 @@ const PaymentDetails = (props) => {
                       fieldClassName="inputCustom"
                       containerClassName="inputCustomBox"
                     />
-                  }
+                  } */}
 
                   <div className='custBtn'>
                     <CustomButton type="submit" title={"Pay now"} disabled={confirmType === "CARD" ? (cardNumber == '' || expiry == '' || cvc == '') : false} loading={busy}></CustomButton>

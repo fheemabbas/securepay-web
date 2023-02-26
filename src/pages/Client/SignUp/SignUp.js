@@ -81,10 +81,10 @@ function SignUp(props) {
   return (
     <div className="signupPage" >
       <MetaTags>
-        <title>Welcome To TrustPay - Sign Up Today</title>
+        <title>Welcome To Securepay - Sign Up Today</title>
         <meta
           name="description"
-          content="TrustPay is a simple and secure payment management platform, providing solutions for SMEs, corporations, and legal and financial firms."
+          content="Securepay is a simple and secure payment management platform, providing solutions for SMEs, corporations, and legal and financial firms."
         />
       </MetaTags>
       <Scrollbars className="loginScroll" style={{ height: dimensions.height + 'px' }}>

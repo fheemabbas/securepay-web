@@ -1106,7 +1106,7 @@ const IndividualForm = (props) => {
                       title="Congratulations!"
                     ></Label>
                     <div className="txt">
-                      You have successfully signed up to TrustPay Secure.
+                      You have successfully signed up to Securepay Secure.
                       Now you can transact in confidence.
                     </div>
                     <div className="signbtnfield">
